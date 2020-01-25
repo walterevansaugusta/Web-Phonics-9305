@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges} from '@angular/core';
 
 @Component({
   selector: 'introduction',
   templateUrl: './introduction.component.html',
   styleUrls: ['./introduction.component.scss']
 })
-export class IntroductionComponent implements OnInit {
+export class IntroductionComponent implements OnInit, OnChanges {
 
-  constructor() { }
+    introWords = ['HELLO', 'HEY', 'HI', 'WELCOME!'];
+    currentInd = 0;
+    currentWord = "";
 
-  ngOnInit() {
-  }
+    constructor() { }
+
+    ngOnInit() {
+        this.currentWord = introWords[currentInd];
+    }
+
+    ngOnChanges() {
+        this.currentWord = introWords[currentInd];
+    }
 
 }

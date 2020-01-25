@@ -14,11 +14,11 @@ export class IntroductionComponent implements OnInit, OnChanges {
     constructor() { }
 
     ngOnInit() {
-        this.currentWord = introWords[currentInd];
+        this.currentWord = this.introWords[this.currentInd];
     }
 
-    ngOnChanges() {
-        this.currentWord = introWords[currentInd];
-    }
+//    ngOnChanges() {
+ //       this.currentWord = this.introWords[this.currentInd];
+ //   }
 
 }

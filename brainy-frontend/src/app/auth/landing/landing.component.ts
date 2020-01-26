@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'landing',
@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
+  @Output() loginClick: EventEmitter<any> = new EventEmitter();
+  @Output() registerClick: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onRegisterClick() {
+    this.registerClick.emit();
+  }
+
+  onLoginClick() {
+    this.loginClick.emit();
+  }
 }

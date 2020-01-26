@@ -38,8 +38,20 @@ h4 {
   padding-bottom: 12px;
 }
 
-.name-input {
+input, textarea {
+  border: none;
+  border-bottom: 3px solid aliceblue;
+  font-size: 48px;
+  background: none;
+  color: white;
 
+  &:focus {
+    outline: none;
+    color: white;
+  }
+  &::placeholder {
+    color: white;
+  }
 }
 
 .passcode {

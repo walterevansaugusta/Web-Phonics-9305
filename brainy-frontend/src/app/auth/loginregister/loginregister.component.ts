@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { IncomingMessage } from 'http';
 
 @Component({
   selector: 'loginregister',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginregisterComponent implements OnInit {
 
+  imgs = [];
+
   constructor() { }
 
   ngOnInit() {
+    for (let i = 0; i < 20; i++) {
+      this.imgs.push('../../../assets/images/lion_icon.jpg');
+    }
   }
 
 }

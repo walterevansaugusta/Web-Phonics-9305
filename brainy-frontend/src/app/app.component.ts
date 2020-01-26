@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'brainy-frontend';
+  showLanding = false;
+
+  onClickedGo() {
+    this.showLanding = true;
+  }
 }

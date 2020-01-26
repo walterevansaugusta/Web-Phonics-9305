@@ -1,0 +1,53 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    margin: auto;
+    font-size: 64px;
+    font-family: "Patrick Hand", cursive;
+    padding: 50px;
+}
+
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #95E1E7;
+        border-radius: 5px;
+        margin: auto;
+        padding: 2% 5%;
+
+        .header {
+            h2 {
+                color: white;
+                margin: auto;
+                font-size: 32px;
+                font-family: "Patrick Hand", cursive;
+            }
+        }
+    
+        .passcode {
+            padding: 10px;
+
+            .pic {
+                border: 3px solid white;
+                border-radius: 5px;
+                height: 32px;
+                width: 32px;
+                padding: 32px;
+                margin: 10px;
+            }
+        }
+    }
+}
+

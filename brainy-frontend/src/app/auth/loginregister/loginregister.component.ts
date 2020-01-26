@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-// import { IncomingMessage } from 'http';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'loginregister',
@@ -7,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loginregister.component.scss']
 })
 export class LoginregisterComponent implements OnInit {
+
+  @Input() showRegister: boolean;
+  @Input() showLogin: boolean;
+  @Output() cancelClick: EventEmitter<any> = new EventEmitter();
 
   imgs = [];
 
@@ -18,4 +21,7 @@ export class LoginregisterComponent implements OnInit {
     }
   }
 
+  onCancel() {
+    this.cancelClick.emit()
+  }
 }

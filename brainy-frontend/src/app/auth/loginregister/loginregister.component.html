@@ -1,5 +1,6 @@
 <div class="root">
-  <header>LOGIN</header>
+  <header *ngIf="!showRegister">LOGIN</header>
+  <header *ngIf="showRegister">REGISTER</header>
 
   <div id="main">
       <h2>Click on your four unqiue animal pictures.</h2>
@@ -21,7 +22,7 @@
   </div>
 
   <footer>
-      <button id="cancel">
+      <button id="cancel" (click)="onCancel()">
           BACK
       </button>
       <button id="login">

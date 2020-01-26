@@ -1,17 +1,31 @@
 <div class="root">
-    <h1>LOGIN</h1>
+  <header>LOGIN</header>
 
-    <div class="container">
-        <div class="header">
-            <h2>Click on your four unqiue animal pictures.</h2>
+  <div id="main">
+      <h2>Click on your four unqiue animal pictures.</h2>
+
+      <div class="passcode">
+          <div class="pic one"></div>
+          <div class="pic two"></div>
+          <div class="pic three"></div>
+          <div class="pic four"></div>
+      </div>
+
+      <div class="gallery-flex-container">
+        <div class="gallery">
+            <div *ngFor="let img of imgs" class="image ">
+                <img [src]="img" width="115px" height="115px">
+            </div>
         </div>
+      </div>
+  </div>
 
-        <div class="passcode">
-            <div class="pic one"></div>
-            <div class="pic two"></div>
-            <div class="pic three"></div>
-            <div class="pic four"></div>
-        </div>
-    </div>
-
+  <footer>
+      <button id="cancel">
+          BACK
+      </button>
+      <button id="login">
+          LOGIN
+      </button>
+  </footer>
 </div>

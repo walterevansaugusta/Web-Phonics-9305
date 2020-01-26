@@ -1,2 +1,10 @@
-<introduction>
+<introduction
+  *ngIf="!showLanding"
+  (clickedOnGo)="onClickedGo()"
+  >
 </introduction>
+
+<landing
+  *ngIf="showLanding"
+  >
+</landing>

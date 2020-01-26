@@ -1,2 +1,20 @@
-<introduction>
+<introduction
+  *ngIf="showIntro"
+  (clickedOnGo)="onClickedGo()"
+  >
 </introduction>
+
+<landing
+  *ngIf="showLanding"
+  (registerClick)="onRegister()"
+  (loginClick)="onLogin()"
+  >
+</landing>
+
+<loginregister
+  *ngIf="showLogin || showRegister"
+  [showRegister]="showRegister"
+  [showLogin]="showLogin"
+  (cancelClick)="onCancel()"
+  >
+</loginregister>

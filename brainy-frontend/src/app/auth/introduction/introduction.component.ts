@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'introduction',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./introduction.component.scss']
 })
 export class IntroductionComponent implements OnInit {
+
+    @Output() clickedOnGo: EventEmitter<any> = new EventEmitter();
 
     introWords = ['HELLO', 'HEY', 'HI', 'WELCOME!'];
     currentInd = 0;
@@ -23,6 +25,10 @@ export class IntroductionComponent implements OnInit {
                 this.stopTimer();
             }
         }, 1000);
+    }
+
+    toLogin() {
+      this.clickedOnGo.emit();
     }
 
     private stopTimer() {

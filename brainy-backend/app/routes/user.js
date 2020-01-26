@@ -29,8 +29,7 @@ router.post("/users", (req, res, next) => {
         loginID : [{picture1: "1", picture2: "2", picture3:  "3", picture4:  "5"}],
         name: "Bob"
     });
-    user
-        .save()
+    user.save()
         .then(result => {
           console.log(result);
           res.status(201).json({

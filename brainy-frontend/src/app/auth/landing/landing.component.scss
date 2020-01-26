@@ -1,0 +1,50 @@
+
+.root { 
+    justify-content: center; 
+    text-align: center; 
+    font-family: "Patrick Hand", cursive;
+    margin-top: 100px; 
+}
+
+h2 {
+    color: white;
+    margin: auto;
+    font-size: 70px;
+    font-family: "Patrick Hand", cursive;
+    padding-bottom: 20px; 
+    padding-top: 10px; 
+    letter-spacing: 4px; 
+}
+
+#logo { 
+    height: 250px; 
+    width: 250px; 
+    padding-top: 35px; 
+}
+
+button { 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 23px; 
+    width: 175px; 
+    font-family: "Patrick Hand", cursive;
+    border-radius: 8px;
+    letter-spacing: 2px; 
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}   
+
+#register { 
+    background-color: #008CBA;
+    margin-right: 25px; 
+}
+
+#login { 
+    background-color: #4CAF50;
+    margin-left: 25px; 
+}

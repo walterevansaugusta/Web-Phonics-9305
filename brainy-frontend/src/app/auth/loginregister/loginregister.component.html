@@ -3,7 +3,9 @@
   <header *ngIf="showRegister">REGISTER</header>
 
   <div id="main">
-      <h2>Click on your four unqiue animal pictures.</h2>
+
+      <input *ngIf="showRegister" class="name-input" type="text" placeholder="Name">
+      <h2 *ngIf="!showRegister">Welcome to Brainy Phonics</h2>
 
       <div class="passcode">
           <div class="pic one"></div>
@@ -11,6 +13,8 @@
           <div class="pic three"></div>
           <div class="pic four"></div>
       </div>
+
+      <h4>Click on your four unique animal pictures.</h4>
 
       <div class="gallery-flex-container">
         <div class="gallery">

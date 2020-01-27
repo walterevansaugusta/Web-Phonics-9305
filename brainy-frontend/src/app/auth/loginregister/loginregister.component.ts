@@ -16,12 +16,12 @@ export class LoginregisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    for (let i = 0; i < 20; i++) {
-      this.imgs.push('../../../assets/images/lion_icon.jpg');
+    for (let i = 1; i <= 20; i++) {
+      this.imgs.push(`../../../assets/images/passcode/${i}.png`);
     }
   }
 
   onCancel() {
-    this.cancelClick.emit()
+    this.cancelClick.emit();
   }
 }

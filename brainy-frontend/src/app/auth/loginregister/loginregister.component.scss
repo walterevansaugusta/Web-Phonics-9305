@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 3% 0;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -19,7 +18,7 @@ header {
   background-color: #95E1E7;
   border-radius: 15px;
   min-width: 75%;
-  padding: 24px;
+  padding: 12px;
 }
 
 h2 {
@@ -30,10 +29,34 @@ h2 {
   padding-bottom: 12px;
 }
 
+h4 {
+  color: white;
+  margin: auto;
+  font-size: 36px;
+  font-family: "Patrick Hand", cursive;
+  padding-bottom: 12px;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 3px solid aliceblue;
+  font-size: 48px;
+  background: none;
+  color: white;
+
+  &:focus {
+    outline: none;
+    color: white;
+  }
+  &::placeholder {
+    color: white;
+  }
+}
+
 .passcode {
   display: flex;
   flex-direction: row;
-  padding: 24px;
+  padding: 12px 24px;
   align-items: center;
   justify-content: center;
   text-align: center;

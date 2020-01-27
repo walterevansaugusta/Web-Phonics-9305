@@ -8,10 +8,18 @@
       <h2 *ngIf="!showRegister">Welcome to Brainy Phonics</h2>
 
       <div class="passcode">
-          <div class="pic one"></div>
-          <div class="pic two"></div>
-          <div class="pic three"></div>
-          <div class="pic four"></div>
+          <div class="pic one">
+            <img *ngIf="chosenImgs[0]" class="chosen-image" [src]="chosenImgs[0]">
+          </div>
+          <div class="pic two">
+            <img *ngIf="chosenImgs[1]" class="chosen-image" [src]="chosenImgs[1]">
+          </div>
+          <div class="pic three">
+            <img *ngIf="chosenImgs[2]" class="chosen-image" [src]="chosenImgs[2]">
+          </div>
+          <div class="pic four">
+            <img *ngIf="chosenImgs[3]" class="chosen-image" [src]="chosenImgs[3]">
+          </div>
       </div>
 
       <h4>Click on your four unique animal pictures.</h4>
@@ -19,7 +27,7 @@
       <div class="gallery-flex-container">
         <div class="gallery">
             <div *ngFor="let img of imgs" class="image ">
-                <img [src]="img" width="115px" height="115px">
+                <img [src]="img" width="115px" height="115px" (click)="onImgClick(img)">
             </div>
         </div>
       </div>

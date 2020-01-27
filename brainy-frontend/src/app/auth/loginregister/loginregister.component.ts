@@ -12,6 +12,7 @@ export class LoginregisterComponent implements OnInit {
   @Output() cancelClick: EventEmitter<any> = new EventEmitter();
 
   imgs = [];
+  chosenImgs = [];
 
   constructor() { }
 
@@ -23,5 +24,9 @@ export class LoginregisterComponent implements OnInit {
 
   onCancel() {
     this.cancelClick.emit();
+  }
+
+  onImgClick(img: string) {
+    this.chosenImgs.push(img);
   }
 }

@@ -64,9 +64,8 @@ input, textarea {
   .pic {
       border: 3px solid white;
       border-radius: 15px;
-      height: 32px;
-      width: 32px;
-      padding: 32px;
+      height: 128px;
+      width: 128px;
       margin: 10px;
   }
 }
@@ -152,4 +151,9 @@ button:hover {
 #login {
   background-color: #4CAF50;
   margin-left: 25px;
+}
+
+.chosen-image {
+  width: 100%;
+  height: 100%;
 }

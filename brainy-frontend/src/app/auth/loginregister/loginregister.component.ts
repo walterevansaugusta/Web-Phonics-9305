@@ -10,6 +10,7 @@ export class LoginregisterComponent implements OnInit {
   @Input() showRegister: boolean;
   @Input() showLogin: boolean;
   @Output() cancelClick: EventEmitter<any> = new EventEmitter();
+  @Output() homeClick: EventEmitter<any> = new EventEmitter();
 
   imgs = [];
   chosenImgs = [];
@@ -24,6 +25,10 @@ export class LoginregisterComponent implements OnInit {
 
   onCancel() {
     this.cancelClick.emit();
+  }
+
+  onHome() {
+    this.homeClick.emit();
   }
 
   onImgClick(img: string) {

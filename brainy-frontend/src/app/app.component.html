@@ -16,5 +16,11 @@
   [showRegister]="showRegister"
   [showLogin]="showLogin"
   (cancelClick)="onCancel()"
+  (homeClick)="onHome()"
   >
 </loginregister>
+
+<app-home
+  *ngIf="showHome"
+  (logoutClick)="onLogout()">
+</app-home>

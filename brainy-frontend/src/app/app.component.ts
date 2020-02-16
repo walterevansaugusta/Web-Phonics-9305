@@ -11,6 +11,7 @@ export class AppComponent {
   showLanding = false;
   showRegister = false;
   showLogin = false;
+  showHome = false;
 
   onClickedGo() {
     this.showLanding = true;
@@ -29,9 +30,23 @@ export class AppComponent {
     this.showLanding = false;
   }
 
+  onLogout() {
+    this.showLanding = true;
+    this.showRegister = false;
+    this.showLogin = false;
+    this.showHome = false;
+  }
+
   onCancel() {
     this.showLogin = false;
     this.showRegister = false;
     this.showLanding = true;
+  }
+
+  onHome() {
+    this.showLanding = false;
+    this.showRegister = false;
+    this.showLogin = false;
+    this.showHome = true;
   }
 }

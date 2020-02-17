@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'landing',
@@ -10,16 +11,19 @@ export class LandingComponent implements OnInit {
   @Output() loginClick: EventEmitter<any> = new EventEmitter();
   @Output() registerClick: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit() {
   }
 
   onRegisterClick() {
-    this.registerClick.emit();
+    this.router.navigate([`../register/`]);
   }
 
   onLoginClick() {
-    this.loginClick.emit();
+    this.router.navigate([`../login/`]);
   }
 }

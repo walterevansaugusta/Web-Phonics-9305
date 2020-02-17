@@ -7,16 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'brainy-frontend';
-  showIntro = true;
-  showLanding = false;
+  showLanding = true;
   showRegister = false;
   showLogin = false;
   showHome = false;
-
-  onClickedGo() {
-    this.showLanding = true;
-    this.showIntro = false;
-  }
 
   onRegister() {
     this.showLogin = false;

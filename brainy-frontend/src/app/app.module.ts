@@ -2,21 +2,50 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { IntroductionComponent } from './auth/introduction/introduction.component';
 import { LoginregisterComponent } from './auth/loginregister/loginregister.component';
 import { LandingComponent } from './auth/landing/landing.component';
 import { HomeComponent } from './home/home.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'landing',
+    component: LandingComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'register',
+    component: LoginregisterComponent,
+    data: { isRegister: true }
+  },
+  {
+    path: 'login',
+    component: LoginregisterComponent,
+    data: { isRegister: false }
+  },
+  {
+    path: '',
+    redirectTo: '/landing',
+    pathMatch: 'full'
+  },
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroductionComponent,
     LoginregisterComponent,
     LandingComponent,
     HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(
+      routes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

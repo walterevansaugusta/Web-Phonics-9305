@@ -1,21 +1,7 @@
 
-<landing
-  *ngIf="showLanding"
-  (registerClick)="onRegister()"
-  (loginClick)="onLogin()"
-  >
-</landing>
-
-<loginregister
-  *ngIf="showLogin || showRegister"
-  [showRegister]="showRegister"
-  [showLogin]="showLogin"
-  (cancelClick)="onCancel()"
-  (homeClick)="onHome()"
-  >
-</loginregister>
-
 <app-home
   *ngIf="showHome"
   (logoutClick)="onLogout()">
 </app-home>
+
+<router-outlet></router-outlet>

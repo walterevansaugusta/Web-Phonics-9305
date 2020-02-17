@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
+import { CardComponent } from './categories/card/card.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
     data: { isRegister: false }
   },
   {
+    path: 'categories',
+    component: CategoriesComponent,
+  },
+  {
     path: '',
     redirectTo: '/landing',
     pathMatch: 'full'
@@ -43,6 +48,7 @@ const routes: Routes = [
     HomeComponent,
     CategoriesComponent,
     NavbarComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

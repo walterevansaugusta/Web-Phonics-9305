@@ -21,4 +21,12 @@ export class HomeComponent implements OnInit {
     this.router.navigate([`../landing/`]);
   }
 
+  onVowel() {
+    this.router.navigate(['../vowels']);
+  }
+
+  onConsonant() {
+    this.router.navigate(['../consonants']);
+  }
+
 }

@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-	loginID: [{picture1: String, picture2: String, picture3: String, picture4: String}],
+	loginID: {picture1: Number, picture2: Number, picture3: Number, picture4: Number},
 	name: String
 });
 

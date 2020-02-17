@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -9,13 +10,15 @@ export class HomeComponent implements OnInit {
 
   @Output() logoutClick: EventEmitter<any> = new EventEmitter();
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit() {
   }
 
   onLogout() {
-    this.logoutClick.emit();
+    this.router.navigate([`../landing/`]);
   }
 
 }

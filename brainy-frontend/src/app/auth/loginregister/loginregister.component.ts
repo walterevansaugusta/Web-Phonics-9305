@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'loginregister',
@@ -7,27 +8,33 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class LoginregisterComponent implements OnInit {
 
-  @Input() showRegister: boolean;
-  @Input() showLogin: boolean;
   @Output() cancelClick: EventEmitter<any> = new EventEmitter();
   @Output() homeClick: EventEmitter<any> = new EventEmitter();
 
   imgs = [];
   chosenImgs = [];
+  showRegister: boolean;
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit() {
+    this.route.data.subscribe(v => {
+        this.showRegister = v["isRegister"];
+    });
     for (let i = 1; i <= 20; i++) {
       this.imgs.push(`../../../assets/images/passcode/${i}.png`);
     }
   }
 
   onCancel() {
-    this.cancelClick.emit();
+    this.router.navigate([`../landing/`]);
   }
 
   onHome() {
+    this.router.navigate([`../home/`]);
     this.homeClick.emit();
   }
 

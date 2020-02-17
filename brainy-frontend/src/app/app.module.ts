@@ -30,8 +30,14 @@ const routes: Routes = [
     data: { isRegister: false }
   },
   {
-    path: 'categories',
+    path: 'consonants',
     component: CategoriesComponent,
+    data: { header: 'Consonants' }
+  },
+  {
+    path: 'vowels',
+    component: CategoriesComponent,
+    data: { header: 'Vowels' }
   },
   {
     path: '',

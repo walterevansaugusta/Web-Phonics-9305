@@ -7,7 +7,7 @@ export const ConsonantPairs: IPhoneme[] = [
       label: 'ch',
       img: '../../assets/images/consonant_pairs/chop.png',
       sound: '',
-      words: []
+      words: [words.ape, words.ants, words.axe]
     },
     {
       label: 'ng',

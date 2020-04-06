@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { a } from '../constants/lesson.constant'; 
+import { ConsonantPairs } from '../constants/consonant.constants';
 
 @Component({
   selector: 'lesson',
@@ -8,7 +8,7 @@ import { a } from '../constants/lesson.constant';
 })
 export class LessonComponent implements OnInit {
 
-  lesson = a; 
+  lesson = ConsonantPairs[0]; 
 
   constructor() { }
 

@@ -1,0 +1,22 @@
+<navbar></navbar>
+
+<h2>{{header}}</h2>
+
+<div class="container">
+    <div style="text-align: center;">
+        <h1 style="font-size: 100px;">{{ lesson.label }}</h1>
+    </div>
+    <div class="row mx-lg-n5 px-lg-5 pt-3 pb-2">
+        <div class="col-md-8 offset-md-5 text-right">
+            <button class="btn btn-logout" type="button">
+                <img src="assets/images/right_arrow.png" width="32" height="32" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div *ngFor="let word of lesson.words" class="col-md-4">
+            <img [src]="word.img" width="260" height="230" class="img-thumbnail lesson">
+            <h3 style="text-align: center;">{{word.label}}</h3>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CardComponent } from './categories/card/card.component';
+import { LessonComponent } from './lesson/lesson.component';
 
 const routes: Routes = [
   {
@@ -30,14 +31,12 @@ const routes: Routes = [
     data: { isRegister: false }
   },
   {
-    path: 'consonants',
+    path: 'category',
     component: CategoriesComponent,
-    data: { header: 'Consonants' }
   },
   {
-    path: 'vowels',
-    component: CategoriesComponent,
-    data: { header: 'Vowels' }
+    path: 'lesson',
+    component: LessonComponent,
   },
   {
     path: '',
@@ -55,6 +54,7 @@ const routes: Routes = [
     CategoriesComponent,
     NavbarComponent,
     CardComponent,
+    LessonComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
 
 body {
     background-color: #7edae2;
-    width: 100%;
-    height: 100vh;
+    font-family: "Patrick Hand", cursive;
 }
 .full-height {
     height: 100vh;

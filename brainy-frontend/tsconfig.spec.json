@@ -4,7 +4,9 @@
     "outDir": "./out-tsc/spec",
     "types": [
       "jasmine",
-      "node"
+      "node",
+      "jest",
+      "mocha"
     ]
   },
   "files": [
@@ -16,3 +18,4 @@
     "src/**/*.d.ts"
   ]
 }
+

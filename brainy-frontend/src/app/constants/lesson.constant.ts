@@ -1,20 +1,20 @@
-import { Word } from '../interfaces/word.interface'; 
+import { IPhoneme } from '../interfaces/phoneme.interface'; 
 import { Lesson } from '../interfaces/lesson.interface'; 
 
-export const ape: Word = {
-    word: 'ape', 
+export const ape: IPhoneme = {
+    label: 'ape', 
     img: 'assets/images/art/ape.png', 
     sound: '../../assets/sounds/ape.mp3', 
 }
 
-export const ants: Word = {
-    word: 'ants', 
+export const ants: IPhoneme = {
+    label: 'ants', 
     img: 'assets/images/art/ants.png', 
     sound: '../../assets/sounds/ants.mp3', 
 }
 
-export const axe: Word = { 
-    word: 'axe',
+export const axe: IPhoneme = { 
+    label: 'axe',
     img: 'assets/images/art/axe.png', 
     sound: '../../assets/sounds/axe.mp3', 
 }

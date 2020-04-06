@@ -1,6 +1,6 @@
-import { Word } from './word.interface'; 
+import { IPhoneme } from './phoneme.interface'; 
 
 export interface Lesson {
     phoneme: string; 
-    words: Word[];  
+    words: IPhoneme[];  
 }

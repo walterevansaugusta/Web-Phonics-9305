@@ -30,7 +30,7 @@ const routes: Routes = [
     data: { isRegister: false }
   },
   {
-    path: 'categories',
+    path: 'category',
     component: CategoriesComponent,
   },
   {

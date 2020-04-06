@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { a } from '../constants/lesson.constant'; 
 
 @Component({
   selector: 'lesson',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lesson.component.scss']
 })
 export class LessonComponent implements OnInit {
+
+  lesson = a; 
 
   constructor() { }
 

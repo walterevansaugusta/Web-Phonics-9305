@@ -1,3 +1,4 @@
+
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
@@ -21,6 +22,7 @@ UserSchema.pre('save', function (next) {
     
 });
 
+<<<<<<< HEAD
 mongoose.model('User', UserSchema);
 
 // // Methods
@@ -42,3 +44,16 @@ mongoose.model('User', UserSchema);
 //     });
 //   }
 // module.exports = { UserSchema, User, getUserDocument };
+=======
+const User = mongoose.model('User', UserSchema);
+function getUserDocument(req, res, next) {
+    User.findOne({password: req.user.password}, (err, user) => {
+       if (err || !user) {
+           res.status('400').json({status: 'user-missing'});
+       }
+       req.userDocument = user;
+       next();
+    });
+  }
+module.exports = { UserSchema, User, getUserDocument };
+>>>>>>> 6e01e6cbdeef2b3a65685ee739b3b699c6435ee1

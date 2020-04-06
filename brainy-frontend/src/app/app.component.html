@@ -1,2 +1,7 @@
-<introduction></introduction>
 
+<app-home
+  *ngIf="showHome"
+  (logoutClick)="onLogout()">
+</app-home>
+
+<router-outlet></router-outlet>

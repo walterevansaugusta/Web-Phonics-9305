@@ -4,6 +4,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+<<<<<<< HEAD
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.5.1",
@@ -12,5 +13,14 @@
     "mongoose": "^5.1.2",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
+=======
+    "express": "^4.17.1",
+    "cors": "^2.8.4"
+    "method-override": "^3.0.0",
+    "mongodb": "^3.5.2",
+    "mongodb-core": "^3.0.0",
+    "mongoose": "^5.8.9",
+    "morgan": "^1.9.1"
+>>>>>>> 6e01e6cbdeef2b3a65685ee739b3b699c6435ee1
   }
 }

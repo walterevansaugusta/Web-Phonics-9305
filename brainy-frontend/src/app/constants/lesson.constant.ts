@@ -1,1625 +1,1625 @@
 import { IPhoneme } from '../interfaces/phoneme.interface';
 
 export const afraid: IPhoneme = {
-    label: 'afraid', 
-    img: 'assets/images/art/afraid.png', 
-    sound: '../../assets/sounds/afraid.mp3', 
+    label: 'afraid',
+    img: 'assets/images/art/afraid.png',
+    sound: '../../assets/sounds/afraid.mp3',
     words: []
 }
 
 export const ants: IPhoneme = {
-    label: 'ants', 
-    img: 'assets/images/art/ants.png', 
-    sound: '../../assets/sounds/ants.mp3', 
+    label: 'ants',
+    img: 'assets/images/art/ants.png',
+    sound: '../../assets/sounds/ants.mp3',
     words: []
 }
 
 export const ape: IPhoneme = {
-    label: 'ape', 
-    img: 'assets/images/art/ape.png', 
-    sound: '../../assets/sounds/ape.mp3', 
+    label: 'ape',
+    img: 'assets/images/art/ape.png',
+    sound: '../../assets/sounds/ape.mp3',
     words: []
 }
 
-export const artic: IPhoneme = { 
+export const artic: IPhoneme = {
     label: 'artic',
-    img: 'assets/images/art/artic.png', 
+    img: 'assets/images/art/artic.png',
     sound: '../../assets/sounds/artic.mp3',
     words: []
 }
 
-export const axe: IPhoneme = { 
+export const axe: IPhoneme = {
     label: 'axe',
-    img: 'assets/images/art/axe.png', 
+    img: 'assets/images/art/axe.png',
     sound: '../../assets/sounds/axe.mp3',
     words: []
 }
 
-export const baby: IPhoneme = { 
+export const baby: IPhoneme = {
     label: 'axe',
-    img: 'assets/images/art/baby.png', 
+    img: 'assets/images/art/baby.png',
     sound: '../../assets/sounds/baby.mp3',
     words: []
 }
 
-export const ball: IPhoneme = { 
+export const ball: IPhoneme = {
     label: 'axe',
-    img: 'assets/images/art/ball.png', 
+    img: 'assets/images/art/ball.png',
     sound: '../../assets/sounds/ball.mp3',
     words: []
 }
 
-export const bat: IPhoneme = { 
+export const bat: IPhoneme = {
     label: 'axe',
-    img: 'assets/images/art/bat.png', 
+    img: 'assets/images/art/bat.png',
     sound: '../../assets/sounds/bat.mp3',
     words: []
 }
 
-export const bathtub: IPhoneme = { 
+export const bathtub: IPhoneme = {
     label: 'axe',
-    img: 'assets/images/art/bathtub.png', 
+    img: 'assets/images/art/bathtub.png',
     sound: '../../assets/sounds/bathtub.mp3',
     words: []
 }
 
-export const beak: IPhoneme = { 
+export const beak: IPhoneme = {
     label: 'axe',
-    img: 'assets/images/art/beak.png', 
+    img: 'assets/images/art/beak.png',
     sound: '../../assets/sounds/beak.mp3',
     words: []
 }
 
-export const bear: IPhoneme = { 
+export const bear: IPhoneme = {
     label: 'bear',
-    img: 'assets/images/art/bear.png', 
+    img: 'assets/images/art/bear.png',
     sound: '../../assets/sounds/bear.mp3',
     words: []
 }
 
-export const beaver: IPhoneme = { 
+export const beaver: IPhoneme = {
     label: 'beaver',
-    img: 'assets/images/art/beaver.png', 
+    img: 'assets/images/art/beaver.png',
     sound: '../../assets/sounds/beaver.mp3',
     words: []
 }
 
-export const bed: IPhoneme = { 
+export const bed: IPhoneme = {
     label: 'bed',
-    img: 'assets/images/art/bed.png', 
+    img: 'assets/images/art/bed.png',
     sound: '../../assets/sounds/bed.mp3',
     words: []
 }
 
-export const bee: IPhoneme = { 
+export const bee: IPhoneme = {
     label: 'bee',
-    img: 'assets/images/art/bee.png', 
+    img: 'assets/images/art/bee.png',
     sound: '../../assets/sounds/bee.mp3',
     words: []
 }
 
-export const bell: IPhoneme = { 
+export const bell: IPhoneme = {
     label: 'bell',
     img: 'assets/images/art/bell.png',
     sound: '../../assets/sounds/bell.mp3',
     words: []
 }
 
-export const bionic: IPhoneme = { 
+export const bionic: IPhoneme = {
     label: 'bionic',
-    img: 'assets/images/art/bionic.png', 
+    img: 'assets/images/art/bionic.png',
     sound: '../../assets/sounds/bionic.mp3',
     words: []
 }
 
-export const blue: IPhoneme = { 
+export const blue: IPhoneme = {
     label: 'blue',
-    img: 'assets/images/art/blue.png', 
+    img: 'assets/images/art/blue.png',
     sound: '../../assets/sounds/blue.mp3',
     words: []
 }
 
-export const boar: IPhoneme = { 
+export const boar: IPhoneme = {
     label: 'boar',
-    img: 'assets/images/art/boar.png', 
+    img: 'assets/images/art/boar.png',
     sound: '../../assets/sounds/boar.mp3',
     words: []
 }
 
-export const boat: IPhoneme = { 
+export const boat: IPhoneme = {
     label: 'boat',
-    img: 'assets/images/art/boat.png', 
+    img: 'assets/images/art/boat.png',
     sound: '../../assets/sounds/boat.mp3',
     words: []
 }
 
-export const bride: IPhoneme = { 
+export const bride: IPhoneme = {
     label: 'bride',
-    img: 'assets/images/art/bride.png', 
+    img: 'assets/images/art/bride.png',
     sound: '../../assets/sounds/bride.mp3',
     words: []
 }
 
-export const bridge: IPhoneme = { 
+export const bridge: IPhoneme = {
     label: 'bridge',
-    img: 'assets/images/art/bridge.png', 
+    img: 'assets/images/art/bridge.png',
     sound: '../../assets/sounds/bridge.mp3',
     words: []
 }
 
-export const bug: IPhoneme = { 
+export const bug: IPhoneme = {
     label: 'bug',
-    img: 'assets/images/art/bug.png', 
+    img: 'assets/images/art/bug.png',
     sound: '../../assets/sounds/bug.mp3',
     words: []
 }
 
-export const bulb: IPhoneme = { 
+export const bulb: IPhoneme = {
     label: 'bulb',
-    img: 'assets/images/art/bulb.png', 
+    img: 'assets/images/art/bulb.png',
     sound: '../../assets/sounds/bulb.mp3',
     words: []
 }
 
-export const bunny: IPhoneme = { 
+export const bunny: IPhoneme = {
     label: 'bunny',
-    img: 'assets/images/art/bunny.png', 
+    img: 'assets/images/art/bunny.png',
     sound: '../../assets/sounds/bunny.mp3',
     words: []
 }
 
-export const bus: IPhoneme = { 
+export const bus: IPhoneme = {
     label: 'bus',
-    img: 'assets/images/art/bus.png', 
+    img: 'assets/images/art/bus.png',
     sound: '../../assets/sounds/bus.mp3',
     words: []
 }
 
-export const buzz: IPhoneme = { 
+export const buzz: IPhoneme = {
     label: 'buzz',
-    img: 'assets/images/art/buzz.png', 
+    img: 'assets/images/art/buzz.png',
     sound: '../../assets/sounds/buzz.mp3',
     words: []
 }
 
-export const cabbage: IPhoneme = { 
+export const cabbage: IPhoneme = {
     label: 'cabbage',
-    img: 'assets/images/art/cabbage.png', 
+    img: 'assets/images/art/cabbage.png',
     sound: '../../assets/sounds/cabbage.mp3',
     words: []
 }
 
-export const cage_rev: IPhoneme = { 
+export const cage_rev: IPhoneme = {
     label: 'cage_rev',
-    img: 'assets/images/art/cage_rev.png', 
+    img: 'assets/images/art/cage_rev.png',
     sound: '../../assets/sounds/cage_rev.mp3',
     words: []
 }
 
-export const candy: IPhoneme = { 
+export const candy: IPhoneme = {
     label: 'candy',
-    img: 'assets/images/art/candy.png', 
+    img: 'assets/images/art/candy.png',
     sound: '../../assets/sounds/candy.mp3',
     words: []
 }
 
-export const cap: IPhoneme = { 
+export const cap: IPhoneme = {
     label: 'cap',
-    img: 'assets/images/art/cap.png', 
+    img: 'assets/images/art/cap.png',
     sound: '../../assets/sounds/cap.mp3',
     words: []
 }
 
-export const cardinal: IPhoneme = { 
+export const cardinal: IPhoneme = {
     label: 'cardinal',
-    img: 'assets/images/art/cardinal.png', 
+    img: 'assets/images/art/cardinal.png',
     sound: '../../assets/sounds/cardinal.mp3',
     words: []
 }
 
-export const clam: IPhoneme = { 
+export const clam: IPhoneme = {
     label: 'clam',
-    img: 'assets/images/art/clam.png', 
+    img: 'assets/images/art/clam.png',
     sound: '../../assets/sounds/clam.mp3',
     words: []
 }
 
-export const climb: IPhoneme = { 
+export const climb: IPhoneme = {
     label: 'climb',
-    img: 'assets/images/art/climb.png', 
+    img: 'assets/images/art/climb.png',
     sound: '../../assets/sounds/climb.mp3',
     words: []
 }
 
-export const clinic: IPhoneme = { 
+export const clinic: IPhoneme = {
     label: 'clinic',
-    img: 'assets/images/art/clinic.png', 
+    img: 'assets/images/art/clinic.png',
     sound: '../../assets/sounds/clinic.mp3',
     words: []
 }
 
-export const clothes: IPhoneme = { 
+export const clothes: IPhoneme = {
     label: 'clothes',
-    img: 'assets/images/art/clothes.png', 
+    img: 'assets/images/art/clothes.png',
     sound: '../../assets/sounds/clothes.mp3',
     words: []
 }
 
-export const cobweb: IPhoneme = { 
+export const cobweb: IPhoneme = {
     label: 'cobweb',
-    img: 'assets/images/art/cobweb.png', 
+    img: 'assets/images/art/cobweb.png',
     sound: '../../assets/sounds/cobweb.mp3',
     words: []
 }
 
-export const cold: IPhoneme = { 
+export const cold: IPhoneme = {
     label: 'cold',
-    img: 'assets/images/art/cold.png', 
+    img: 'assets/images/art/cold.png',
     sound: '../../assets/sounds/cold.mp3',
     words: []
 }
 
-export const croc: IPhoneme = { 
+export const croc: IPhoneme = {
     label: 'croc',
-    img: 'assets/images/art/croc.png', 
+    img: 'assets/images/art/croc.png',
     sound: '../../assets/sounds/croc.mp3',
     words: []
 }
 
-export const cry: IPhoneme = { 
+export const cry: IPhoneme = {
     label: 'cry',
-    img: 'assets/images/art/cry.png', 
+    img: 'assets/images/art/cry.png',
     sound: '../../assets/sounds/cry.mp3',
     words: []
 }
 
-export const cut: IPhoneme = { 
+export const cut: IPhoneme = {
     label: 'cut',
-    img: 'assets/images/art/cut.png', 
+    img: 'assets/images/art/cut.png',
     sound: '../../assets/sounds/cut.mp3',
     words: []
 }
 
-export const cyclops: IPhoneme = { 
+export const cyclops: IPhoneme = {
     label: 'cyclops',
-    img: 'assets/images/art/cyclops.png', 
+    img: 'assets/images/art/cyclops.png',
     sound: '../../assets/sounds/cyclops.mp3',
     words: []
 }
 
-export const dandelion: IPhoneme = { 
+export const dandelion: IPhoneme = {
     label: 'dandelion',
-    img: 'assets/images/art/dandelion.png', 
+    img: 'assets/images/art/dandelion.png',
     sound: '../../assets/sounds/dandelion.mp3',
     words: []
 }
 
-export const dig: IPhoneme = { 
+export const dig: IPhoneme = {
     label: 'dig',
-    img: 'assets/images/art/dig.png', 
+    img: 'assets/images/art/dig.png',
     sound: '../../assets/sounds/dig.mp3',
     words: []
 }
 
-export const disc: IPhoneme = { 
+export const disc: IPhoneme = {
     label: 'disc',
-    img: 'assets/images/art/disc.png', 
+    img: 'assets/images/art/disc.png',
     sound: '../../assets/sounds/disc.mp3',
     words: []
 }
 
-export const dive: IPhoneme = { 
+export const dive: IPhoneme = {
     label: 'dive',
-    img: 'assets/images/art/dive.png', 
+    img: 'assets/images/art/dive.png',
     sound: '../../assets/sounds/dive.mp3',
     words: []
 }
 
-export const doze: IPhoneme = { 
+export const doze: IPhoneme = {
     label: 'doze',
-    img: 'assets/images/art/doze.png', 
+    img: 'assets/images/art/doze.png',
     sound: '../../assets/sounds/doze.mp3',
     words: []
 }
 
-export const dozer: IPhoneme = { 
+export const dozer: IPhoneme = {
     label: 'dozer',
-    img: 'assets/images/art/dozer.png', 
+    img: 'assets/images/art/dozer.png',
     sound: '../../assets/sounds/dozer.mp3',
     words: []
 }
 
-export const dress: IPhoneme = { 
+export const dress: IPhoneme = {
     label: 'dress',
-    img: 'assets/images/art/dress.png', 
+    img: 'assets/images/art/dress.png',
     sound: '../../assets/sounds/dress.mp3',
     words: []
 }
 
-export const drop: IPhoneme = { 
+export const drop: IPhoneme = {
     label: 'drop',
-    img: 'assets/images/art/drop.png', 
+    img: 'assets/images/art/drop.png',
     sound: '../../assets/sounds/drop.mp3',
     words: []
 }
 
-export const elf: IPhoneme = { 
+export const elf: IPhoneme = {
     label: 'elf',
-    img: 'assets/images/art/elf.png', 
+    img: 'assets/images/art/elf.png',
     sound: '../../assets/sounds/elf.mp3',
     words: []
 }
 
-export const elk: IPhoneme = { 
+export const elk: IPhoneme = {
     label: 'elk',
-    img: 'assets/images/art/elk.png', 
+    img: 'assets/images/art/elk.png',
     sound: '../../assets/sounds/elk.mp3',
     words: []
 }
 
-export const excavator: IPhoneme = { 
+export const excavator: IPhoneme = {
     label: 'cyclops',
-    img: 'assets/images/art/excavator.png', 
+    img: 'assets/images/art/excavator.png',
     sound: '../../assets/sounds/excavator.mp3',
     words: []
 }
 
-export const excellent: IPhoneme = { 
+export const excellent: IPhoneme = {
     label: 'excellent',
-    img: 'assets/images/art/excellent.png', 
+    img: 'assets/images/art/excellent.png',
     sound: '../../assets/sounds/excellent.mp3',
     words: []
 }
 
-export const exercise: IPhoneme = { 
+export const exercise: IPhoneme = {
     label: 'exercise',
-    img: 'assets/images/art/exercise.png', 
+    img: 'assets/images/art/exercise.png',
     sound: '../../assets/sounds/exercise.mp3',
     words: []
 }
 
-export const eye: IPhoneme = { 
+export const eye: IPhoneme = {
     label: 'eye',
-    img: 'assets/images/art/eye.png', 
+    img: 'assets/images/art/eye.png',
     sound: '../../assets/sounds/eye.mp3',
     words: []
 }
 
-export const face: IPhoneme = { 
+export const face: IPhoneme = {
     label: 'face',
-    img: 'assets/images/art/face.png', 
+    img: 'assets/images/art/face.png',
     sound: '../../assets/sounds/face.mp3',
     words: []
 }
 
-export const fairy: IPhoneme = { 
+export const fairy: IPhoneme = {
     label: 'fairy',
-    img: 'assets/images/art/fairy.png', 
+    img: 'assets/images/art/fairy.png',
     sound: '../../assets/sounds/fairy.mp3',
     words: []
 }
 
-export const fall: IPhoneme = { 
+export const fall: IPhoneme = {
     label: 'fall',
-    img: 'assets/images/art/fall.png', 
+    img: 'assets/images/art/fall.png',
     sound: '../../assets/sounds/fall.mp3',
     words: []
 }
 
-export const family: IPhoneme = { 
+export const family: IPhoneme = {
     label: 'family',
-    img: 'assets/images/art/family.png', 
+    img: 'assets/images/art/family.png',
     sound: '../../assets/sounds/family.mp3',
     words: []
 }
 
-export const fan: IPhoneme = { 
+export const fan: IPhoneme = {
     label: 'fan',
-    img: 'assets/images/art/fan.png', 
+    img: 'assets/images/art/fan.png',
     sound: '../../assets/sounds/fan.mp3',
     words: []
 }
 
-export const fin: IPhoneme = { 
+export const fin: IPhoneme = {
     label: 'fin',
-    img: 'assets/images/art/fin.png', 
+    img: 'assets/images/art/fin.png',
     sound: '../../assets/sounds/fin.mp3',
     words: []
 }
 
-export const find: IPhoneme = { 
+export const find: IPhoneme = {
     label: 'find',
-    img: 'assets/images/art/find.png', 
+    img: 'assets/images/art/find.png',
     sound: '../../assets/sounds/find.mp3',
     words: []
 }
 
-export const firefly: IPhoneme = { 
+export const firefly: IPhoneme = {
     label: 'firefly',
-    img: 'assets/images/art/firefly.png', 
+    img: 'assets/images/art/firefly.png',
     sound: '../../assets/sounds/firefly.mp3',
     words: []
 }
 
-export const fish: IPhoneme = { 
+export const fish: IPhoneme = {
     label: 'fish',
-    img: 'assets/images/art/fish.png', 
+    img: 'assets/images/art/fish.png',
     sound: '../../assets/sounds/fish.mp3',
     words: []
 }
 
-export const flag: IPhoneme = { 
+export const flag: IPhoneme = {
     label: 'flag',
-    img: 'assets/images/art/flag.png', 
+    img: 'assets/images/art/flag.png',
     sound: '../../assets/sounds/flag.mp3',
     words: []
 }
 
-export const flute: IPhoneme = { 
+export const flute: IPhoneme = {
     label: 'flute',
-    img: 'assets/images/art/flute.png', 
+    img: 'assets/images/art/flute.png',
     sound: '../../assets/sounds/flute.mp3',
     words: []
 }
 
-export const fly: IPhoneme = { 
+export const fly: IPhoneme = {
     label: 'fly',
-    img: 'assets/images/art/fly.png', 
+    img: 'assets/images/art/fly.png',
     sound: '../../assets/sounds/fly.mp3',
     words: []
 }
 
-export const foal: IPhoneme = { 
+export const foal: IPhoneme = {
     label: 'foal',
-    img: 'assets/images/art/foal.png', 
+    img: 'assets/images/art/foal.png',
     sound: '../../assets/sounds/foal.mp3',
     words: []
 }
 
-export const foot: IPhoneme = { 
+export const foot: IPhoneme = {
     label: 'foot',
-    img: 'assets/images/art/foot.png', 
+    img: 'assets/images/art/foot.png',
     sound: '../../assets/sounds/foot.mp3',
     words: []
 }
 
-export const fork: IPhoneme = { 
+export const fork: IPhoneme = {
     label: 'fork',
-    img: 'assets/images/art/fork.png', 
+    img: 'assets/images/art/fork.png',
     sound: '../../assets/sounds/fork.mp3',
     words: []
 }
 
-export const freeze: IPhoneme = { 
+export const freeze: IPhoneme = {
     label: 'freeze',
-    img: 'assets/images/art/freeze.png', 
+    img: 'assets/images/art/freeze.png',
     sound: '../../assets/sounds/freeze.mp3',
     words: []
 }
 
-export const friend: IPhoneme = { 
+export const friend: IPhoneme = {
     label: 'friend',
-    img: 'assets/images/art/friend.png', 
+    img: 'assets/images/art/friend.png',
     sound: '../../assets/sounds/friend.mp3',
     words: []
 }
 
-export const fringe: IPhoneme = { 
+export const fringe: IPhoneme = {
     label: 'fringe',
-    img: 'assets/images/art/fringe.png', 
+    img: 'assets/images/art/fringe.png',
     sound: '../../assets/sounds/fringe.mp3',
     words: []
 }
 
-export const frog: IPhoneme = { 
+export const frog: IPhoneme = {
     label: 'frog',
-    img: 'assets/images/art/frog.png', 
+    img: 'assets/images/art/frog.png',
     sound: '../../assets/sounds/frog.mp3',
     words: []
 }
 
-export const fry: IPhoneme = { 
+export const fry: IPhoneme = {
     label: 'fry',
-    img: 'assets/images/art/fry.png', 
+    img: 'assets/images/art/fry.png',
     sound: '../../assets/sounds/fry.mp3',
     words: []
 }
 
-export const garden: IPhoneme = { 
+export const garden: IPhoneme = {
     label: 'garden',
-    img: 'assets/images/art/garden.png', 
+    img: 'assets/images/art/garden.png',
     sound: '../../assets/sounds/garden.mp3',
     words: []
 }
 
-export const gate: IPhoneme = { 
+export const gate: IPhoneme = {
     label: 'gate',
-    img: 'assets/images/art/gate.png', 
+    img: 'assets/images/art/gate.png',
     sound: '../../assets/sounds/gate.mp3',
     words: []
 }
 
-export const gauze: IPhoneme = { 
+export const gauze: IPhoneme = {
     label: 'gauze',
-    img: 'assets/images/art/gauze.png', 
+    img: 'assets/images/art/gauze.png',
     sound: '../../assets/sounds/gauze.mp3',
     words: []
 }
 
-export const gazelle: IPhoneme = { 
+export const gazelle: IPhoneme = {
     label: 'gazelle',
-    img: 'assets/images/art/gazelle.png', 
+    img: 'assets/images/art/gazelle.png',
     sound: '../../assets/sounds/gazelle.mp3',
     words: []
 }
 
-export const glum: IPhoneme = { 
+export const glum: IPhoneme = {
     label: 'glum',
-    img: 'assets/images/art/glum.png', 
+    img: 'assets/images/art/glum.png',
     sound: '../../assets/sounds/glum.mp3',
     words: []
 }
 
-export const goal: IPhoneme = { 
+export const goal: IPhoneme = {
     label: 'goal',
-    img: 'assets/images/art/goal.png', 
+    img: 'assets/images/art/goal.png',
     sound: '../../assets/sounds/goal.mp3',
     words: []
 }
 
-export const goat: IPhoneme = { 
+export const goat: IPhoneme = {
     label: 'goat',
-    img: 'assets/images/art/goat.png', 
+    img: 'assets/images/art/goat.png',
     sound: '../../assets/sounds/goat.mp3',
     words: []
 }
 
-export const go_kart: IPhoneme = { 
+export const go_kart: IPhoneme = {
     label: 'go-kart',
-    img: 'assets/images/art/go-kart.png', 
+    img: 'assets/images/art/go-kart.png',
     sound: '../../assets/sounds/go-kart.mp3',
     words: []
 }
 
-export const gold: IPhoneme = { 
+export const gold: IPhoneme = {
     label: 'gold',
-    img: 'assets/images/art/gold.png', 
+    img: 'assets/images/art/gold.png',
     sound: '../../assets/sounds/gold.mp3',
     words: []
 }
 
-export const green: IPhoneme = { 
+export const green: IPhoneme = {
     label: 'green',
-    img: 'assets/images/art/green.png', 
+    img: 'assets/images/art/green.png',
     sound: '../../assets/sounds/green.mp3',
     words: []
 }
 
-export const hard_hat: IPhoneme = { 
+export const hard_hat: IPhoneme = {
     label: 'hard_hat',
-    img: 'assets/images/art/hard_hat.png', 
+    img: 'assets/images/art/hard_hat.png',
     sound: '../../assets/sounds/hard_hat.mp3',
     words: []
 }
 
-export const harp: IPhoneme = { 
+export const harp: IPhoneme = {
     label: 'harp',
-    img: 'assets/images/art/harp.png', 
+    img: 'assets/images/art/harp.png',
     sound: '../../assets/sounds/harp.mp3',
     words: []
 }
 
-export const hawk: IPhoneme = { 
+export const hawk: IPhoneme = {
     label: 'hawk',
-    img: 'assets/images/art/hawk.png', 
+    img: 'assets/images/art/hawk.png',
     sound: '../../assets/sounds/hawk.mp3',
     words: []
 }
 
-export const hear: IPhoneme = { 
+export const hear: IPhoneme = {
     label: 'hear',
-    img: 'assets/images/art/hear.png', 
+    img: 'assets/images/art/hear.png',
     sound: '../../assets/sounds/hear.mp3',
     words: []
 }
 
-export const heel: IPhoneme = { 
+export const heel: IPhoneme = {
     label: 'heel',
-    img: 'assets/images/art/heel.png', 
+    img: 'assets/images/art/heel.png',
     sound: '../../assets/sounds/heel.mp3',
     words: []
 }
 
-export const hid: IPhoneme = { 
+export const hid: IPhoneme = {
     label: 'hid',
-    img: 'assets/images/art/hid.png', 
+    img: 'assets/images/art/hid.png',
     sound: '../../assets/sounds/hid.mp3',
     words: []
 }
 
-export const hide: IPhoneme = { 
+export const hide: IPhoneme = {
     label: 'hide',
-    img: 'assets/images/art/hide.png', 
+    img: 'assets/images/art/hide.png',
     sound: '../../assets/sounds/hide.mp3',
     words: []
 }
 
-export const hippo: IPhoneme = { 
+export const hippo: IPhoneme = {
     label: 'hippo',
-    img: 'assets/images/art/hippo.png', 
+    img: 'assets/images/art/hippo.png',
     sound: '../../assets/sounds/hippo.mp3',
     words: []
 }
 
-export const hog: IPhoneme = { 
+export const hog: IPhoneme = {
     label: 'hog',
-    img: 'assets/images/art/hog.png', 
+    img: 'assets/images/art/hog.png',
     sound: '../../assets/sounds/hog.mp3',
     words: []
 }
 
-export const hoof: IPhoneme = { 
+export const hoof: IPhoneme = {
     label: 'hoof',
-    img: 'assets/images/art/hoof.png', 
+    img: 'assets/images/art/hoof.png',
     sound: '../../assets/sounds/hoof.mp3',
     words: []
 }
 
-export const horns: IPhoneme = { 
+export const horns: IPhoneme = {
     label: 'horns',
-    img: 'assets/images/art/horns.png', 
+    img: 'assets/images/art/horns.png',
     sound: '../../assets/sounds/horns.mp3',
     words: []
 }
 
-export const hose: IPhoneme = { 
+export const hose: IPhoneme = {
     label: 'hose',
-    img: 'assets/images/art/hose.png', 
+    img: 'assets/images/art/hose.png',
     sound: '../../assets/sounds/hose.mp3',
     words: []
 }
 
-export const hot: IPhoneme = { 
+export const hot: IPhoneme = {
     label: 'hot',
-    img: 'assets/images/art/hot.png', 
+    img: 'assets/images/art/hot.png',
     sound: '../../assets/sounds/hot.mp3',
     words: []
 }
 
-export const hunt: IPhoneme = { 
+export const hunt: IPhoneme = {
     label: 'hunt',
-    img: 'assets/images/art/hunt.png', 
+    img: 'assets/images/art/hunt.png',
     sound: '../../assets/sounds/hunt.mp3',
     words: []
 }
 
-export const ice: IPhoneme = { 
+export const ice: IPhoneme = {
     label: 'ice',
-    img: 'assets/images/art/ice.png', 
+    img: 'assets/images/art/ice.png',
     sound: '../../assets/sounds/ice.mp3',
     words: []
 }
 
-export const jacket: IPhoneme = { 
+export const jacket: IPhoneme = {
     label: 'jacket',
-    img: 'assets/images/art/jacket.png', 
+    img: 'assets/images/art/jacket.png',
     sound: '../../assets/sounds/jacket.mp3',
     words: []
 }
 
-export const jay: IPhoneme = { 
+export const jay: IPhoneme = {
     label: 'jay',
-    img: 'assets/images/art/jay.png', 
+    img: 'assets/images/art/jay.png',
     sound: '../../assets/sounds/jay.mp3',
     words: []
 }
 
-export const jeep: IPhoneme = { 
+export const jeep: IPhoneme = {
     label: 'jeep',
-    img: 'assets/images/art/jeep.png', 
+    img: 'assets/images/art/jeep.png',
     sound: '../../assets/sounds/jeep.mp3',
     words: []
 }
 
-export const jellyfish: IPhoneme = { 
+export const jellyfish: IPhoneme = {
     label: 'jellyfish',
-    img: 'assets/images/art/jellyfish.png', 
+    img: 'assets/images/art/jellyfish.png',
     sound: '../../assets/sounds/jellyfish.mp3',
     words: []
 }
 
-export const joy: IPhoneme = { 
+export const joy: IPhoneme = {
     label: 'joy',
-    img: 'assets/images/art/joy.png', 
+    img: 'assets/images/art/joy.png',
     sound: '../../assets/sounds/joy.mp3',
     words: []
 }
 
-export const judge: IPhoneme = { 
+export const judge: IPhoneme = {
     label: 'judge',
-    img: 'assets/images/art/judge.png', 
+    img: 'assets/images/art/judge.png',
     sound: '../../assets/sounds/judge.mp3',
     words: []
 }
 
-export const juggle: IPhoneme = { 
+export const juggle: IPhoneme = {
     label: 'juggle',
-    img: 'assets/images/art/juggle.png', 
+    img: 'assets/images/art/juggle.png',
     sound: '../../assets/sounds/juggle.mp3',
     words: []
 }
 
-export const kayak: IPhoneme = { 
+export const kayak: IPhoneme = {
     label: 'kayak',
-    img: 'assets/images/art/kayak.png', 
+    img: 'assets/images/art/kayak.png',
     sound: '../../assets/sounds/kayak.mp3',
     words: []
 }
 
-export const key: IPhoneme = { 
+export const key: IPhoneme = {
     label: 'key',
-    img: 'assets/images/art/key.png', 
+    img: 'assets/images/art/key.png',
     sound: '../../assets/sounds/key.mp3',
     words: []
 }
 
-export const kimono: IPhoneme = { 
+export const kimono: IPhoneme = {
     label: 'kimono',
-    img: 'assets/images/art/kimono.png', 
+    img: 'assets/images/art/kimono.png',
     sound: '../../assets/sounds/kimono.mp3',
     words: []
 }
 
-export const king: IPhoneme = { 
+export const king: IPhoneme = {
     label: 'king',
-    img: 'assets/images/art/king.png', 
+    img: 'assets/images/art/king.png',
     sound: '../../assets/sounds/king.mp3',
     words: []
 }
 
-export const kitchen: IPhoneme = { 
+export const kitchen: IPhoneme = {
     label: 'kitchen',
-    img: 'assets/images/art/kitchen.png', 
+    img: 'assets/images/art/kitchen.png',
     sound: '../../assets/sounds/kitchen.mp3',
     words: []
 }
 
-export const kitten: IPhoneme = { 
+export const kitten: IPhoneme = {
     label: 'kitten',
-    img: 'assets/images/art/kitten.png', 
+    img: 'assets/images/art/kitten.png',
     sound: '../../assets/sounds/kitten.mp3',
     words: []
 }
 
-export const kitty: IPhoneme = { 
+export const kitty: IPhoneme = {
     label: 'kitty',
-    img: 'assets/images/art/kitty.png', 
+    img: 'assets/images/art/kitty.png',
     sound: '../../assets/sounds/kitty.mp3',
     words: []
 }
 
-export const lamb: IPhoneme = { 
+export const lamb: IPhoneme = {
     label: 'lamb',
-    img: 'assets/images/art/lamb.png', 
+    img: 'assets/images/art/lamb.png',
     sound: '../../assets/sounds/lamb.mp3',
     words: []
 }
 
-export const leaf: IPhoneme = { 
+export const leaf: IPhoneme = {
     label: 'leaf',
-    img: 'assets/images/art/leaf.png', 
+    img: 'assets/images/art/leaf.png',
     sound: '../../assets/sounds/leaf.mp3',
     words: []
 }
 
-export const lemon: IPhoneme = { 
+export const lemon: IPhoneme = {
     label: 'lemon',
-    img: 'assets/images/art/lemon.png', 
+    img: 'assets/images/art/lemon.png',
     sound: '../../assets/sounds/lemon.mp3',
     words: []
 }
 
-export const lion: IPhoneme = { 
+export const lion: IPhoneme = {
     label: 'lion',
-    img: 'assets/images/art/lion.png', 
+    img: 'assets/images/art/lion.png',
     sound: '../../assets/sounds/lion.mp3',
     words: []
 }
 
-export const lip: IPhoneme = { 
+export const lip: IPhoneme = {
     label: 'lip',
-    img: 'assets/images/art/lip.png', 
+    img: 'assets/images/art/lip.png',
     sound: '../../assets/sounds/lip.mp3',
     words: []
 }
 
-export const lizard: IPhoneme = { 
+export const lizard: IPhoneme = {
     label: 'lizard',
-    img: 'assets/images/art/lizard.png', 
+    img: 'assets/images/art/lizard.png',
     sound: '../../assets/sounds/lizard.mp3',
     words: []
 }
 
-export const lock: IPhoneme = { 
+export const lock: IPhoneme = {
     label: 'lock',
-    img: 'assets/images/art/lock.png', 
+    img: 'assets/images/art/lock.png',
     sound: '../../assets/sounds/lock.mp3',
     words: []
 }
 
-export const love: IPhoneme = { 
+export const love: IPhoneme = {
     label: 'love',
-    img: 'assets/images/art/love.png', 
+    img: 'assets/images/art/love.png',
     sound: '../../assets/sounds/love.mp3',
     words: []
 }
 
-export const magic: IPhoneme = { 
+export const magic: IPhoneme = {
     label: 'magic',
-    img: 'assets/images/art/magic.png', 
+    img: 'assets/images/art/magic.png',
     sound: '../../assets/sounds/magic.mp3',
     words: []
 }
 
-export const mail: IPhoneme = { 
+export const mail: IPhoneme = {
     label: 'mail',
-    img: 'assets/images/art/mail.png', 
+    img: 'assets/images/art/mail.png',
     sound: '../../assets/sounds/mail.mp3',
     words: []
 }
 
-export const maize: IPhoneme = { 
+export const maize: IPhoneme = {
     label: 'maize',
-    img: 'assets/images/art/maize.png', 
+    img: 'assets/images/art/maize.png',
     sound: '../../assets/sounds/maize.mp3',
     words: []
 }
 
-export const mane: IPhoneme = { 
+export const mane: IPhoneme = {
     label: 'mane',
-    img: 'assets/images/art/mane.png', 
+    img: 'assets/images/art/mane.png',
     sound: '../../assets/sounds/mane.mp3',
     words: []
 }
 
-export const mermaid: IPhoneme = { 
+export const mermaid: IPhoneme = {
     label: 'mermaid',
-    img: 'assets/images/art/mermaid.png', 
+    img: 'assets/images/art/mermaid.png',
     sound: '../../assets/sounds/mermaid.mp3',
     words: []
 }
 
-export const millipede: IPhoneme = { 
+export const millipede: IPhoneme = {
     label: 'millipede',
-    img: 'assets/images/art/millipede.png', 
+    img: 'assets/images/art/millipede.png',
     sound: '../../assets/sounds/millipede.mp3',
     words: []
 }
 
-export const mittens: IPhoneme = { 
+export const mittens: IPhoneme = {
     label: 'mittens',
-    img: 'assets/images/art/mittens.png', 
+    img: 'assets/images/art/mittens.png',
     sound: '../../assets/sounds/mittens.mp3',
     words: []
 }
 
-export const mole: IPhoneme = { 
+export const mole: IPhoneme = {
     label: 'mole',
-    img: 'assets/images/art/mole.png', 
+    img: 'assets/images/art/mole.png',
     sound: '../../assets/sounds/mole.mp3',
     words: []
 }
 
-export const money: IPhoneme = { 
+export const money: IPhoneme = {
     label: 'money',
-    img: 'assets/images/art/money.png', 
+    img: 'assets/images/art/money.png',
     sound: '../../assets/sounds/money.mp3',
     words: []
 }
 
-export const moon: IPhoneme = { 
+export const moon: IPhoneme = {
     label: 'moon',
-    img: 'assets/images/art/moon.png', 
+    img: 'assets/images/art/moon.png',
     sound: '../../assets/sounds/moon.mp3',
     words: []
 }
 
-export const mop: IPhoneme = { 
+export const mop: IPhoneme = {
     label: 'mop',
-    img: 'assets/images/art/mop.png', 
+    img: 'assets/images/art/mop.png',
     sound: '../../assets/sounds/mop.mp3',
     words: []
 }
 
-export const moss: IPhoneme = { 
+export const moss: IPhoneme = {
     label: 'moss',
-    img: 'assets/images/art/moss.png', 
+    img: 'assets/images/art/moss.png',
     sound: '../../assets/sounds/moss.mp3',
     words: []
 }
 
-export const moth: IPhoneme = { 
+export const moth: IPhoneme = {
     label: 'moth',
-    img: 'assets/images/art/moth.png', 
+    img: 'assets/images/art/moth.png',
     sound: '../../assets/sounds/moth.mp3',
     words: []
 }
 
-export const mother: IPhoneme = { 
+export const mother: IPhoneme = {
     label: 'mother',
-    img: 'assets/images/art/mother.png', 
+    img: 'assets/images/art/mother.png',
     sound: '../../assets/sounds/mother.mp3',
     words: []
 }
 
-export const music: IPhoneme = { 
+export const music: IPhoneme = {
     label: 'music',
-    img: 'assets/images/art/music.png', 
+    img: 'assets/images/art/music.png',
     sound: '../../assets/sounds/music.mp3',
     words: []
 }
 
-export const nap: IPhoneme = { 
+export const nap: IPhoneme = {
     label: 'nap',
-    img: 'assets/images/art/nap.png', 
+    img: 'assets/images/art/nap.png',
     sound: '../../assets/sounds/nap.mp3',
     words: []
 }
 
-export const net: IPhoneme = { 
+export const net: IPhoneme = {
     label: 'net',
-    img: 'assets/images/art/net.png', 
+    img: 'assets/images/art/net.png',
     sound: '../../assets/sounds/net.mp3',
     words: []
 }
 
-export const noise: IPhoneme = { 
+export const noise: IPhoneme = {
     label: 'noise',
-    img: 'assets/images/art/noise.png', 
+    img: 'assets/images/art/noise.png',
     sound: '../../assets/sounds/noise.mp3',
     words: []
 }
 
-export const nose: IPhoneme = { 
+export const nose: IPhoneme = {
     label: 'nose',
-    img: 'assets/images/art/nose.png', 
+    img: 'assets/images/art/nose.png',
     sound: '../../assets/sounds/nose.mp3',
     words: []
 }
 
-export const nun: IPhoneme = { 
+export const nun: IPhoneme = {
     label: 'nun',
-    img: 'assets/images/art/nun.png', 
+    img: 'assets/images/art/nun.png',
     sound: '../../assets/sounds/nun.mp3',
     words: []
 }
 
-export const nurse: IPhoneme = { 
+export const nurse: IPhoneme = {
     label: 'nurse',
-    img: 'assets/images/art/nurse.png', 
+    img: 'assets/images/art/nurse.png',
     sound: '../../assets/sounds/nurse.mp3',
     words: []
 }
 
-export const nuts: IPhoneme = { 
+export const nuts: IPhoneme = {
     label: 'nuts',
-    img: 'assets/images/art/nuts.png', 
+    img: 'assets/images/art/nuts.png',
     sound: '../../assets/sounds/nuts.mp3',
     words: []
 }
 
-export const old: IPhoneme = { 
+export const old: IPhoneme = {
     label: 'old',
-    img: 'assets/images/art/old.png', 
+    img: 'assets/images/art/old.png',
     sound: '../../assets/sounds/old.mp3',
     words: []
 }
 
-export const orange: IPhoneme = { 
+export const orange: IPhoneme = {
     label: 'orange',
-    img: 'assets/images/art/orange.png', 
+    img: 'assets/images/art/orange.png',
     sound: '../../assets/sounds/orange.mp3',
     words: []
 }
 
-export const oven: IPhoneme = { 
+export const oven: IPhoneme = {
     label: 'oven',
-    img: 'assets/images/art/oven.png', 
+    img: 'assets/images/art/oven.png',
     sound: '../../assets/sounds/oven.mp3',
     words: []
 }
 
-export const paint: IPhoneme = { 
+export const paint: IPhoneme = {
     label: 'paint',
-    img: 'assets/images/art/paint.png', 
+    img: 'assets/images/art/paint.png',
     sound: '../../assets/sounds/paint.mp3',
     words: []
 }
 
-export const palm: IPhoneme = { 
+export const palm: IPhoneme = {
     label: 'palm',
-    img: 'assets/images/art/palm.png', 
+    img: 'assets/images/art/palm.png',
     sound: '../../assets/sounds/palm.mp3',
     words: []
 }
 
-export const pencil: IPhoneme = { 
+export const pencil: IPhoneme = {
     label: 'pencil',
-    img: 'assets/images/art/pencil.png', 
+    img: 'assets/images/art/pencil.png',
     sound: '../../assets/sounds/pencil.mp3',
     words: []
 }
 
-export const pets: IPhoneme = { 
+export const pets: IPhoneme = {
     label: 'pets',
-    img: 'assets/images/art/pets.png', 
+    img: 'assets/images/art/pets.png',
     sound: '../../assets/sounds/pets.mp3',
     words: []
 }
 
-export const pick_final: IPhoneme = { 
+export const pick_final: IPhoneme = {
     label: 'pick_final',
-    img: 'assets/images/art/pick_final.png', 
+    img: 'assets/images/art/pick_final.png',
     sound: '../../assets/sounds/pick_final.mp3',
     words: []
 }
 
-export const pie: IPhoneme = { 
+export const pie: IPhoneme = {
     label: 'pie',
-    img: 'assets/images/art/pie.png', 
+    img: 'assets/images/art/pie.png',
     sound: '../../assets/sounds/pie.mp3',
     words: []
 }
 
-export const pig: IPhoneme = { 
+export const pig: IPhoneme = {
     label: 'pig',
-    img: 'assets/images/art/pig.png', 
+    img: 'assets/images/art/pig.png',
     sound: '../../assets/sounds/pig.mp3',
     words: []
 }
 
-export const pizza: IPhoneme = { 
+export const pizza: IPhoneme = {
     label: 'pizza',
-    img: 'assets/images/art/pizza.png', 
+    img: 'assets/images/art/pizza.png',
     sound: '../../assets/sounds/pizza.mp3',
     words: []
 }
 
-export const polar_bear: IPhoneme = { 
+export const polar_bear: IPhoneme = {
     label: 'polar_bear',
-    img: 'assets/images/art/polar_bear.png', 
+    img: 'assets/images/art/polar_bear.png',
     sound: '../../assets/sounds/polar_bear.mp3',
     words: []
 }
 
-export const pool: IPhoneme = { 
+export const pool: IPhoneme = {
     label: 'pool',
-    img: 'assets/images/art/pool.png', 
+    img: 'assets/images/art/pool.png',
     sound: '../../assets/sounds/pool.mp3',
     words: []
 }
 
-export const potty: IPhoneme = { 
+export const potty: IPhoneme = {
     label: 'potty',
-    img: 'assets/images/art/potty.png', 
+    img: 'assets/images/art/potty.png',
     sound: '../../assets/sounds/potty.mp3',
     words: []
 }
 
-export const purse: IPhoneme = { 
+export const purse: IPhoneme = {
     label: 'purse',
-    img: 'assets/images/art/purse.png', 
+    img: 'assets/images/art/purse.png',
     sound: '../../assets/sounds/purse.mp3',
     words: []
 }
 
-export const question: IPhoneme = { 
+export const question: IPhoneme = {
     label: 'question',
-    img: 'assets/images/art/question.png', 
+    img: 'assets/images/art/question.png',
     sound: '../../assets/sounds/question.mp3',
     words: []
 }
 
-export const queue: IPhoneme = { 
+export const queue: IPhoneme = {
     label: 'queue',
-    img: 'assets/images/art/queue.png', 
+    img: 'assets/images/art/queue.png',
     sound: '../../assets/sounds/queue.mp3',
     words: []
 }
 
-export const quick: IPhoneme = { 
+export const quick: IPhoneme = {
     label: 'quick',
-    img: 'assets/images/art/quick.png', 
+    img: 'assets/images/art/quick.png',
     sound: '../../assets/sounds/quick.mp3',
     words: []
 }
 
-export const quiet: IPhoneme = { 
+export const quiet: IPhoneme = {
     label: 'quiet',
-    img: 'assets/images/art/quiet.png', 
+    img: 'assets/images/art/quiet.png',
     sound: '../../assets/sounds/quiet.mp3',
     words: []
 }
 
-export const quill: IPhoneme = { 
+export const quill: IPhoneme = {
     label: 'quill',
-    img: 'assets/images/art/quill.png', 
+    img: 'assets/images/art/quill.png',
     sound: '../../assets/sounds/quill.mp3',
     words: []
 }
 
-export const quiz: IPhoneme = { 
+export const quiz: IPhoneme = {
     label: 'quiz',
-    img: 'assets/images/art/quiz.png', 
+    img: 'assets/images/art/quiz.png',
     sound: '../../assets/sounds/quiz.mp3',
     words: []
 }
 
-export const rabbit: IPhoneme = { 
+export const rabbit: IPhoneme = {
     label: 'rabbit',
-    img: 'assets/images/art/rabbit.png', 
+    img: 'assets/images/art/rabbit.png',
     sound: '../../assets/sounds/rabbit.mp3',
     words: []
 }
 
-export const rainbow: IPhoneme = { 
+export const rainbow: IPhoneme = {
     label: 'rainbow',
-    img: 'assets/images/art/rainbow.png', 
+    img: 'assets/images/art/rainbow.png',
     sound: '../../assets/sounds/rainbow.mp3',
     words: []
 }
 
-export const read: IPhoneme = { 
+export const read: IPhoneme = {
     label: 'read',
-    img: 'assets/images/art/read.png', 
+    img: 'assets/images/art/read.png',
     sound: '../../assets/sounds/read.mp3',
     words: []
 }
 
-export const rob: IPhoneme = { 
+export const rob: IPhoneme = {
     label: 'rob',
-    img: 'assets/images/art/rob.png', 
+    img: 'assets/images/art/rob.png',
     sound: '../../assets/sounds/rob.mp3',
     words: []
 }
 
-export const robin: IPhoneme = { 
+export const robin: IPhoneme = {
     label: 'robin',
-    img: 'assets/images/art/robin.png', 
+    img: 'assets/images/art/robin.png',
     sound: '../../assets/sounds/robin.mp3',
     words: []
 }
 
-export const robot: IPhoneme = { 
+export const robot: IPhoneme = {
     label: 'robot',
-    img: 'assets/images/art/robot.png', 
+    img: 'assets/images/art/robot.png',
     sound: '../../assets/sounds/robot.mp3',
     words: []
 }
 
-export const rug: IPhoneme = { 
+export const rug: IPhoneme = {
     label: 'rug',
-    img: 'assets/images/art/rug.png', 
+    img: 'assets/images/art/rug.png',
     sound: '../../assets/sounds/rug.mp3',
     words: []
 }
 
-export const sail: IPhoneme = { 
+export const sail: IPhoneme = {
     label: 'sail',
-    img: 'assets/images/art/sail.png', 
+    img: 'assets/images/art/sail.png',
     sound: '../../assets/sounds/sail.mp3',
     words: []
 }
 
-export const seal: IPhoneme = { 
+export const seal: IPhoneme = {
     label: 'seal',
-    img: 'assets/images/art/seal.png', 
+    img: 'assets/images/art/seal.png',
     sound: '../../assets/sounds/seal.mp3',
     words: []
 }
 
-export const shark: IPhoneme = { 
+export const shark: IPhoneme = {
     label: 'shark',
-    img: 'assets/images/art/shark.png', 
+    img: 'assets/images/art/shark.png',
     sound: '../../assets/sounds/shark.mp3',
     words: []
 }
 
-export const sheep: IPhoneme = { 
+export const sheep: IPhoneme = {
     label: 'sheep',
-    img: 'assets/images/art/sheep.png', 
+    img: 'assets/images/art/sheep.png',
     sound: '../../assets/sounds/sheep.mp3',
     words: []
 }
 
-export const sing: IPhoneme = { 
+export const sing: IPhoneme = {
     label: 'sing',
-    img: 'assets/images/art/sing.png', 
+    img: 'assets/images/art/sing.png',
     sound: '../../assets/sounds/sing.mp3',
     words: []
 }
 
-export const six: IPhoneme = { 
+export const six: IPhoneme = {
     label: 'six',
-    img: 'assets/images/art/six.png', 
+    img: 'assets/images/art/six.png',
     sound: '../../assets/sounds/six.mp3',
     words: []
 }
 
-export const sky: IPhoneme = { 
+export const sky: IPhoneme = {
     label: 'sky',
-    img: 'assets/images/art/sky.png', 
+    img: 'assets/images/art/sky.png',
     sound: '../../assets/sounds/sky.mp3',
     words: []
 }
 
-export const sled: IPhoneme = { 
+export const sled: IPhoneme = {
     label: 'sled',
-    img: 'assets/images/art/sled.png', 
+    img: 'assets/images/art/sled.png',
     sound: '../../assets/sounds/sled.mp3',
     words: []
 }
 
-export const sleepy: IPhoneme = { 
+export const sleepy: IPhoneme = {
     label: 'sleepy',
-    img: 'assets/images/art/sleepy.png', 
+    img: 'assets/images/art/sleepy.png',
     sound: '../../assets/sounds/sleepy.mp3',
     words: []
 }
 
-export const soap: IPhoneme = { 
+export const soap: IPhoneme = {
     label: 'soap',
-    img: 'assets/images/art/soap.png', 
+    img: 'assets/images/art/soap.png',
     sound: '../../assets/sounds/soap.mp3',
     words: []
 }
 
-export const sob: IPhoneme = { 
+export const sob: IPhoneme = {
     label: 'noise',
-    img: 'assets/images/art/noise.png', 
+    img: 'assets/images/art/noise.png',
     sound: '../../assets/sounds/noise.mp3',
     words: []
 }
 
-export const sofa: IPhoneme = { 
+export const sofa: IPhoneme = {
     label: 'sofa',
-    img: 'assets/images/art/sofa.png', 
+    img: 'assets/images/art/sofa.png',
     sound: '../../assets/sounds/sofa.mp3',
     words: []
 }
 
-export const spyglass: IPhoneme = { 
+export const spyglass: IPhoneme = {
     label: 'spyglass',
-    img: 'assets/images/art/spyglass.png', 
+    img: 'assets/images/art/spyglass.png',
     sound: '../../assets/sounds/spyglass.mp3',
     words: []
 }
 
-export const squirrel: IPhoneme = { 
+export const squirrel: IPhoneme = {
     label: 'squirrel',
-    img: 'assets/images/art/squirrel.png', 
+    img: 'assets/images/art/squirrel.png',
     sound: '../../assets/sounds/squirrel.mp3',
     words: []
 }
 
-export const statue: IPhoneme = { 
+export const statue: IPhoneme = {
     label: 'statue',
-    img: 'assets/images/art/statue.png', 
+    img: 'assets/images/art/statue.png',
     sound: '../../assets/sounds/statue.mp3',
     words: []
 }
 
-export const steal: IPhoneme = { 
+export const steal: IPhoneme = {
     label: 'steal',
-    img: 'assets/images/art/steal.png', 
+    img: 'assets/images/art/steal.png',
     sound: '../../assets/sounds/steal.mp3',
     words: []
 }
 
-export const storm: IPhoneme = { 
+export const storm: IPhoneme = {
     label: 'storm',
-    img: 'assets/images/art/storm.png', 
+    img: 'assets/images/art/storm.png',
     sound: '../../assets/sounds/storm.mp3',
     words: []
 }
 
-export const sun: IPhoneme = { 
+export const sun: IPhoneme = {
     label: 'sun',
-    img: 'assets/images/art/sun.png', 
+    img: 'assets/images/art/sun.png',
     sound: '../../assets/sounds/sun.mp3',
     words: []
 }
 
-export const surf: IPhoneme = { 
+export const surf: IPhoneme = {
     label: 'surf',
-    img: 'assets/images/art/surf.png', 
+    img: 'assets/images/art/surf.png',
     sound: '../../assets/sounds/surf.mp3',
     words: []
 }
 
-export const swim: IPhoneme = { 
+export const swim: IPhoneme = {
     label: 'swim',
-    img: 'assets/images/art/swim.png', 
+    img: 'assets/images/art/swim.png',
     sound: '../../assets/sounds/swim.mp3',
     words: []
 }
 
-export const tail: IPhoneme = { 
+export const tail: IPhoneme = {
     label: 'tail',
-    img: 'assets/images/art/tail.png', 
+    img: 'assets/images/art/tail.png',
     sound: '../../assets/sounds/tail.mp3',
     words: []
 }
 
-export const teeter_totter: IPhoneme = { 
+export const teeter_totter: IPhoneme = {
     label: 'teeter_totter',
-    img: 'assets/images/art/teeter_totter.png', 
+    img: 'assets/images/art/teeter_totter.png',
     sound: '../../assets/sounds/teeter_totter.mp3',
     words: []
 }
 
-export const tent: IPhoneme = { 
+export const tent: IPhoneme = {
     label: 'tent',
-    img: 'assets/images/art/tent.png', 
+    img: 'assets/images/art/tent.png',
     sound: '../../assets/sounds/tent.mp3',
     words: []
 }
 
-export const toad: IPhoneme = { 
+export const toad: IPhoneme = {
     label: 'toad',
-    img: 'assets/images/art/toad.png', 
+    img: 'assets/images/art/toad.png',
     sound: '../../assets/sounds/toad.mp3',
     words: []
 }
 
-export const toxic: IPhoneme = { 
+export const toxic: IPhoneme = {
     label: 'toxic',
-    img: 'assets/images/art/toxic.png', 
+    img: 'assets/images/art/toxic.png',
     sound: '../../assets/sounds/toxic.mp3',
     words: []
 }
 
-export const toys: IPhoneme = { 
+export const toys: IPhoneme = {
     label: 'toys',
-    img: 'assets/images/art/toys.png', 
+    img: 'assets/images/art/toys.png',
     sound: '../../assets/sounds/toys.mp3',
     words: []
 }
 
-export const trex: IPhoneme = { 
+export const trex: IPhoneme = {
     label: 'trex',
-    img: 'assets/images/art/trex.png', 
+    img: 'assets/images/art/trex.png',
     sound: '../../assets/sounds/trex.mp3',
     words: []
 }
 
-export const tuba: IPhoneme = { 
+export const tuba: IPhoneme = {
     label: 'tuba',
-    img: 'assets/images/art/tuba.png', 
+    img: 'assets/images/art/tuba.png',
     sound: '../../assets/sounds/tuba.mp3',
     words: []
 }
 
-export const turtle: IPhoneme = { 
+export const turtle: IPhoneme = {
     label: 'turtle',
-    img: 'assets/images/art/turtle.png', 
+    img: 'assets/images/art/turtle.png',
     sound: '../../assets/sounds/turtle.mp3',
     words: []
 }
 
-export const unicorn: IPhoneme = { 
+export const unicorn: IPhoneme = {
     label: 'unicorn',
-    img: 'assets/images/art/unicorn.png', 
+    img: 'assets/images/art/unicorn.png',
     sound: '../../assets/sounds/unicorn.mp3',
     words: []
 }
 
-export const unicycle: IPhoneme = { 
+export const unicycle: IPhoneme = {
     label: 'unicycle',
-    img: 'assets/images/art/unicycle.png', 
+    img: 'assets/images/art/unicycle.png',
     sound: '../../assets/sounds/unicycle.mp3',
     words: []
 }
 
-export const van: IPhoneme = { 
+export const van: IPhoneme = {
     label: 'van',
-    img: 'assets/images/art/van.png', 
+    img: 'assets/images/art/van.png',
     sound: '../../assets/sounds/van.mp3',
     words: []
 }
 
-export const vehicles_ambulance: IPhoneme = { 
+export const vehicles_ambulance: IPhoneme = {
     label: 'vehicles_ambulance',
-    img: 'assets/images/art/vehicles_ambulance.png', 
+    img: 'assets/images/art/vehicles_ambulance.png',
     sound: '../../assets/sounds/vehicles_ambulance.mp3',
     words: []
 }
 
-export const veil: IPhoneme = { 
+export const veil: IPhoneme = {
     label: 'veil',
-    img: 'assets/images/art/veil.png', 
+    img: 'assets/images/art/veil.png',
     sound: '../../assets/sounds/veil.mp3',
     words: []
 }
 
-export const violin: IPhoneme = { 
+export const violin: IPhoneme = {
     label: 'violin',
-    img: 'assets/images/art/violin.png', 
+    img: 'assets/images/art/violin.png',
     sound: '../../assets/sounds/violin.mp3',
     words: []
 }
 
-export const voice: IPhoneme = { 
+export const voice: IPhoneme = {
     label: 'voice',
-    img: 'assets/images/art/voice.png', 
+    img: 'assets/images/art/voice.png',
     sound: '../../assets/sounds/voice.mp3',
     words: []
 }
 
-export const volleyball: IPhoneme = { 
+export const volleyball: IPhoneme = {
     label: 'volleyball',
-    img: 'assets/images/art/volleyball.png', 
+    img: 'assets/images/art/volleyball.png',
     sound: '../../assets/sounds/volleyball.mp3',
     words: []
 }
 
-export const vowels: IPhoneme = { 
+export const vowels: IPhoneme = {
     label: 'vowels',
-    img: 'assets/images/art/vowels.png', 
+    img: 'assets/images/art/vowels.png',
     sound: '../../assets/sounds/vowels.mp3',
     words: []
 }
 
-export const wall: IPhoneme = { 
+export const wall: IPhoneme = {
     label: 'wall',
-    img: 'assets/images/art/wall.png', 
+    img: 'assets/images/art/wall.png',
     sound: '../../assets/sounds/wall.mp3',
     words: []
 }
 
-export const walnuts: IPhoneme = { 
+export const walnuts: IPhoneme = {
     label: 'walnuts',
-    img: 'assets/images/art/walnuts.png', 
+    img: 'assets/images/art/walnuts.png',
     sound: '../../assets/sounds/walnuts.mp3',
     words: []
 }
 
-export const walrus: IPhoneme = { 
+export const walrus: IPhoneme = {
     label: 'walrus',
-    img: 'assets/images/art/walrus.png', 
+    img: 'assets/images/art/walrus.png',
     sound: '../../assets/sounds/walrus.mp3',
     words: []
 }
 
-export const wash: IPhoneme = { 
+export const wash: IPhoneme = {
     label: 'wash',
-    img: 'assets/images/art/wash.png', 
+    img: 'assets/images/art/wash.png',
     sound: '../../assets/sounds/wash.mp3',
     words: []
 }
 
-export const waterfall: IPhoneme = { 
+export const waterfall: IPhoneme = {
     label: 'waterfall',
-    img: 'assets/images/art/waterfall.png', 
+    img: 'assets/images/art/waterfall.png',
     sound: '../../assets/sounds/waterfall.mp3',
     words: []
 }
 
-export const web: IPhoneme = { 
+export const web: IPhoneme = {
     label: 'web',
-    img: 'assets/images/art/web.png', 
+    img: 'assets/images/art/web.png',
     sound: '../../assets/sounds/web.mp3',
     words: []
 }
 
-export const wig: IPhoneme = { 
+export const wig: IPhoneme = {
     label: 'wig',
-    img: 'assets/images/art/wig.png', 
+    img: 'assets/images/art/wig.png',
     sound: '../../assets/sounds/wig.mp3',
     words: []
 }
 
-export const window: IPhoneme = { 
+export const window: IPhoneme = {
     label: 'window',
-    img: 'assets/images/art/window.png', 
+    img: 'assets/images/art/window.png',
     sound: '../../assets/sounds/window.mp3',
     words: []
 }
 
-export const wolf: IPhoneme = { 
+export const wolf: IPhoneme = {
     label: 'wolf',
-    img: 'assets/images/art/wolf.png', 
+    img: 'assets/images/art/wolf.png',
     sound: '../../assets/sounds/wolf.mp3',
     words: []
 }
 
-export const woman: IPhoneme = { 
+export const woman: IPhoneme = {
     label: 'woman',
-    img: 'assets/images/art/woman.png', 
+    img: 'assets/images/art/woman.png',
     sound: '../../assets/sounds/woman.mp3',
     words: []
 }
 
-export const yacht: IPhoneme = { 
+export const yacht: IPhoneme = {
     label: 'yacht',
-    img: 'assets/images/art/yacht.png', 
+    img: 'assets/images/art/yacht.png',
     sound: '../../assets/sounds/yacht.mp3',
     words: []
 }
 
-export const yawn: IPhoneme = { 
+export const yawn: IPhoneme = {
     label: 'yawn',
-    img: 'assets/images/art/yawn.png', 
+    img: 'assets/images/art/yawn.png',
     sound: '../../assets/sounds/yawn.mp3',
     words: []
 }
 
-export const yellow: IPhoneme = { 
+export const yellow: IPhoneme = {
     label: 'yellow',
-    img: 'assets/images/art/yellow.png', 
+    img: 'assets/images/art/yellow.png',
     sound: '../../assets/sounds/yellow.mp3',
     words: []
 }
 
-export const yeti: IPhoneme = { 
+export const yeti: IPhoneme = {
     label: 'yeti',
-    img: 'assets/images/art/yeti.png', 
+    img: 'assets/images/art/yeti.png',
     sound: '../../assets/sounds/yeti.mp3',
     words: []
 }
 
-export const youngster: IPhoneme = { 
+export const youngster: IPhoneme = {
     label: 'youngster',
-    img: 'assets/images/art/youngster.png', 
+    img: 'assets/images/art/youngster.png',
     sound: '../../assets/sounds/youngster.mp3',
     words: []
 }
 
-export const yummy: IPhoneme = { 
+export const yummy: IPhoneme = {
     label: 'yummy',
-    img: 'assets/images/art/yummy.png', 
+    img: 'assets/images/art/yummy.png',
     sound: '../../assets/sounds/yummy.mp3',
     words: []
 }
 
-export const zany: IPhoneme = { 
+export const zany: IPhoneme = {
     label: 'zany',
-    img: 'assets/images/art/zany.png', 
+    img: 'assets/images/art/zany.png',
     sound: '../../assets/sounds/zany.mp3',
     words: []
 }
 
-export const zero_final: IPhoneme = { 
+export const zero_final: IPhoneme = {
     label: 'zero_final',
-    img: 'assets/images/art/zero_final.png', 
+    img: 'assets/images/art/zero_final.png',
     sound: '../../assets/sounds/zero_final.mp3',
     words: []
 }
 
-export const zigzag: IPhoneme = { 
+export const zigzag: IPhoneme = {
     label: 'zigzag',
-    img: 'assets/images/art/zigzag.png', 
+    img: 'assets/images/art/zigzag.png',
     sound: '../../assets/sounds/zigzag.mp3',
     words: []
 }
 
-export const zipper: IPhoneme = { 
+export const zipper: IPhoneme = {
     label: 'zipper',
-    img: 'assets/images/art/zipper.png', 
+    img: 'assets/images/art/zipper.png',
     sound: '../../assets/sounds/zipper.mp3',
     words: []
 }
 
-export const zither: IPhoneme = { 
+export const zither: IPhoneme = {
     label: 'zither',
-    img: 'assets/images/art/zither.png', 
+    img: 'assets/images/art/zither.png',
     sound: '../../assets/sounds/zither.mp3',
     words: []
 }
 
-export const zoo: IPhoneme = { 
+export const zoo: IPhoneme = {
     label: 'zoo',
-    img: 'assets/images/art/zoo.png', 
+    img: 'assets/images/art/zoo.png',
     sound: '../../assets/sounds/zoo.mp3',
     words: []
 }

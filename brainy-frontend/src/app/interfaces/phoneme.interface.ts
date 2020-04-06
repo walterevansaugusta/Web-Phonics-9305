@@ -1,8 +1,8 @@
 export interface IPhoneme {
   label: string;
   img: string;
-  sound: string; 
-  words: IPhoneme[]; 
+  sound: string;
+  words: IPhoneme[];
 }
 
 export interface ICategory {

@@ -31,11 +31,11 @@ const routes: Routes = [
     data: { isRegister: false }
   },
   {
-    path: 'category',
+    path: 'category/:id',
     component: CategoriesComponent,
   },
   {
-    path: 'lesson',
+    path: 'lesson/:id',
     component: LessonComponent,
   },
   {

@@ -1,5 +1,8 @@
+import { IPhoneme } from './../interfaces/phoneme.interface';
 import { Component, OnInit } from '@angular/core';
 import { ConsonantPairs } from '../constants/consonant.constants';
+import { ActivatedRoute, Router } from '@angular/router';
+import { StateService } from '../services/state.service';
 
 @Component({
   selector: 'lesson',
@@ -8,11 +11,28 @@ import { ConsonantPairs } from '../constants/consonant.constants';
 })
 export class LessonComponent implements OnInit {
 
-  lesson = ConsonantPairs[0]; 
+  constructor(
+    private route: ActivatedRoute,
+    private stateService: StateService,
+    private router: Router,
+  ) {
+    this.route.params.subscribe( params => this.catParam = params['id'] );
+  }
 
-  constructor() { }
+  catParam: string;
+  chosenPhoneme: IPhoneme;
+  header: string;
 
   ngOnInit() {
+    const categoryList = this.stateService.getAll();
+    this.chosenPhoneme = categoryList.find(phon => {
+      return phon.label === this.catParam;
+    });
+    if (!this.chosenPhoneme) {
+      this.router.navigate(['home']);
+    }
+    this.chosenPhoneme = this.stateService.phonemeState;
+    this.header = this.chosenPhoneme.label;
   }
 
 }

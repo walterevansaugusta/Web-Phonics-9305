@@ -1,3 +1,4 @@
+import { CategoriesComponent } from './../categories/categories.component';
 import { StateService } from './../services/state.service';
 import { ICategory } from './../interfaces/phoneme.interface';
 import { Categories } from './../constants/category.constants';
@@ -29,15 +30,10 @@ export class HomeComponent implements OnInit {
 
   onCategoryClick(image: ICategory) {
     this.stateService.categoryState = image;
-    this.router.navigate(['../category']);
+    this.router.navigate(['category', image.key]);
   }
 
-  onVowel() {
-    this.router.navigate(['../vowels']);
+  onShowAll() {
+    this.router.navigate(['category', 'all']);
   }
-
-  onConsonant() {
-    this.router.navigate(['../consonants']);
-  }
-
 }

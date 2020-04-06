@@ -22,3 +22,14 @@
     padding-top: 20px;
     padding-bottom: 30px;
 }
+
+.no-gutters {
+    margin-right: -80px;
+    margin-left: -80px;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }

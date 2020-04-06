@@ -36,35 +36,35 @@ export const axe: IPhoneme = {
 }
 
 export const baby: IPhoneme = {
-    label: 'axe',
+    label: 'baby',
     img: 'assets/images/art/baby.png',
     sound: '../../assets/sounds/baby.mp3',
     words: []
 }
 
 export const ball: IPhoneme = {
-    label: 'axe',
+    label: 'ball',
     img: 'assets/images/art/ball.png',
     sound: '../../assets/sounds/ball.mp3',
     words: []
 }
 
 export const bat: IPhoneme = {
-    label: 'axe',
+    label: 'bat',
     img: 'assets/images/art/bat.png',
     sound: '../../assets/sounds/bat.mp3',
     words: []
 }
 
 export const bathtub: IPhoneme = {
-    label: 'axe',
+    label: 'bathtub',
     img: 'assets/images/art/bathtub.png',
     sound: '../../assets/sounds/bathtub.mp3',
     words: []
 }
 
 export const beak: IPhoneme = {
-    label: 'axe',
+    label: 'beak',
     img: 'assets/images/art/beak.png',
     sound: '../../assets/sounds/beak.mp3',
     words: []
@@ -1808,140 +1808,140 @@ export const whale: IPhoneme = {
 
 export const bubbles: IPhoneme = {
     label: 'bubbles',
-    img: 'assets/images/consonant/bubbles.png',
+    img: 'assets/images/consonants/bubbles.png',
     sound: '../../assets/sounds/bubbles.mp3',
     words: []
 }
 
 export const centipede: IPhoneme = {
     label: 'centipede',
-    img: 'assets/images/consonant/centipede.png',
+    img: 'assets/images/consonants/centipede.png',
     sound: '../../assets/sounds/centipede.mp3',
     words: []
 }
 
 export const doc: IPhoneme = {
     label: 'doc',
-    img: 'assets/images/consonant/doc.png',
+    img: 'assets/images/consonants/doc.png',
     sound: '../../assets/sounds/doc.mp3',
     words: []
 }
 
 export const fox: IPhoneme = {
     label: 'fox',
-    img: 'assets/images/consonant/fox.png',
+    img: 'assets/images/consonants/fox.png',
     sound: '../../assets/sounds/fox.mp3',
     words: []
 }
 
 export const goose: IPhoneme = {
     label: 'goose',
-    img: 'assets/images/consonant/goose.png',
+    img: 'assets/images/consonants/goose.png',
     sound: '../../assets/sounds/goose.mp3',
     words: []
 }
 
 export const hug: IPhoneme = {
     label: 'hug',
-    img: 'assets/images/consonant/hug.png',
+    img: 'assets/images/consonants/hug.png',
     sound: '../../assets/sounds/hug.mp3',
     words: []
 }
 
 export const jump: IPhoneme = {
     label: 'jump',
-    img: 'assets/images/consonant/jump.png',
+    img: 'assets/images/consonants/jump.png',
     sound: '../../assets/sounds/jump.mp3',
     words: []
 }
 
 export const kangaroo: IPhoneme = {
     label: 'kangaroo',
-    img: 'assets/images/consonant/kangaroo.png',
+    img: 'assets/images/consonants/kangaroo.png',
     sound: '../../assets/sounds/kangaroo.mp3',
     words: []
 }
 
 export const kiss: IPhoneme = {
     label: 'kiss',
-    img: 'assets/images/consonant/kiss.png',
+    img: 'assets/images/consonants/kiss.png',
     sound: '../../assets/sounds/kiss.mp3',
     words: []
 }
 
 export const monkey: IPhoneme = {
     label: 'monkey',
-    img: 'assets/images/consonant/monkey.png',
+    img: 'assets/images/consonants/monkey.png',
     sound: '../../assets/sounds/monkey.mp3',
     words: []
 }
 
 export const nail: IPhoneme = {
     label: 'nail',
-    img: 'assets/images/consonant/nail.png',
+    img: 'assets/images/consonants/nail.png',
     sound: '../../assets/sounds/nail.mp3',
     words: []
 }
 
 export const puppy: IPhoneme = {
     label: 'puppy',
-    img: 'assets/images/consonant/puppy.png',
+    img: 'assets/images/consonants/puppy.png',
     sound: '../../assets/sounds/puppy.mp3',
     words: []
 }
 
 export const raccoons: IPhoneme = {
     label: 'raccoons',
-    img: 'assets/images/consonant/raccoons.png',
+    img: 'assets/images/consonants/raccoons.png',
     sound: '../../assets/sounds/raccoons.mp3',
     words: []
 }
 
 export const stilts: IPhoneme = {
     label: 'stilts',
-    img: 'assets/images/consonant/stilts.png',
+    img: 'assets/images/consonants/stilts.png',
     sound: '../../assets/sounds/stilts.mp3',
     words: []
 }
 
 export const suitcases: IPhoneme = {
     label: 'suitcases',
-    img: 'assets/images/consonant/suitcases.png',
+    img: 'assets/images/consonants/suitcases.png',
     sound: '../../assets/sounds/suitcases.mp3',
     words: []
 }
 
 export const taxi: IPhoneme = {
     label: 'taxi',
-    img: 'assets/images/consonant/taxi.png',
+    img: 'assets/images/consonants/taxi.png',
     sound: '../../assets/sounds/taxi.mp3',
     words: []
 }
 
 export const toe: IPhoneme = {
     label: 'toe',
-    img: 'assets/images/consonant/toe.png',
+    img: 'assets/images/consonants/toe.png',
     sound: '../../assets/sounds/toe.mp3',
     words: []
 }
 
 export const volcano: IPhoneme = {
     label: 'volcano',
-    img: 'assets/images/consonant/volcano.png',
+    img: 'assets/images/consonants/volcano.png',
     sound: '../../assets/sounds/volcano.mp3',
     words: []
 }
 
 export const wagon: IPhoneme = {
     label: 'wagon',
-    img: 'assets/images/consonant/wagon.png',
+    img: 'assets/images/consonants/wagon.png',
     sound: '../../assets/sounds/wagon.mp3',
     words: []
 }
 
 export const yo_yo: IPhoneme = {
     label: 'yo-yo',
-    img: 'assets/images/consonant/yoyo.png',
+    img: 'assets/images/consonants/yoyo.png',
     sound: '../../assets/sounds/yoyo.mp3',
     words: []
 }

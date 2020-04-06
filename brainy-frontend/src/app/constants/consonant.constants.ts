@@ -188,7 +188,7 @@ export const VowelConsonantBlends: IPhoneme[] = [
     },
     {
       label: 'qu',
-      img: '../../assets/images/vowel_consonant_blends/quill.png',
+      img: '../../assets/images/art/quill.png',
       sound: '',
       words: [words.quill, words.quick, words.quiz]
     },

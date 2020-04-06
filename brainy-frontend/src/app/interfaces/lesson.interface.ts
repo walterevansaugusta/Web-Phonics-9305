@@ -1,6 +1,6 @@
-import { IPhoneme } from './phoneme.interface'; 
+import { IPhoneme } from './phoneme.interface';
 
 export interface Lesson {
-    phoneme: string; 
-    words: IPhoneme[];  
+    phoneme: string;
+    words: IPhoneme[];
 }

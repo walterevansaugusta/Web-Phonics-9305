@@ -32,7 +32,6 @@ export class LessonComponent implements OnInit {
     if (!this.chosenPhoneme) {
       this.router.navigate(['home']);
     }
-    this.chosenPhoneme = this.stateService.phonemeState;
     this.header = this.chosenPhoneme.label;
   }
 

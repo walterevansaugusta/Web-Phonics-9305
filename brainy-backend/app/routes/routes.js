@@ -5,4 +5,6 @@ const ctrlUser = require('../controllers/user_controller');
 
 router.post('/register', ctrlUser.register);
 
+// router.post('/authenticate', ctrlUser.authenticate);
+
 module.exports = router;

@@ -41,6 +41,10 @@ const routes: Routes = [
     data: { header: 'Vowels' }
   },
   {
+    path: 'lesson',
+    component: LessonComponent,
+  },
+  {
     path: '',
     redirectTo: '/landing',
     pathMatch: 'full'

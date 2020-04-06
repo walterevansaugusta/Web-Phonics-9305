@@ -28,6 +28,13 @@ export const artic: IPhoneme = {
     words: []
 }
 
+export const axe: IPhoneme = { 
+    label: 'axe',
+    img: 'assets/images/art/axe.png', 
+    sound: '../../assets/sounds/axe.mp3',
+    words: []
+}
+
 export const baby: IPhoneme = { 
     label: 'axe',
     img: 'assets/images/art/baby.png', 

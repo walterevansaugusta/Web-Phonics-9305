@@ -1,9 +1,8 @@
-import { Consonants } from './../constants/consonant.constants';
+import { Categories } from './../constants/category.constants';
 import { StateService } from './../services/state.service';
 import { IPhoneme, ICategory } from './../interfaces/phoneme.interface';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { MockVowels, MockConsonants } from '../constants/phoneme.constants';
 
 @Component({
   selector: 'app-categories',
@@ -15,27 +14,37 @@ export class CategoriesComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private stateService: StateService,
-  ) { }
+    private router: Router,
+  ) {
+    this.route.params.subscribe( params => this.catParam = params['id'] );
+  }
 
+  catParam: string;
   chosenCategory: ICategory;
   categoryImages: IPhoneme[];
   header: string;
-  iterations = [1,2,3,4,5,6,7,8,9];
 
   ngOnInit() {
-    this.chosenCategory = this.stateService.categoryState;
-    this.stateService.categoryState = undefined;
+    if (this.catParam === 'all') {
+      this.chosenCategory = {
+        label: 'All',
+        key: 'all',
+        img: '',
+      };
+    } else {
+      this.chosenCategory = Categories.find(category => {
+        return category['key'] === this.catParam.toLowerCase();
+      });
+    }
+    if (!this.chosenCategory) {
+      this.router.navigate(['home']);
+    }
     this.header = this.chosenCategory.label;
     this.categoryImages = this.stateService.getCategory(this.chosenCategory.key);
-    console.log(this.categoryImages);
-    // this.route.data
-    //   .subscribe(d => {
-    //     this.header = d.header;
-    //     console.log(this.header);
-    //     this.header === 'Vowels'
-    //       ? this.categoryImages = MockVowels
-    //       : this.categoryImages = MockConsonants;
-    //   });
   }
 
+  onCardClick(card: IPhoneme) {
+    this.stateService.phonemeState = card;
+    this.router.navigate(['lesson', card.label]);
+  }
 }

@@ -12,7 +12,6 @@ export class StateService {
   constructor() { }
 
   public categoryState: ICategory;
-  public phonemeState: IPhoneme;
 
   public getCategory(key: string) {
     if (key === 'consonants') {

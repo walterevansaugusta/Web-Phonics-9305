@@ -25,7 +25,6 @@ export class LessonComponent implements OnInit {
 
   ngOnInit() {
     const categoryList = this.stateService.getAll();
-    console.log(this.catParam);
     this.chosenPhoneme = categoryList.find(phon => {
       return phon.label === this.catParam;
     });

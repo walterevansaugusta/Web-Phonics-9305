@@ -1,3 +1,4 @@
+import { UserService } from './../services/user.service';
 import { CategoriesComponent } from './../categories/categories.component';
 import { StateService } from './../services/state.service';
 import { ICategory } from './../interfaces/phoneme.interface';
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private router: Router,
     private stateService: StateService,
+    private userService: UserService,
   ) { }
 
   categoryImgs: ICategory[] = Categories;

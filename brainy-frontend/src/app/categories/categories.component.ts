@@ -44,7 +44,6 @@ export class CategoriesComponent implements OnInit {
   }
 
   onCardClick(card: IPhoneme) {
-    this.stateService.phonemeState = card;
-    this.router.navigate(['lesson', card.label]);
+    this.router.navigate(['lesson', card.label, this.categoryImages]);
   }
 }

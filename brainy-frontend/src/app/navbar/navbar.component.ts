@@ -1,3 +1,4 @@
+import { UserService } from './../services/user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
@@ -9,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   constructor(
-    private router: Router
+    private router: Router,
+    private userService: UserService,
   ) { }
 
   ngOnInit() {
@@ -20,6 +22,7 @@ export class NavbarComponent implements OnInit {
   }
 
   onLogout() {
+    this.userService.deleteToken();
     this.router.navigate([`../landing/`]);
   }
 }

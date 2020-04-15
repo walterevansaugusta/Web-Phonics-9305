@@ -24,6 +24,13 @@ export class HomeComponent implements OnInit {
   categoryImgs: ICategory[] = Categories;
 
   ngOnInit() {
+    this.userService.getUserProfile()
+      .subscribe(
+        res => {
+          console.log(res['user']);
+        },
+        err => {}
+      );
   }
 
   onLogout() {

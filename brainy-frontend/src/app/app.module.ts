@@ -1,7 +1,10 @@
+import { AuthInterceptor } from './auth/auth.interceptor';
+import { UserService } from './services/user.service';
+import { AuthGuard } from './auth/auth.guard';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LoginregisterComponent } from './auth/loginregister/loginregister.component';
@@ -21,6 +24,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'register',
@@ -35,10 +39,12 @@ const routes: Routes = [
   {
     path: 'category/:id',
     component: CategoriesComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'lesson/:id',
     component: LessonComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: '',
@@ -67,7 +73,11 @@ const routes: Routes = [
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AuthInterceptor,
+    multi: true,
+    }, AuthGuard, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

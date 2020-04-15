@@ -73,12 +73,13 @@ export class LoginregisterComponent implements OnInit {
         this.userService.loginUser(user)
           .subscribe(
             res => {
-              this.userService.token = res['token'];
-              this.userService.getUser(res)
+              this.userService.setToken(res['token']);
               this.router.navigate([`../home/`]);
               this.homeClick.emit();
             },
-            err => {},
+            err => {
+              alert('Failed to login');
+            },
           );
       }
     }

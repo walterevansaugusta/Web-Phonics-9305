@@ -41,10 +41,8 @@ export class LessonComponent implements OnInit {
     this.chosenCategory = this.chosenPhoneme['category'];
     this.chosenCategoryList = this.stateService.getCategory(this.chosenCategory['key']);
     this.lessonIndex = this.chosenCategoryList.indexOf(this.chosenPhoneme);
-    console.log(this.lessonIndex);
     this.header = this.chosenPhoneme.label;
   }
-<<<<<<< HEAD
 
   onLeftArrow() {
     this.lessonIndex--;
@@ -56,7 +54,4 @@ export class LessonComponent implements OnInit {
     this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
   }
 
-=======
-  
->>>>>>> master
 }

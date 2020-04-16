@@ -2,10 +2,12 @@ const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
+
 var UserSchema = new mongoose.Schema({
     name: { type: String, required: true},
     password: { type: String, required: true},
-    saltSecret: { type: String}
+    saltSecret: { type: String},
+    progress: {type: Object, required: true}
 });
 
 // Events

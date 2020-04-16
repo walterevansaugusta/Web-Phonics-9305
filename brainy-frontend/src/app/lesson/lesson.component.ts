@@ -16,20 +16,25 @@ export class LessonComponent implements OnInit {
     private router: Router,
   ) {
     this.route.params.subscribe( params => this.catParam = params['id'] );
+
   }
 
   catParam: string;
   chosenPhoneme: IPhoneme;
   chosenCategory: ICategory;
   chosenCategoryList: IPhoneme[];
+  isDuplicate = false;
   header: string;
 
   ngOnInit() {
     const categoryList = this.stateService.getAll();
+    if (this.catParam[0] === ':') this.isDuplicate = true;
     this.chosenPhoneme = categoryList.find(phon => {
-      return this.catParam.length === 2 ? phon.dupKey === this.catParam
+      return this.isDuplicate ? phon.dupKey === this.catParam
         : phon.label === this.catParam;
     });
+    console.log(this.chosenPhoneme);
+    console.log(this.catParam);
     if (!this.chosenPhoneme) {
       this.router.navigateByUrl('/home');
     }

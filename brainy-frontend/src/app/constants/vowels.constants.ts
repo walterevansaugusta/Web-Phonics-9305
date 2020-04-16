@@ -67,7 +67,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/ape.png',
       sound: '',
       category: vowels,
-      dupKey: 'a1',
+      dupKey: ':a1',
       words: [w.ape, w.skate]
     },
     {
@@ -75,7 +75,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/bat.png',
       sound: '',
       category: vowels,
-      dupKey: 'a2',
+      dupKey: ':a2',
       words: [w.bat, w.wagon]
     },
     {
@@ -83,7 +83,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/sofa.png',
       sound: '',
       category: vowels,
-      dupKey: 'a3',
+      dupKey: ':a3',
       words: [w.sofa, w.zebra]
     },
     {
@@ -91,7 +91,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/key.png',
       sound: '',
       category: vowels,
-      dupKey: 'e1',
+      dupKey: ':e1',
       words: [w.key, w.zebra, w.tree]
     },
     {
@@ -99,7 +99,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/elf.png',
       sound: '',
       category: vowels,
-      dupKey: 'e2',
+      dupKey: ':e2',
       words: [w.elf, w.bed, w.net]
     },
     {
@@ -107,7 +107,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/oven.png',
       sound: '',
       category: vowels,
-      dupKey: 'e3',
+      dupKey: ':e3',
       words: [w.oven, w.kitten]
     },
     {
@@ -115,7 +115,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/ice.png',
       sound: '',
       category: vowels,
-      dupKey: 'i1',
+      dupKey: ':i1',
       words: [w.ice, w.climb]
     },
     {
@@ -123,7 +123,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/mittens.png',
       sound: '',
       category: vowels,
-      dupKey: 'i2',
+      dupKey: ':i2',
       words: [w.mittens, w.fish]
     },
     {
@@ -131,7 +131,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/rabbit.png',
       sound: '',
       category: vowels,
-      dupKey: 'i3',
+      dupKey: ':i3',
       words: [w.rabbit, w.pencil, w.family]
     },
     {
@@ -139,7 +139,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/old.png',
       sound: '',
       category: vowels,
-      dupKey: 'o1',
+      dupKey: ':o1',
       words: [w.old, w.mole, w.polar_bear]
     },
     {
@@ -147,7 +147,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/oven.png',
       sound: '',
       category: vowels,
-      dupKey: 'o2',
+      dupKey: ':o2',
       words: [w.oven, w.wagon]
     },
     {
@@ -155,7 +155,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/unicycle.png',
       sound: '',
       category: vowels,
-      dupKey: 'u1',
+      dupKey: ':u1',
       words: [w.unicycle, w.unicorn]
     },
     {
@@ -163,7 +163,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/tuba.png',
       sound: '',
       category: vowels,
-      dupKey: 'u2',
+      dupKey: ':u2',
       words: [w.tuba, w.blue]
     },
     {
@@ -171,7 +171,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/bug.png',
       sound: '',
       category: vowels,
-      dupKey: 'u3',
+      dupKey: ':u3',
       words: [w.bug]
     },
     {
@@ -179,7 +179,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/cry.png',
       sound: '',
       category: vowels,
-      dupKey: 'y1',
+      dupKey: ':y1',
       words: [w.cry, w.fly, w.sky]
     },
     {
@@ -187,7 +187,7 @@ export const Vowels: IPhoneme[] = [
       img: '../../assets/images/art/baby.png',
       sound: '',
       category: vowels,
-      dupKey: 'y2',
+      dupKey: ':y2',
       words: [w.baby, w.candy, w.sleepy]
     },
     {
@@ -197,5 +197,5 @@ export const Vowels: IPhoneme[] = [
       category: vowels,
       dupKey: 'y3',
       words: [w.yellow, w.yo_yo]
-    },
+    }
 ];

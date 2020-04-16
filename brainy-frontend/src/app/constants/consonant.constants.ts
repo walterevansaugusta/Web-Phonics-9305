@@ -234,7 +234,7 @@ export const Consonants: IPhoneme[] = [
       img: '../../assets/images/consonants/cabbage.png',
       sound: '',
       category: consonants,
-      dupKey: 'c1',
+      dupKey: ':c1',
       words: [words.cabbage, words.candy, words.cap]
     },
     {
@@ -242,7 +242,7 @@ export const Consonants: IPhoneme[] = [
       img: '../../assets/images/consonants/centipede.png',
       sound: '',
       category: consonants,
-      dupKey: 'c2',
+      dupKey: ':c2',
       words: [words.centipede, words.face]
     },
     {
@@ -264,7 +264,7 @@ export const Consonants: IPhoneme[] = [
       img: '../../assets/images/consonants/goose.png',
       sound: '',
       category: consonants,
-      dupKey: 'g1',
+      dupKey: ':g1',
       words: [words.gate, words.gazelle, words.goat]
     },
     {
@@ -272,7 +272,7 @@ export const Consonants: IPhoneme[] = [
       img: '../../assets/images/consonants/fridge.png',
       sound: '',
       category: consonants,
-      dupKey: 'g2',
+      dupKey: ':g2',
       words: [words.fridge]
     },
     {
@@ -336,7 +336,7 @@ export const Consonants: IPhoneme[] = [
       img: '../../assets/images/consonants/suitcase.png',
       sound: '',
       category: consonants,
-      dupKey: 's1',
+      dupKey: ':s1',
       words: [words.suitcases, words.sail, words.soap]
     },
     {
@@ -344,7 +344,7 @@ export const Consonants: IPhoneme[] = [
       img: '../../assets/images/consonants/stilts.png',
       sound: '',
       category: consonants,
-      dupKey: 's2',
+      dupKey: ':s2',
       words: [words.stilts]
     },
     {

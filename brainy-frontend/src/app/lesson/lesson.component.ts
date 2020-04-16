@@ -16,33 +16,56 @@ export class LessonComponent implements OnInit {
     private router: Router,
   ) {
     this.route.params.subscribe( params => this.catParam = params['id'] );
+
   }
 
   catParam: string;
   chosenPhoneme: IPhoneme;
   chosenCategory: ICategory;
   chosenCategoryList: IPhoneme[];
+  lessonIndex: number;
   header: string;
+  isDuplicate = false;
 
   ngOnInit() {
     const categoryList = this.stateService.getAll();
+    if (this.catParam[0] === ':') this.isDuplicate = true;
     this.chosenPhoneme = categoryList.find(phon => {
-      return this.catParam.length === 2 ? phon.dupKey === this.catParam
+      return this.isDuplicate ? phon.dupKey === this.catParam
         : phon.label === this.catParam;
     });
+
     if (!this.chosenPhoneme) {
       this.router.navigateByUrl('/home');
     }
     this.chosenCategory = this.chosenPhoneme['category'];
     this.chosenCategoryList = this.stateService.getCategory(this.chosenCategory['key']);
-    console.log(this.chosenCategoryList);
+    this.lessonIndex = this.chosenCategoryList.indexOf(this.chosenPhoneme);
+    console.log(this.lessonIndex);
     this.header = this.chosenPhoneme.label;
   }
+<<<<<<< HEAD
+
+  onLeftArrow() {
+    this.lessonIndex--;
+    this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
+  }
+
+  onRightArrow() {
+    this.lessonIndex++;
+    this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
+  }
+
+=======
   
+<<<<<<< HEAD
   playAudio(sound) { 
     let audio = new Audio(); 
     audio.src = sound;
     audio.load();
     audio.play();
   }
+=======
+>>>>>>> master
+>>>>>>> d80dbbfa50eb775143953b38d1a7c4d23d975641
 }

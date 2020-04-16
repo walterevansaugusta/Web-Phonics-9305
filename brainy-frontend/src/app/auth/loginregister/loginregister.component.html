@@ -9,16 +9,16 @@
 
       <div class="passcode">
           <div class="pic one">
-            <img *ngIf="chosenImgs[0]" class="chosen-image" [src]="chosenImgs[0]['url']">
+            <img *ngIf="chosenImgs[0]" class="chosen-image" [src]="chosenImgs[0]['url']" (click)="onChosenClick(chosenImgs[0])">
           </div>
           <div class="pic two">
-            <img *ngIf="chosenImgs[1]" class="chosen-image" [src]="chosenImgs[1]['url']">
+            <img *ngIf="chosenImgs[1]" class="chosen-image" [src]="chosenImgs[1]['url']" (click)="onChosenClick(chosenImgs[1])">
           </div>
           <div class="pic three">
-            <img *ngIf="chosenImgs[2]" class="chosen-image" [src]="chosenImgs[2]['url']">
+            <img *ngIf="chosenImgs[2]" class="chosen-image" [src]="chosenImgs[2]['url']" (click)="onChosenClick(chosenImgs[2])">
           </div>
           <div class="pic four">
-            <img *ngIf="chosenImgs[3]" class="chosen-image" [src]="chosenImgs[3]['url']">
+            <img *ngIf="chosenImgs[3]" class="chosen-image" [src]="chosenImgs[3]['url']" (click)="onChosenClick(chosenImgs[3])">
           </div>
       </div>
 

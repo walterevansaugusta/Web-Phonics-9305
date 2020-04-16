@@ -14,7 +14,16 @@ export class NavbarComponent implements OnInit {
     private userService: UserService,
   ) { }
 
+  userName: string;
+
   ngOnInit() {
+    this.userService.getUserProfile()
+      .subscribe(
+        res => {
+          this.userName = res['user']['name']
+        },
+        err => {}
+      );
   }
 
   onHome() {

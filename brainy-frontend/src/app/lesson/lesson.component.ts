@@ -38,12 +38,5 @@ export class LessonComponent implements OnInit {
     console.log(this.chosenCategoryList);
     this.header = this.chosenPhoneme.label;
   }
-
-  playAudio(sound) { 
-    let audio = new Audio(); 
-    audio.src = sound;
-    audio.load(); 
-    audio.play(); 
-  }
-
+  
 }

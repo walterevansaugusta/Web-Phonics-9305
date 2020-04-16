@@ -44,6 +44,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   onCardClick(card: IPhoneme) {
-    this.router.navigate(['lesson', card.label, this.categoryImages]);
+    card.dupKey ? this.router.navigate(['lesson', card.dupKey])
+      : this.router.navigate(['lesson', card.label]);
   }
 }

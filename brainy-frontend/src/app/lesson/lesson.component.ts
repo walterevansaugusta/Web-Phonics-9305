@@ -38,5 +38,5 @@ export class LessonComponent implements OnInit {
     console.log(this.chosenCategoryList);
     this.header = this.chosenPhoneme.label;
   }
-
+  
 }

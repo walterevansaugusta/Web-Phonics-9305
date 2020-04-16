@@ -58,5 +58,14 @@ export class LessonComponent implements OnInit {
 
 =======
   
+<<<<<<< HEAD
+  playAudio(sound) { 
+    let audio = new Audio(); 
+    audio.src = sound;
+    audio.load();
+    audio.play();
+  }
+=======
 >>>>>>> master
+>>>>>>> d80dbbfa50eb775143953b38d1a7c4d23d975641
 }

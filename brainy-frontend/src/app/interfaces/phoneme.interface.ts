@@ -12,3 +12,11 @@ export interface ICategory {
   img: string;
   key: string;
 }
+
+export interface IUserProgress {
+  category: IProgressCategory;
+}
+
+export interface IProgressCategory {
+  phoneme: number;
+}

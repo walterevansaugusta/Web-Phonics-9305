@@ -3,11 +3,15 @@
         <h1 *ngIf="userName" class="display-5">Welcome to Brainy Phonics {{ userName }}!</h1>
     </span>
     <form class="form-inline logout">
+        <button class="btn btn-logout" (click)="onUser()">
+            <img src="assets/images/user.png" width="40" height="40">
+        </button>
+        &nbsp;&nbsp;&nbsp;
         <button class="btn btn-logout" (click)="onHome()">
           <img src="assets/images/home_icon.png" width="40" height="40">
         </button>
         &nbsp;&nbsp;&nbsp;
-        <button class="btn btn-logout" type="button" (click)="onLogout()">
+        <button title="Logout" class="btn btn-logout" type="button" (click)="onLogout()">
         <img src="assets/images/log-out.svg" width="40" height="40" alt="">
         </button>
     </form>

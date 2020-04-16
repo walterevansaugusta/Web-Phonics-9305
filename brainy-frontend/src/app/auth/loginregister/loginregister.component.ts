@@ -110,6 +110,7 @@ export class LoginregisterComponent implements OnInit {
           this.homeClick.emit();
         },
         err => {
+          console.log(err);
           alert('You may only choose 4 animal pictures');
         }
       );

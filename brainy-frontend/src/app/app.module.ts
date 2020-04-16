@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Routes, RouterModule } from '@angular/router';
 import { CardComponent } from './categories/card/card.component';
 import { LessonComponent } from './lesson/lesson.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
     redirectTo: '/landing',
     pathMatch: 'full'
   },
+  { 
+    path: 'user', 
+    component: UserComponent, 
+  }
 ];
 
 @NgModule({
@@ -63,6 +68,7 @@ const routes: Routes = [
     NavbarComponent,
     CardComponent,
     LessonComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,

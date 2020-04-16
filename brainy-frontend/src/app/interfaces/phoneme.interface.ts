@@ -3,6 +3,8 @@ export interface IPhoneme {
   img: string;
   sound: string;
   words: IPhoneme[];
+  category?: ICategory;
+  dupKey?: string;
 }
 
 export interface ICategory {

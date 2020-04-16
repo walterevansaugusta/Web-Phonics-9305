@@ -54,7 +54,8 @@ export class LoginregisterComponent implements OnInit {
     } else {
       let userImages = '';
       this.chosenImgs.forEach(img => {
-        userImages += img['id'];
+        const charId = String.fromCharCode(96 + img['id']);
+        userImages += charId;
       });
       const user: User = {
         name: this.name,
@@ -64,30 +65,53 @@ export class LoginregisterComponent implements OnInit {
         this.userService.registerUser(user)
         .subscribe(
           res => {
-            this.router.navigate([`../home/`]);
-            this.homeClick.emit();
+            this.userLogin(user);
           },
           err => {},
         );
       } else {
-        this.userService.loginUser(user)
-          .subscribe(
-            res => {
-              this.userService.setToken(res['token']);
-              this.router.navigate([`../home/`]);
-              this.homeClick.emit();
-            },
-            err => {
-              alert('Failed to login');
-            },
-          );
+        this.userLogin(user);
       }
     }
   }
 
   onImgClick(img: IImage) {
-    console.log(img);
-    this.chosenImgs.length === 4 ? alert('You may only choose 4 animal pictures')
-      : this.chosenImgs.push(img);
+    if (this.chosenImgs.length === 4) {
+      alert('You may only choose 4 animal pictures');
+    } else {
+      let isAdded = false;
+      for (let i = 0; i < this.chosenImgs.length; i++) {
+        if (!this.chosenImgs[i]) {
+          this.chosenImgs.splice(i, 1, img);
+          isAdded = true;
+          console.log(this.chosenImgs);
+          break;
+        }
+      }
+      if (!isAdded) this.chosenImgs.push(img);
+    }
+  }
+
+  onChosenClick(chosen: IImage) {
+    const index = this.chosenImgs.indexOf(chosen);
+    if (index === this.chosenImgs.length - 1) {
+      this.chosenImgs.length--;
+    }
+    delete this.chosenImgs[index];
+    console.log(this.chosenImgs);
+  }
+
+  private userLogin(user: User) {
+    this.userService.loginUser(user)
+      .subscribe(
+        res => {
+          this.userService.setToken(res['token']);
+          this.router.navigate([`../home/`]);
+          this.homeClick.emit();
+        },
+        err => {
+          alert('You may only choose 4 animal pictures');
+        }
+      );
   }
 }

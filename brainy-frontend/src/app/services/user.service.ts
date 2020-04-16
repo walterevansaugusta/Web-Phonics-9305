@@ -2,6 +2,7 @@ import { environment } from './../../environments/environment';
 import { User } from './user.model';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { IUserProgress } from '../interfaces/phoneme.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,7 @@ export class UserService {
   ) { }
 
   noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
+  userProgress: IUserProgress;
 
   // http
   registerUser(user: User) {
@@ -30,6 +32,11 @@ export class UserService {
 
   getUserProfile() {
     return this.http.get(environment.apiBaseUrl + '/userProfile');
+  }
+
+  updateUserProgress(progress) {
+    console.log(progress);
+    return this.http.put(environment.apiBaseUrl + '/update', progress);
   }
 
   // helper

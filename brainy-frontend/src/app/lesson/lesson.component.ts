@@ -39,4 +39,10 @@ export class LessonComponent implements OnInit {
     this.header = this.chosenPhoneme.label;
   }
   
+  playAudio(sound) { 
+    let audio = new Audio(); 
+    audio.src = sound;
+    audio.load();
+    audio.play();
+  }
 }

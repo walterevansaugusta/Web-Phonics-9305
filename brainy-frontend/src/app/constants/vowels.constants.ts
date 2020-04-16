@@ -1,6 +1,6 @@
 import { vowelPairs, vowels } from './category.constants';
 import { IPhoneme } from './../interfaces/phoneme.interface';
-import * as words from './lesson.constant';
+import * as w from './lesson.constant';
 
 export const VowelPairs: IPhoneme[] = [
     {
@@ -8,56 +8,56 @@ export const VowelPairs: IPhoneme[] = [
       img: '../../assets/images/vowel_pairs/sail.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.tail, w.nail, w.rainbow]
     },
     {
       label: 'ay',
       img: '../../assets/images/vowel_pairs/jay.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.jay]
     },
     {
       label: 'ea',
       img: '../../assets/images/vowel_pairs/leaf.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.leaf]
     },
     {
       label: 'oa',
       img: '../../assets/images/vowel_pairs/goat.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.goat, w.boat]
     },
     {
       label: 'ow',
       img: '../../assets/images/vowel_pairs/rainbow.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.rainbow]
     },
     {
       label: 'oo',
       img: '../../assets/images/vowel_pairs/foot.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.foot]
     },
     {
       label: 'oi',
       img: '../../assets/images/vowel_pairs/noise.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.noise]
     },
     {
       label: 'oy',
       img: '../../assets/images/vowel_pairs/toys.png',
       sound: '',
       category: vowelPairs,
-      words: []
+      words: [w.toys]
     },
 ];
 
@@ -68,7 +68,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'a1',
-      words: []
+      words: [w.ape, w.skate]
     },
     {
       label: 'a',
@@ -76,7 +76,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'a2',
-      words: []
+      words: [w.bat, w.wagon]
     },
     {
       label: 'a',
@@ -84,7 +84,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'a3',
-      words: []
+      words: [w.sofa, w.zebra]
     },
     {
       label: 'e',
@@ -92,7 +92,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'e1',
-      words: []
+      words: [w.key, w.zebra, w.tree]
     },
     {
       label: 'e',
@@ -100,7 +100,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'e2',
-      words: []
+      words: [w.elf, w.bed, w.net]
     },
     {
       label: 'e',
@@ -108,7 +108,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'e3',
-      words: []
+      words: [w.oven, w.kitten]
     },
     {
       label: 'i',
@@ -116,7 +116,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'i1',
-      words: []
+      words: [w.ice, w.climb]
     },
     {
       label: 'i',
@@ -124,7 +124,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'i2',
-      words: []
+      words: [w.mittens, w.fish]
     },
     {
       label: 'i',
@@ -132,7 +132,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'i3',
-      words: []
+      words: [w.rabbit, w.pencil, w.family]
     },
     {
       label: 'o',
@@ -140,7 +140,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'o1',
-      words: []
+      words: [w.old, w.mole, w.polar_bear]
     },
     {
       label: 'o',
@@ -148,7 +148,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'o2',
-      words: []
+      words: [w.oven, w.wagon]
     },
     {
       label: 'u',
@@ -156,7 +156,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'u1',
-      words: []
+      words: [w.unicycle, w.unicorn]
     },
     {
       label: 'u',
@@ -164,7 +164,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'u2',
-      words: []
+      words: [w.tuba, w.blue]
     },
     {
       label: 'u',
@@ -172,7 +172,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'u3',
-      words: []
+      words: [w.bug]
     },
     {
       label: 'y',
@@ -180,7 +180,7 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'y1',
-      words: []
+      words: [w.cry, w.fly, w.sky]
     },
     {
       label: 'y',
@@ -188,6 +188,14 @@ export const Vowels: IPhoneme[] = [
       sound: '',
       category: vowels,
       dupKey: 'y2',
-      words: []
+      words: [w.baby, w.candy, w.sleepy]
+    },
+    {
+      label: 'y',
+      img: '../../assets/images/art/yellow.png',
+      sound: '',
+      category: vowels,
+      dupKey: 'y3',
+      words: [w.yellow, w.yo_yo]
     },
 ];

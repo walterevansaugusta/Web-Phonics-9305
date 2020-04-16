@@ -611,7 +611,7 @@ export const goal: IPhoneme = {
 
 export const goat: IPhoneme = {
     label: 'goat',
-    img: 'assets/images/art/goat.png',
+    img: 'assets/images/vowel_pairs/goat.png',
     sound: '../../assets/sounds/goat.mp3',
     words: []
 }

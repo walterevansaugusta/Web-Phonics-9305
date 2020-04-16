@@ -42,8 +42,8 @@ passport.use(new LocalStrategy({
 module.exports.authenticate = (req, res, next) => {
     // call for passport authentication
     console.log("Reached authenticate");
-    passport.authenticate('local', (err, user, info) => {  
-        console.log("Reached passport");     
+    passport.authenticate('local', (err, user, info) => {
+        console.log("Reached passport");
         // error from passport middleware
         if (err) return res.status(400).json(err);
         // registered user

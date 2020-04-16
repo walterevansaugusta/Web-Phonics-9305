@@ -1,6 +1,5 @@
-import { IPhoneme } from './../interfaces/phoneme.interface';
+import { IPhoneme, ICategory } from './../interfaces/phoneme.interface';
 import { Component, OnInit } from '@angular/core';
-import { ConsonantPairs } from '../constants/consonant.constants';
 import { ActivatedRoute, Router } from '@angular/router';
 import { StateService } from '../services/state.service';
 
@@ -21,16 +20,22 @@ export class LessonComponent implements OnInit {
 
   catParam: string;
   chosenPhoneme: IPhoneme;
+  chosenCategory: ICategory;
+  chosenCategoryList: IPhoneme[];
   header: string;
 
   ngOnInit() {
     const categoryList = this.stateService.getAll();
     this.chosenPhoneme = categoryList.find(phon => {
-      return phon.label === this.catParam;
+      return this.catParam.length === 2 ? phon.dupKey === this.catParam
+        : phon.label === this.catParam;
     });
     if (!this.chosenPhoneme) {
-      this.router.navigate(['home']);
+      this.router.navigateByUrl('/home');
     }
+    this.chosenCategory = this.chosenPhoneme['category'];
+    this.chosenCategoryList = this.stateService.getCategory(this.chosenCategory['key']);
+    console.log(this.chosenCategoryList);
     this.header = this.chosenPhoneme.label;
   }
 

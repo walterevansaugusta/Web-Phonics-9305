@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-light" style="background-color: #c4faff;">
     <span class="navbar-brand mb-0">
-        <h1 *ngIf="userName" class="display-5">Welcome to Brainy Phonics {{ userName }}!</h1>
+        <h1 *ngIf="userName" class="display-5">Welcome to Brainy Phonics {{ userName.toUpperCase() }}!</h1>
     </span>
     <form class="form-inline logout">
         <button class="btn btn-logout" (click)="onHome()">

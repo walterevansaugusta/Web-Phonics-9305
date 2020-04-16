@@ -15,7 +15,7 @@ export class StateService {
 
   public getCategory(key: string) {
     if (key === 'consonants') {
-      return this.getConsonants();
+      return Consonants;
     } else if (key === 'consonantpairs') {
       return ConsonantPairs;
     } else if (key === 'consonantblends') {
@@ -25,7 +25,7 @@ export class StateService {
     } else if (key === 'vowelpairs') {
       return VowelPairs;
     } else if (key === 'vowels') {
-      return this.getVowels();
+      return Vowels;
     } else {
       return this.getAll();
     }

@@ -34,4 +34,8 @@ export class NavbarComponent implements OnInit {
     this.userService.deleteToken();
     this.router.navigate([`../landing/`]);
   }
+
+  onUser() { 
+    this.router.navigate(['../user/'])
+  }
 }

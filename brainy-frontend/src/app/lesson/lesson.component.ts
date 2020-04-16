@@ -44,6 +44,7 @@ export class LessonComponent implements OnInit {
     console.log(this.lessonIndex);
     this.header = this.chosenPhoneme.label;
   }
+<<<<<<< HEAD
 
   onLeftArrow() {
     this.lessonIndex--;
@@ -55,4 +56,7 @@ export class LessonComponent implements OnInit {
     this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
   }
 
+=======
+  
+>>>>>>> master
 }

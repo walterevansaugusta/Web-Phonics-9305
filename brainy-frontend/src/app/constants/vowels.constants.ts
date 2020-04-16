@@ -1,5 +1,6 @@
 import { vowelPairs, vowels } from './category.constants';
 import { IPhoneme } from './../interfaces/phoneme.interface';
+import * as words from './lesson.constant';
 
 export const VowelPairs: IPhoneme[] = [
     {

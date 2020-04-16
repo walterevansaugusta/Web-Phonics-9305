@@ -1,53 +1,60 @@
 import { IPhoneme } from './../interfaces/phoneme.interface';
+import * as w from './lesson.constant'; 
 
 export const VowelPairs: IPhoneme[] = [
     {
       label: 'ai',
       img: '../../assets/images/vowel_pairs/sail.png',
       sound: '',
-      words: []
+      words: [w.tail, w.nail, w.rainbow]
     },
     {
       label: 'ay',
       img: '../../assets/images/vowel_pairs/jay.png',
       sound: '',
-      words: []
+      words: [w.jay]
     },
     {
       label: 'ea',
       img: '../../assets/images/vowel_pairs/leaf.png',
       sound: '',
-      words: []
+      words: [w.leaf]
     },
     {
       label: 'oa',
       img: '../../assets/images/vowel_pairs/goat.png',
       sound: '',
-      words: []
+      words: [w.boat, w.goat]
     },
     {
       label: 'ow',
       img: '../../assets/images/vowel_pairs/rainbow.png',
       sound: '',
-      words: []
+      words: [w.rainbow]
+    },
+    {
+      label: 'oo',
+      img: '../../assets/images/art/zoo.png',
+      sound: '',
+      words: [w.zoo, w.kangaroo, w.raccoons]
     },
     {
       label: 'oo',
       img: '../../assets/images/vowel_pairs/foot.png',
       sound: '',
-      words: []
+      words: [w.foot]
     },
     {
       label: 'oi',
       img: '../../assets/images/vowel_pairs/noise.png',
       sound: '',
-      words: []
+      words: [w.noise]
     },
     {
       label: 'oy',
       img: '../../assets/images/vowel_pairs/toys.png',
       sound: '',
-      words: []
+      words: [w.toys]
     },
 ];
 
@@ -56,96 +63,102 @@ export const Vowels: IPhoneme[] = [
       label: 'a',
       img: '../../assets/images/art/ape.png',
       sound: '',
-      words: []
+      words: [w.ape, w.skate]
     },
     {
       label: 'a',
       img: '../../assets/images/art/bat.png',
       sound: '',
-      words: []
+      words: [w.bat, w.wagon]
     },
     {
       label: 'a',
       img: '../../assets/images/art/sofa.png',
       sound: '',
-      words: []
+      words: [w.sofa, w.zebra]
     },
     {
       label: 'e',
       img: '../../assets/images/art/key.png',
       sound: '',
-      words: []
+      words: [w.key, w.zebra, w.tree]
     },
     {
       label: 'e',
       img: '../../assets/images/art/elf.png',
       sound: '',
-      words: []
+      words: [w.elf, w.bed, w.net]
     },
     {
       label: 'e',
       img: '../../assets/images/art/oven.png',
       sound: '',
-      words: []
+      words: [w.oven, w.oven, w.kitten]
     },
     {
       label: 'i',
       img: '../../assets/images/art/ice.png',
       sound: '',
-      words: []
+      words: [w.ice, w.climb]
     },
     {
       label: 'i',
       img: '../../assets/images/art/mittens.png',
       sound: '',
-      words: []
+      words: [w.mittens, w.fish]
     },
     {
       label: 'i',
       img: '../../assets/images/art/rabbit.png',
       sound: '',
-      words: []
+      words: [w.rabbit, w.pencil, w.family]
     },
     {
       label: 'o',
       img: '../../assets/images/art/old.png',
       sound: '',
-      words: []
+      words: [w.old, w.mole, w.polar_bear]
     },
     {
       label: 'o',
       img: '../../assets/images/art/oven.png',
       sound: '',
-      words: []
+      words: [w.oven, w.wagon]
     },
     {
       label: 'u',
       img: '../../assets/images/art/unicycle.png',
       sound: '',
-      words: []
+      words: [w.unicycle, w.unicorn]
     },
     {
       label: 'u',
       img: '../../assets/images/art/tuba.png',
       sound: '',
-      words: []
+      words: [w.tuba, w.blue]
     },
     {
       label: 'u',
       img: '../../assets/images/art/bug.png',
       sound: '',
-      words: []
+      words: [w.bug]
+    },
+    {
+      label: 'y',
+      img: '../../assets/images/art/yellow.png',
+      sound: '',
+      words: [w.yellow, w.yo_yo]
     },
     {
       label: 'y',
       img: '../../assets/images/art/cry.png',
       sound: '',
-      words: []
+      words: [w.cry, w.fly, w.sky]
     },
     {
       label: 'y',
       img: '../../assets/images/art/baby.png',
       sound: '',
-      words: []
+      words: [w.baby, w.candy, w.sleepy]
     },
 ];

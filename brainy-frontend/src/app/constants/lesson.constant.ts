@@ -1317,9 +1317,9 @@ export const soap: IPhoneme = {
 }
 
 export const sob: IPhoneme = {
-    label: 'noise',
-    img: 'assets/images/art/noise.png',
-    sound: '../../assets/sounds/noise.mp3',
+    label: 'sob',
+    img: 'assets/images/art/sob.png',
+    sound: '../../assets/sounds/sob.mp3',
     words: []
 }
 

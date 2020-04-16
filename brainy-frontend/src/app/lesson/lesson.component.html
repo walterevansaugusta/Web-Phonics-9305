@@ -6,12 +6,12 @@
     </div>
     <div class="row no-gutters pb-3">
         <div class="col-auto mr-auto">
-            <button class="btn btn-logout" type="button">
+            <button *ngIf="lessonIndex > 0" class="btn btn-logout" type="button" (click)="onLeftArrow()">
                 <img src="assets/images/left_arrow.png" width="32" height="32" alt="">
             </button>
         </div>
         <div class="col-auto">
-            <button class="btn btn-logout" type="button">
+            <button *ngIf="lessonIndex < chosenCategoryList.length - 1" class="btn btn-logout" type="button" (click)="onRightArrow()">
                 <img src="assets/images/right_arrow.png" width="32" height="32" alt="">
             </button>
         </div>

@@ -23,8 +23,9 @@ export class LessonComponent implements OnInit {
   chosenPhoneme: IPhoneme;
   chosenCategory: ICategory;
   chosenCategoryList: IPhoneme[];
-  isDuplicate = false;
+  lessonIndex: number;
   header: string;
+  isDuplicate = false;
 
   ngOnInit() {
     const categoryList = this.stateService.getAll();
@@ -33,15 +34,25 @@ export class LessonComponent implements OnInit {
       return this.isDuplicate ? phon.dupKey === this.catParam
         : phon.label === this.catParam;
     });
-    console.log(this.chosenPhoneme);
-    console.log(this.catParam);
+
     if (!this.chosenPhoneme) {
       this.router.navigateByUrl('/home');
     }
     this.chosenCategory = this.chosenPhoneme['category'];
     this.chosenCategoryList = this.stateService.getCategory(this.chosenCategory['key']);
-    console.log(this.chosenCategoryList);
+    this.lessonIndex = this.chosenCategoryList.indexOf(this.chosenPhoneme);
+    console.log(this.lessonIndex);
     this.header = this.chosenPhoneme.label;
+  }
+
+  onLeftArrow() {
+    this.lessonIndex--;
+    this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
+  }
+
+  onRightArrow() {
+    this.lessonIndex++;
+    this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
   }
 
 }

@@ -499,7 +499,7 @@ export const foal: IPhoneme = {
 
 export const foot: IPhoneme = {
     label: 'foot',
-    img: 'assets/images/art/foot.png',
+    img: 'assets/images/vowel_pairs/foot.png',
     sound: '../../assets/sounds/foot.mp3',
 
 }
@@ -730,7 +730,7 @@ export const jacket: IPhoneme = {
 
 export const jay: IPhoneme = {
     label: 'jay',
-    img: 'assets/images/art/jay.png',
+    img: 'assets/images/vowel_pairs/jay.png',
     sound: '../../assets/sounds/jay.mp3',
 
 }
@@ -828,7 +828,7 @@ export const lamb: IPhoneme = {
 
 export const leaf: IPhoneme = {
     label: 'leaf',
-    img: 'assets/images/art/leaf.png',
+    img: 'assets/images/vowel_pairs/leaf.png',
     sound: '../../assets/sounds/leaf.mp3',
 
 }
@@ -996,7 +996,7 @@ export const net: IPhoneme = {
 
 export const noise: IPhoneme = {
     label: 'noise',
-    img: 'assets/images/art/noise.png',
+    img: 'assets/images/vowel_pairs/noise.png',
     sound: '../../assets/sounds/noise.mp3',
 
 }
@@ -1185,7 +1185,7 @@ export const rabbit: IPhoneme = {
 
 export const rainbow: IPhoneme = {
     label: 'rainbow',
-    img: 'assets/images/art/rainbow.png',
+    img: 'assets/images/vowel_pairs/rainbow.png',
     sound: '../../assets/sounds/rainbow.mp3',
 
 }
@@ -1227,7 +1227,7 @@ export const rug: IPhoneme = {
 
 export const sail: IPhoneme = {
     label: 'sail',
-    img: 'assets/images/art/sail.png',
+    img: 'assets/images/vowel_pairs/sail.png',
     sound: '../../assets/sounds/sail.mp3',
 
 }
@@ -1402,7 +1402,7 @@ export const toxic: IPhoneme = {
 
 export const toys: IPhoneme = {
     label: 'toys',
-    img: 'assets/images/art/toys.png',
+    img: 'assets/images/vowel_pairs/toys.png',
     sound: '../../assets/sounds/toys.mp3',
 
 }

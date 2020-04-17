@@ -1,18 +1,20 @@
 <div class="root">
   <navbar></navbar>
-  <div class="container px-lg-5">
-    <div class="row mx-lg-n5 py-3 px-lg-5">
-      <div class="col-md-6 offset-md-3 py-3 px-lg-5 text-center font-weight-bold header">CATEGORIES</div>
+  <div class="container">
+    <div class="row mx-lg-n5 py-2 px-lg-5">
+      <div class="col-md-6 offset-md-3 py-2 px-lg-5 text-center font-weight-bold header">CATEGORIES</div>
     </div>
-    <div *ngIf="categoryImgs" class="row mx-lg-n5 justify-content-around">
-      <img *ngFor="let image of categoryImgs" [src]="image.img" class="img-thumbnail category col-sm-4" (click)="onCategoryClick(image)">
+    <div *ngIf="categoryImgs" class="category-container">
+      <img *ngFor="let image of categoryImgs" [src]="image.img" class="category" (click)="onCategoryClick(image)">
     </div>
-    <div class="row mx-lg-n5 px-lg-5 pt-3 pb-5">
+    <div class="row mx-lg-n5 px-lg-5 pt-3">
       <div class="col-md-2 offset-md-5 text-center">
         <button class="btn btn-show rounded-pill" type="button" (click)="onShowAll()">SHOW ALL</button>
       </div>
-      <div class="col-md-2 offset-md-5 text-center">
-        <button class="btn btn-show rounded-pill" type="button" (click)="onTakeQuiz()">TAKE QUIZ</button>
+    </div>
+    <div class="row pb-5 pl-3 pt-4">
+      <div class="col-md-3 offset-md-4 text-center">
+        <button class="btn btn-show rounded-pill quiz" type="button" (click)="onTakeQuiz()">TAKE QUIZ</button>
       </div>
     </div>
   </div>

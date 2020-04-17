@@ -499,7 +499,7 @@ export const foal: IPhoneme = {
 
 export const foot: IPhoneme = {
     label: 'foot',
-    img: 'assets/images/art/foot.png',
+    img: 'assets/images/vowel_pairs/foot.png',
     sound: '../../assets/sounds/foot.mp3',
 
 }
@@ -730,7 +730,7 @@ export const jacket: IPhoneme = {
 
 export const jay: IPhoneme = {
     label: 'jay',
-    img: 'assets/images/art/jay.png',
+    img: 'assets/images/vowel_pairs/jay.png',
     sound: '../../assets/sounds/jay.mp3',
 
 }
@@ -828,7 +828,7 @@ export const lamb: IPhoneme = {
 
 export const leaf: IPhoneme = {
     label: 'leaf',
-    img: 'assets/images/art/leaf.png',
+    img: 'assets/images/vowel_pairs/leaf.png',
     sound: '../../assets/sounds/leaf.mp3',
 
 }
@@ -996,7 +996,7 @@ export const net: IPhoneme = {
 
 export const noise: IPhoneme = {
     label: 'noise',
-    img: 'assets/images/art/noise.png',
+    img: 'assets/images/vowel_pairs/noise.png',
     sound: '../../assets/sounds/noise.mp3',
 
 }
@@ -1185,7 +1185,7 @@ export const rabbit: IPhoneme = {
 
 export const rainbow: IPhoneme = {
     label: 'rainbow',
-    img: 'assets/images/art/rainbow.png',
+    img: 'assets/images/vowel_pairs/rainbow.png',
     sound: '../../assets/sounds/rainbow.mp3',
 
 }
@@ -1227,7 +1227,7 @@ export const rug: IPhoneme = {
 
 export const sail: IPhoneme = {
     label: 'sail',
-    img: 'assets/images/art/sail.png',
+    img: 'assets/images/vowel_pairs/sail.png',
     sound: '../../assets/sounds/sail.mp3',
 
 }
@@ -1402,7 +1402,7 @@ export const toxic: IPhoneme = {
 
 export const toys: IPhoneme = {
     label: 'toys',
-    img: 'assets/images/art/toys.png',
+    img: 'assets/images/vowel_pairs/toys.png',
     sound: '../../assets/sounds/toys.mp3',
 
 }
@@ -1922,5 +1922,315 @@ export const yo_yo: IPhoneme = {
     label: 'yo-yo',
     img: 'assets/images/consonants/yoyo.png',
     sound: '../../assets/sounds/yoyo.mp3',
+
+}
+
+// Missing Images
+
+export const chimney: IPhoneme = {
+    label: 'chimney',
+    img: 'assets/images/missing_art/chimney.png',
+    sound: '../../assets/sounds/chimney.mp3',
+
+}
+
+export const three: IPhoneme = {
+    label: 'three',
+    img: 'assets/images/missing_art/three.png',
+    sound: '../../assets/sounds/three.mp3',
+
+}
+
+export const whistle: IPhoneme = {
+    label: 'whistle',
+    img: 'assets/images/missing_art/whistle.png',
+    sound: '../../assets/sounds/whistle.mp3',
+
+}
+
+export const wheelchair: IPhoneme = {
+    label: 'wheelchair',
+    img: 'assets/images/missing_art/wheelchair.png',
+    sound: '../../assets/sounds/wheelchair.mp3',
+
+}
+
+export const blanket: IPhoneme = {
+    label: 'blanket',
+    img: 'assets/images/missing_art/blanket.png',
+    sound: '../../assets/sounds/blanket.mp3',
+
+}
+
+export const juggler: IPhoneme = {
+    label: 'juggler',
+    img: 'assets/images/missing_art/juggler.png',
+    sound: '../../assets/sounds/juggler.mp3',
+
+}
+
+export const angry: IPhoneme = {
+    label: 'angry',
+    img: 'assets/images/missing_art/angry.png',
+    sound: '../../assets/sounds/angry.mp3',
+
+}
+
+export const playground: IPhoneme = {
+    label: 'playground',
+    img: 'assets/images/missing_art/playground.png',
+    sound: '../../assets/sounds/playground.mp3',
+
+}
+
+export const airplane: IPhoneme = {
+    label: 'airplane',
+    img: 'assets/images/missing_art/airplane.png',
+    sound: '../../assets/sounds/airplane.mp3',
+
+}
+
+export const pretzel: IPhoneme = {
+    label: 'pretzel',
+    img: 'assets/images/missing_art/pretzel.png',
+    sound: '../../assets/sounds/pretzel.mp3',
+
+}
+
+export const proud: IPhoneme = {
+    label: 'proud',
+    img: 'assets/images/missing_art/proud.png',
+    sound: '../../assets/sounds/proud.mp3',
+
+}
+
+export const skunk: IPhoneme = {
+    label: 'skunk',
+    img: 'assets/images/missing_art/skunk.png',
+    sound: '../../assets/sounds/skunk.mp3',
+
+}
+
+export const spoon: IPhoneme = {
+    label: 'spoon',
+    img: 'assets/images/missing_art/spoon.png',
+    sound: '../../assets/sounds/spoon.mp3',
+
+}
+
+export const sweets: IPhoneme = {
+    label: 'sweets',
+    img: 'assets/images/missing_art/sweets.png',
+    sound: '../../assets/sounds/sweets.mp3',
+
+}
+
+export const tricycle: IPhoneme = {
+    label: 'tricycle',
+    img: 'assets/images/missing_art/tricycle.png',
+    sound: '../../assets/sounds/tricycle.mp3',
+
+}
+
+export const firetruck: IPhoneme = {
+    label: 'firetruck',
+    img: 'assets/images/missing_art/firetruck.png',
+    sound: '../../assets/sounds/firetruck.mp3',
+
+}
+
+export const balance: IPhoneme = {
+    label: 'balance',
+    img: 'assets/images/missing_art/balance.png',
+    sound: '../../assets/sounds/balance.mp3',
+
+}
+
+export const gingerbread_man: IPhoneme = {
+    label: 'gingerbread man',
+    img: 'assets/images/missing_art/gingerbread_man.png',
+    sound: '../../assets/sounds/gingerbread_man.mp3',
+
+}
+
+export const giraffe: IPhoneme = {
+    label: 'giraffe',
+    img: 'assets/images/missing_art/giraffe.png',
+    sound: '../../assets/sounds/giraffe.mp3',
+
+}
+
+export const dogs: IPhoneme = {
+    label: 'dogs',
+    img: 'assets/images/missing_art/dogs.png',
+    sound: '../../assets/sounds/dogs.mp3',
+
+}
+
+export const skis: IPhoneme = {
+    label: 'skis',
+    img: 'assets/images/missing_art/skis.png',
+    sound: '../../assets/sounds/skis.mp3',
+
+}
+
+export const crayons: IPhoneme = {
+    label: 'crayons',
+    img: 'assets/images/missing_art/crayons.png',
+    sound: '../../assets/sounds/crayons.mp3',
+
+}
+
+export const eat: IPhoneme = {
+    label: 'eat',
+    img: 'assets/images/missing_art/eat.png',
+    sound: '../../assets/sounds/eat.mp3',
+
+}
+
+export const eagle: IPhoneme = {
+    label: 'eagle',
+    img: 'assets/images/missing_art/eagle.png',
+    sound: '../../assets/sounds/eagle.mp3',
+
+}
+
+export const coat: IPhoneme = {
+    label: 'coat',
+    img: 'assets/images/missing_art/coat.png',
+    sound: '../../assets/sounds/coat.mp3',
+
+}
+
+export const snow: IPhoneme = {
+    label: 'snow',
+    img: 'assets/images/missing_art/snow.png',
+    sound: '../../assets/sounds/snow.mp3',
+
+}
+
+export const bow_and_arrows: IPhoneme = {
+    label: 'bow and arrows',
+    img: 'assets/images/missing_art/bow_and_arrows.png',
+    sound: '../../assets/sounds/bow_and_arrows.mp3',
+
+}
+
+export const wood: IPhoneme = {
+    label: 'wood',
+    img: 'assets/images/missing_art/wood.png',
+    sound: '../../assets/sounds/wood.mp3',
+
+}
+
+export const cookies: IPhoneme = {
+    label: 'cookies',
+    img: 'assets/images/missing_art/cookies.png',
+    sound: '../../assets/sounds/cookies.mp3',
+
+}
+
+export const poison: IPhoneme = {
+    label: 'poison',
+    img: 'assets/images/missing_art/poison.png',
+    sound: '../../assets/sounds/poison.mp3',
+
+}
+
+export const coin: IPhoneme = {
+    label: 'coin',
+    img: 'assets/images/missing_art/coin.png',
+    sound: '../../assets/sounds/coin.mp3',
+
+}
+
+export const boy: IPhoneme = {
+    label: 'boy',
+    img: 'assets/images/missing_art/boy.png',
+    sound: '../../assets/sounds/boy.mp3',
+
+}
+
+export const oyster: IPhoneme = {
+    label: 'oyster',
+    img: 'assets/images/missing_art/oyster.png',
+    sound: '../../assets/sounds/oyster.mp3',
+
+}
+
+export const crane: IPhoneme = {
+    label: 'crane',
+    img: 'assets/images/missing_art/crane.png',
+    sound: '../../assets/sounds/crane.mp3',
+
+}
+
+export const cat: IPhoneme = {
+    label: 'cat',
+    img: 'assets/images/missing_art/cat.png',
+    sound: '../../assets/sounds/cat.mp3',
+
+}
+
+export const canoe: IPhoneme = {
+    label: 'canoe',
+    img: 'assets/images/missing_art/canoe.png',
+    sound: '../../assets/sounds/canoe.mp3',
+
+}
+
+export const camel: IPhoneme = {
+    label: 'camel',
+    img: 'assets/images/missing_art/camel.png',
+    sound: '../../assets/sounds/camel.mp3',
+
+}
+
+export const life_jacket: IPhoneme = {
+    label: 'life jacket',
+    img: 'assets/images/missing_art/life_jacket.png',
+    sound: '../../assets/sounds/life_jacket.mp3',
+
+}
+
+export const hit: IPhoneme = {
+    label: 'hit',
+    img: 'assets/images/missing_art/hit.png',
+    sound: '../../assets/sounds/hit.mp3',
+
+}
+
+export const onion: IPhoneme = {
+    label: 'onion',
+    img: 'assets/images/missing_art/onion.png',
+    sound: '../../assets/sounds/onion.mp3',
+
+}
+
+export const binoculars: IPhoneme = {
+    label: 'binoculars',
+    img: 'assets/images/missing_art/binoculars.png',
+    sound: '../../assets/sounds/binoculars.mp3',
+
+}
+
+export const dune_buggy: IPhoneme = {
+    label: 'dune buggy',
+    img: 'assets/images/missing_art/dune_buggy.png',
+    sound: '../../assets/sounds/dune_buggy.mp3',
+
+}
+
+export const bucket: IPhoneme = {
+    label: 'bucket',
+    img: 'assets/images/missing_art/bucket.png',
+    sound: '../../assets/sounds/bucket.mp3',
+
+}
+
+export const chipmunk: IPhoneme = {
+    label: 'chipmunk',
+    img: 'assets/images/missing_art/chipmunk.png',
+    sound: '../../assets/sounds/chipmunk.mp3',
 
 }

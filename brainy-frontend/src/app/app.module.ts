@@ -18,6 +18,7 @@ import { LessonComponent } from './lesson/lesson.component';
 import { UserComponent } from './user/user.component';
 import { StarsComponent } from './stars/stars.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { QuizLandingComponent } from './quiz-landing/quiz-landing.component';
 
 const routes: Routes = [
   {
@@ -61,6 +62,10 @@ const routes: Routes = [
   {
     path: 'quiz/:id',
     component: QuizComponent
+  }, 
+  { 
+    path: 'quiz-landing', 
+    component: QuizLandingComponent
   }
 ];
 
@@ -77,6 +82,7 @@ const routes: Routes = [
     UserComponent,
     StarsComponent,
     QuizComponent,
+    QuizLandingComponent,
   ],
   imports: [
     BrowserModule,

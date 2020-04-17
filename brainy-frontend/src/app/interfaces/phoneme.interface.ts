@@ -2,7 +2,7 @@ export interface IPhoneme {
   label: string;
   img: string;
   sound: string;
-  words: IPhoneme[];
+  words?: IPhoneme[];
   category?: ICategory;
   dupKey?: string;
 }

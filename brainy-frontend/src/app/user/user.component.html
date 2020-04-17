@@ -4,14 +4,91 @@
         <h1>{{ userName }}'s progress</h1>
         <hr>
         <br>
-        <h4>Overall Progress</h4>
+        <h3>Overall Progress</h3>
+        <p *ngIf="userProgress">
+        </p>
         <div class="row mx-lg-n5">
-            <div class="col-md-6 offset-md-3 pb-1 px-lg-5">
-                <div class="progress" style="height: 30px;">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            <div class="col-md-10 offset-md-1 px-lg-5">
+                <div class="progress" style="height: 43px;">
+                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{totalPercent}}%" attr.aria-valuenow="{{totalPercent}}" aria-valuemin="0" aria-valuemax="100"> {{totalPercent}}% </div>
                 </div>
             </div>
         </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Vowels Progress</h5>
+                    <div class="row mx-lg-n5">
+                        <div class="col-md-8 offset-md-2 pb-3">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentVowels}}%" attr.aria-valuenow="{{percentVowels}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowels}}% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Vowels Pairs Progress</h5>
+                    <div class="row mx-lg-n5">
+                        <div class="col-md-8 offset-md-2 pb-3">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentVowelPairs}}%" attr.aria-valuenow="{{percentVowelPairs}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowelPairs}}% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Consonants Progress</h5>
+                    <div class="row mx-lg-n5">
+                        <div class="col-md-8 offset-md-2 pb-3">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentConsonants}}%" attr.aria-valuenow="{{percentConsonants}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonants}}% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Consonant Pairs Progress</h5>
+                    <div class="row mx-lg-n5">
+                        <div class="col-md-8 offset-md-2 pb-3">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentConsonantPairs}}%" attr.aria-valuenow="{{percentConsonantPairs}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonantPairs}}% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Consonant Blends Progress</h5>
+                    <div class="row mx-lg-n5">
+                        <div class="col-md-8 offset-md-2 pb-3">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentConsonantBlends}}%" attr.aria-valuenow="{{percentConsonantBlends}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonantBlends}}% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h5>Vowel Consonant Blends Progress</h5>
+                    <div class="row mx-lg-n5">
+                        <div class="col-md-8 offset-md-2 pb-3">
+                            <div class="progress" style="height: 30px;">
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentVowelConsonantBlends}}%" attr.aria-valuenow="{{percentVowelConsonantBlends}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowelConsonantBlends}}% </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     </div>
 </div>
 

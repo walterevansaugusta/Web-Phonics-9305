@@ -14,49 +14,49 @@ export const AY: IPhoneme = {
   img: '../../assets/images/vowel_pairs/jay.png',
   sound: '',
   category: vowelPairs,
-  words: [w.jay]
+  words: [w.jay, w.crayons, w. playground]
 };
 export const EA: IPhoneme = {
   label: 'ea',
   img: '../../assets/images/vowel_pairs/leaf.png',
   sound: '',
   category: vowelPairs,
-  words: [w.leaf]
+  words: [w.leaf, w.eat, w.eagle]
 };
 export const OA: IPhoneme = {
   label: 'oa',
   img: '../../assets/images/vowel_pairs/goat.png',
   sound: '',
   category: vowelPairs,
-  words: [w.goat, w.boat]
+  words: [w.goat, w.boat, w.coat]
 };
 export const OW: IPhoneme = {
   label: 'ow',
   img: '../../assets/images/vowel_pairs/rainbow.png',
   sound: '',
   category: vowelPairs,
-  words: [w.rainbow]
+  words: [w.rainbow, w.snow, w.bow_and_arrows]
 };
 export const OO: IPhoneme = {
   label: 'oo',
   img: '../../assets/images/vowel_pairs/foot.png',
   sound: '',
   category: vowelPairs,
-  words: [w.foot]
+  words: [w.foot, w.wood, w.cookies]
 };
 export const OI: IPhoneme = {
   label: 'oi',
   img: '../../assets/images/vowel_pairs/noise.png',
   sound: '',
   category: vowelPairs,
-  words: [w.noise]
+  words: [w.noise, w.poison, w.coin]
 };
 export const OY: IPhoneme = {
   label: 'oy',
   img: '../../assets/images/vowel_pairs/toys.png',
   sound: '',
   category: vowelPairs,
-  words: [w.toys]
+  words: [w.toys, w.oyster, w.boy]
 };
 
 
@@ -70,7 +70,7 @@ export const A1: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':a1',
-  words: [w.ape, w.skate]
+  words: [w.ape, w.skate, w.crane]
 };
 export const A2: IPhoneme = {
   label: 'a',
@@ -78,7 +78,7 @@ export const A2: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':a2',
-  words: [w.bat, w.wagon]
+  words: [w.bat, w.wagon, w.cat]
 };
 export const A3: IPhoneme = {
   label: 'a',
@@ -86,7 +86,7 @@ export const A3: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':a3',
-  words: [w.sofa, w.zebra]
+  words: [w.sofa, w.zebra, w.canoe]
 };
 export const E1: IPhoneme = {
   label: 'e',
@@ -110,7 +110,7 @@ export const E3: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':e3',
-  words: [w.oven, w.kitten]
+  words: [w.oven, w.kitten, w.camel]
 };
 export const I1: IPhoneme = {
   label: 'i',
@@ -118,7 +118,7 @@ export const I1: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':i1',
-  words: [w.ice, w.climb]
+  words: [w.ice, w.climb, w.life_jacket]
 };
 export const I2: IPhoneme = {
   label: 'i',
@@ -126,7 +126,7 @@ export const I2: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':i2',
-  words: [w.mittens, w.fish]
+  words: [w.mittens, w.fish, w.hit]
 };
 export const I3: IPhoneme = {
   label: 'i',
@@ -150,7 +150,7 @@ export const O2: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':o2',
-  words: [w.oven, w.wagon]
+  words: [w.oven, w.wagon, w.onion]
 };
 export const U1: IPhoneme = {
   label: 'u',
@@ -158,7 +158,7 @@ export const U1: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':u1',
-  words: [w.unicycle, w.unicorn]
+  words: [w.unicycle, w.unicorn, w.binoculars]
 };
 export const U2: IPhoneme = {
   label: 'u',
@@ -166,7 +166,7 @@ export const U2: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':u2',
-  words: [w.tuba, w.blue]
+  words: [w.tuba, w.blue, w.dune_buggy]
 };
 export const U3: IPhoneme = {
   label: 'u',
@@ -174,7 +174,7 @@ export const U3: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: ':u3',
-  words: [w.bug]
+  words: [w.bug, w.bucket, w.chipmunk]
 };
 export const YVowel1: IPhoneme = {
   label: 'y',
@@ -198,7 +198,7 @@ export const YVowel3: IPhoneme = {
   sound: '',
   category: vowels,
   dupKey: 'y3',
-  words: [w.yellow, w.yo_yo]
+  words: [w.yellow, w.yo_yo, w.crayons]
 };
 
 

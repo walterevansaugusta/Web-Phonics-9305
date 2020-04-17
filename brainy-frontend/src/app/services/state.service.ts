@@ -12,6 +12,7 @@ export class StateService {
   constructor() { }
 
   public categoryState: ICategory;
+  quizPhoneme: IPhoneme;
 
   public getCategory(key: string) {
     if (key === 'consonants') {

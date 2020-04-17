@@ -2,16 +2,20 @@
     <navbar></navbar>
     <div class="row quiz">
         <div class="col-md-3" id="phoneme">
-            <h1>b</h1>
+            <h1>{{ phoneme.label }}</h1>
+            <button (click)="onAudioPlay()">Play Sounds</button>
             <br>
             <br>
-            <stars></stars>
+            <stars
+              [phoneme]="phoneme"
+              >
+            </stars>
         </div>
         <div class="row col-md-9" id="words">
-            <div id="card" class="col-sm-6" *ngFor="let w of choices">
+            <div id="card" class="col-sm-6" *ngFor="let w of choices" (click)="onCardClick(w)">
                 <div>
-                    <h3 *ngIf="clicked">{{w.label}}</h3>
-                    <img id="image" [src]="w.img" width="200" height="200">
+                    <h3 *ngIf="w['isClicked']">{{w['word'].label}}</h3>
+                    <img id="image" [src]="w['word'].img" width="200" height="200">
                 </div>
             </div>
         </div>

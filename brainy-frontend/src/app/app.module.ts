@@ -54,12 +54,12 @@ const routes: Routes = [
     redirectTo: '/landing',
     pathMatch: 'full'
   },
-  { 
-    path: 'user', 
-    component: UserComponent, 
-  }, 
-  { 
-    path: 'quiz', 
+  {
+    path: 'user',
+    component: UserComponent,
+  },
+  {
+    path: 'quiz/:id',
     component: QuizComponent
   }
 ];

@@ -1,0 +1,35 @@
+.container {
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 60px;
+}
+
+p { 
+    font-size: 22px;
+    font-family: "Comic Sans MS";
+}
+
+.btn-show {
+    border: white solid 2px;
+    padding: 15px;
+    font-size: 30px;
+    background-color: #b57fe3;
+    width: 12%;
+    color: whitesmoke;
+}
+
+.checked { 
+    color: orange;
+}
+
+.fa-star { 
+    // padding: 0px 4px 0px 4px;
+    font-size: 25px;
+}

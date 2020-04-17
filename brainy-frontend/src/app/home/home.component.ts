@@ -37,4 +37,8 @@ export class HomeComponent implements OnInit {
   onShowAll() {
     this.router.navigate(['category', 'all']);
   }
+
+  onTakeQuiz() { 
+    this.router.navigate(['../quiz-landing/'])
+  }
 }

@@ -15,7 +15,7 @@ h1 {
 
 .btn-show {
   border: white solid 2px;
-  padding: 15px;
+  padding: 12px;
   font-size: 30px;
   background-color: #b57fe3;
 }
@@ -24,15 +24,46 @@ h1 {
   font-size: 35px;
 }
 
+.progress {
+  border: white solid 3px;
+}
+
+.no-gutters {
+  margin: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.category-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .category {
   border: #b57fe3 solid 1px;
   border-radius: 45px;
-  width: 240px;
-  height: 280px;
-  // margin-right: 5px;
-  margin-bottom: 20px;
+  width: 325px;
+  height: 240px;
+  margin-top: 5px;
+  line-height: 150px;
+
+  &:nth-last-child(-n+3) {
+    margin-top: 30px;
+  }
 }
 
-.progress {
-  border: white solid 3px;
+.quiz {
+  margin-left: 80px;
+  background-color: greenyellow;
+  height: 55px;
+  padding-top: 4px;
+  padding-bottom: 14px;
 }

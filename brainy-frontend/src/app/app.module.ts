@@ -16,6 +16,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { CardComponent } from './categories/card/card.component';
 import { LessonComponent } from './lesson/lesson.component';
 import { UserComponent } from './user/user.component';
+import { StarsComponent } from './stars/stars.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
   {
@@ -55,6 +57,10 @@ const routes: Routes = [
   { 
     path: 'user', 
     component: UserComponent, 
+  }, 
+  { 
+    path: 'quiz', 
+    component: QuizComponent
   }
 ];
 
@@ -69,6 +75,8 @@ const routes: Routes = [
     CardComponent,
     LessonComponent,
     UserComponent,
+    StarsComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,

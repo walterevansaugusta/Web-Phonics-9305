@@ -317,7 +317,7 @@ export const R: IPhoneme = {
 };
 export const S1: IPhoneme = {
   label: 's',
-  img: '../../assets/images/consonants/suitcase.png',
+  img: '../../assets/images/consonants/suitcases.png',
   sound: '',
   category: consonants,
   dupKey: ':s1',

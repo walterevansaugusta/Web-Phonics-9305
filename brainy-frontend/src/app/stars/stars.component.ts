@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { UserService } from './../services/user.service';
+import { Component, OnInit, Input } from '@angular/core';
+import { IPhoneme } from '../interfaces/phoneme.interface';
 
 @Component({
   selector: 'stars',
@@ -7,11 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarsComponent implements OnInit {
 
-  stars = [1,2,3,4,5,6,7];
+  @Input() phoneme: IPhoneme;
 
-  constructor() { }
+  // stars = [1,2,3,4,5,6,7];
+  stars;
+
+  constructor(
+    private userService: UserService,
+  ) { }
 
   ngOnInit() {
+    const category = this.phoneme.category.label.replace(/\s/g, '');
+    console.log(category);
+    const phonCat = this.userService.userProgress[category];
+
+    let phonStars: number;
+    this.phoneme.dupKey ? phonStars = phonCat[this.phoneme.dupKey]
+      : phonStars = phonCat[this.phoneme.label];
+    this.stars = Array(phonStars).fill(0);
   }
 
 }

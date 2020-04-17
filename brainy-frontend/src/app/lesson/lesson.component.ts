@@ -55,9 +55,15 @@ export class LessonComponent implements OnInit {
   }
 
   playAudio(sound) {
-    let audio = new Audio();
+    const audio = new Audio();
     audio.src = sound;
     audio.load();
     audio.play();
+  }
+
+  onQuiz() {
+    this.stateService.quizPhoneme = this.chosenPhoneme;
+    this.chosenPhoneme.dupKey ? this.router.navigate(['quiz', this.chosenPhoneme.dupKey])
+      : this.router.navigate(['quiz', this.chosenPhoneme.label]);
   }
 }

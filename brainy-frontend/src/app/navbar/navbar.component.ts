@@ -22,19 +22,6 @@ export class NavbarComponent implements OnInit {
         res => {
           this.userName = res['user']['name']
           this.userService.userProgress = res['user']['progress'];
-
-          // Temporary to test new API
-          const update = {
-            category: "VowelPairs",
-            constant: "ai",
-            stars: 12
-          };
-          this.userService.updateUserProgress(update)
-            .subscribe(
-              res => {},
-              err => {}
-            );
-          // End of temporary block
         },
         err => {}
       );

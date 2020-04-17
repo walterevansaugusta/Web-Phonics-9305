@@ -18,7 +18,7 @@
     </div>
     <div class="row">
         <div *ngFor="let word of chosenPhoneme.words" class="col-md-4">
-            <img id="sound_img" src="https://img.icons8.com/windows/32/000000/room-sound.png"/>
+            <img id="sound_img" src="https://img.icons8.com/windows/32/000000/room-sound.png" class="sound-icon" (click)="playAudio(word.sound)"/>
             <img id="image" [src]="word.img" width="260" height="230" class="img-thumbnail lesson" (click)="playAudio(word.sound)">
         </div>
     </div>

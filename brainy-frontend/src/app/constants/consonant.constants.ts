@@ -8,8 +8,7 @@ export const CH: IPhoneme = {
   img: '../../assets/images/consonant_pairs/chop.png',
   sound: '',
   category: consonantPairs,
-  words: [words.chop, words.chimp]
-  // words.chipmunk, words.chimney, words.catch
+  words: [words.chop, words.chimp, words.chimney]
 };
 export const NG: IPhoneme = {
   label: 'ng',
@@ -24,23 +23,20 @@ export const SH: IPhoneme = {
   sound: '',
   category: consonantPairs,
   words: [words.fish, words.shovel, words.sheep]
-  // words.shoes
 };
 export const TH: IPhoneme = {
   label: 'th',
   img: '../../assets/images/consonant_pairs/thief.png',
   sound: '',
   category: consonantPairs,
-  words: [words.moth, words.thief]
-  // words.three, words.throne
+  words: [words.moth, words.thief, words.three]
 };
 export const WH: IPhoneme = {
   label: 'wh',
   img: '../../assets/images/consonant_pairs/whale.png',
   sound: '',
   category: consonantPairs,
-  words: [words.whale]
-  // words.whistle, words.wheelchair
+  words: [words.whale, words.whistle, words.wheelchair]
 };
 
 export const ConsonantPairs: IPhoneme[] = [
@@ -52,8 +48,7 @@ export const BL: IPhoneme = {
   img: '../../assets/images/consonant_blends/blaze.png',
   sound: '',
   category: consonantBlends,
-  words: [words.blue, words.blaze]
-  // words.blanket, words.bloodhound
+  words: [words.blue, words.blaze, words.blanket]
 };
 export const BR: IPhoneme = {
   label: 'br',
@@ -61,7 +56,6 @@ export const BR: IPhoneme = {
   sound: '',
   category: consonantBlends,
   words: [words.broom, words.bridge, words.bride]
-  // words.break
 };
 export const CL: IPhoneme = {
   label: 'cl',
@@ -76,7 +70,6 @@ export const CR: IPhoneme = {
   sound: '',
   category: consonantBlends,
   words: [words.crab, words.croc, words.cry]
-  // words.crane, words.cradle
 };
 export const DR: IPhoneme = {
   label: 'dr',
@@ -104,42 +97,35 @@ export const GL: IPhoneme = {
   img: '../../assets/images/consonant_blends/glove.png',
   sound: '',
   category: consonantBlends,
-  words: [words.glove, words.glum]
+  words: [words.glove, words.glum, words.juggler]
 };
 export const GR: IPhoneme = {
   label: 'gr',
   img: '../../assets/images/consonant_blends/grapes.png',
   sound: '',
   category: consonantBlends,
-  words: [words.grapes, words.green]
+  words: [words.grapes, words.green, words.angry]
 };
 export const PL: IPhoneme = {
   label: 'pl',
   img: '../../assets/images/consonant_blends/plug.png',
   sound: '',
   category: consonantBlends,
-  words: [words.plug]
+  words: [words.plug, words.playground, words.airplane]
 };
 export const PR: IPhoneme = {
   label: 'pr',
   img: '../../assets/images/consonant_blends/prize.png',
   sound: '',
   category: consonantBlends,
-  words: [words.prize]
-};
-export const SC: IPhoneme = {
-  label: 'sc',
-  img: '../../assets/images/consonant_blends/scarf.png',
-  sound: '',
-  category: consonantBlends,
-  words: [words.scarf]
+  words: [words.prize, words.pretzel, words.proud]
 };
 export const SK: IPhoneme = {
   label: 'sk',
   img: '../../assets/images/consonant_blends/skate.png',
   sound: '',
   category: consonantBlends,
-  words: [words.skate, words.sky]
+  words: [words.skate, words.sky, words.skunk]
 };
 export const SL: IPhoneme = {
   label: 'sl',
@@ -148,23 +134,16 @@ export const SL: IPhoneme = {
   category: consonantBlends,
   words: [words.slide, words.sled, words.sleepy]
 };
-export const SN: IPhoneme = {
-  label: 'sn',
-  img: '../../assets/images/consonant_blends/snout.png',
-  sound: '',
-  category: consonantBlends,
-  words: [words.snout]
-};
 export const SP: IPhoneme = {
   label: 'sp',
   img: '../../assets/images/consonant_blends/spider.png',
   sound: '',
   category: consonantBlends,
-  words: [words.spider, words.spyglass]
+  words: [words.spider, words.spyglass, words.spoon]
 };
 export const ST: IPhoneme = {
   label: 'st',
-  img: '../../assets/images/consonant/stilts.png',
+  img: '../../assets/images/consonants/stilts.png',
   sound: '',
   category: consonantBlends,
   words: [words.statue, words.stilts, words.steal]
@@ -174,18 +153,18 @@ export const SW: IPhoneme = {
   img: '../../assets/images/consonant_blends/swing.png',
   sound: '',
   category: consonantBlends,
-  words: [words.swim, words.swing]
+  words: [words.swim, words.swing, words.sweets]
 };
 export const TR: IPhoneme = {
   label: 'tr',
   img: '../../assets/images/consonant_blends/tree.png',
   sound: '',
   category: consonantBlends,
-  words: [words.tree]
+  words: [words.tree, words.tricycle, words.firetruck]
 };
 
 export const ConsonantBlends: IPhoneme[] = [
-  BL, BR, CL, CR, DR, FL, FR, GL, GR, PL, PR, SC, SK, SL, SN, SP, ST, SW, TR
+  BL, BR, CL, CR, DR, FL, FR, GL, GR, PL, PR, SK, SL, SP, ST, SW, TR
     // {
     //   label: 'mp',
     //   this label doesn't exist in the mobile app but Walter may still require it
@@ -248,7 +227,7 @@ export const C2: IPhoneme = {
   sound: '',
   category: consonants,
   dupKey: ':c2',
-  words: [words.centipede, words.face]
+  words: [words.centipede, words.face, words.balance]
 };
 export const D: IPhoneme = {
   label: 'd',
@@ -278,7 +257,7 @@ export const G2: IPhoneme = {
   sound: '',
   category: consonants,
   dupKey: ':g2',
-  words: [words.fridge]
+  words: [words.fridge, words.gingerbread_man, words.giraffe]
 };
 export const H: IPhoneme = {
   label: 'h',
@@ -350,7 +329,7 @@ export const S2: IPhoneme = {
   sound: '',
   category: consonants,
   dupKey: ':s2',
-  words: [words.stilts]
+  words: [words.stilts, words.dogs, words.skis]
 };
 export const T: IPhoneme = {
   label: 't',

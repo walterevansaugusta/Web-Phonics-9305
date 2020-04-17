@@ -47,11 +47,15 @@ export class LessonComponent implements OnInit {
   onLeftArrow() {
     this.lessonIndex--;
     this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
+    this.chosenPhoneme.dupKey ? this.router.navigate(['lesson', this.chosenPhoneme.dupKey])
+      : this.router.navigate(['lesson', this.chosenPhoneme.label]);
   }
 
   onRightArrow() {
     this.lessonIndex++;
     this.chosenPhoneme = this.chosenCategoryList[this.lessonIndex];
+    this.chosenPhoneme.dupKey ? this.router.navigate(['lesson', this.chosenPhoneme.dupKey])
+      : this.router.navigate(['lesson', this.chosenPhoneme.label]);
   }
 
   playAudio(sound) {

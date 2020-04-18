@@ -18,10 +18,10 @@ export const ape: IPhoneme = {
     sound: '../../assets/sounds/ape.mp3',
 }
 
-export const artic: IPhoneme = {
-    label: 'artic',
-    img: 'assets/images/art/artic.png',
-    sound: '../../assets/sounds/artic.mp3',
+export const arctic: IPhoneme = {
+    label: 'arctic',
+    img: 'assets/images/art/arctic.png',
+    sound: '../../assets/sounds/arctic.mp3',
 }
 
 export const axe: IPhoneme = {
@@ -2111,8 +2111,8 @@ export const snow: IPhoneme = {
 
 export const bow_and_arrows: IPhoneme = {
     label: 'bow and arrows',
-    img: 'assets/images/missing_art/bow_and_arrows.png',
-    sound: '../../assets/sounds/bow_and_arrows.mp3',
+    img: 'assets/images/missing_art/bowandarrows.png',
+    sound: '../../assets/sounds/bowandarrows.mp3',
 
 }
 

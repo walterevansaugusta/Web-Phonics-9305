@@ -20,11 +20,10 @@ export class StarsComponent implements OnInit {
 
   ngOnInit() {
     const category = this.phoneme.category.label.replace(/\s/g, '');
-    console.log(category);
     const phonCat = this.userService.userProgress[category];
 
     let phonStars: number;
-    this.phoneme.dupKey ? phonStars = phonCat[this.phoneme.dupKey]
+    this.phoneme.dupKey ? phonStars = phonCat[this.phoneme.dupKey.slice(1, this.phoneme.dupKey.length)]
       : phonStars = phonCat[this.phoneme.label];
     this.stars = Array(phonStars).fill(0);
   }

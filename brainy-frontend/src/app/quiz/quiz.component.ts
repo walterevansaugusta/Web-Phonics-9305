@@ -1,7 +1,7 @@
 import { StateService } from './../services/state.service';
 import { IPhoneme } from './../interfaces/phoneme.interface';
 import { Component, OnInit } from '@angular/core';
-import * as words from '../constants/lesson.constant';
+import * as w from '../constants/lesson.constant';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -12,12 +12,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class QuizComponent implements OnInit {
 
   phoneme: IPhoneme;
-  words = [words.bear, words.candy, words.cardinal, words.chop];
   choices = [];
+  quizChoices = [];
+  correctWord: IPhoneme;
   private catParam;
   private choicesInd = 0;
   private interval;
   private isDuplicate = false;
+  private allPhonemes: IPhoneme[];
 
   constructor(
     private stateService: StateService,
@@ -39,14 +41,10 @@ export class QuizComponent implements OnInit {
       this.router.navigateByUrl('/home');
     }
 
-    console.log(this.phoneme);
-    for (const w of this.phoneme.words) {
-      const wordObj = {
-        word: w,
-        isClicked: false,
-      };
-      this.choices.push(wordObj);
-    }
+    this.allPhonemes = this.stateService.getAll();
+    this.correctChoice();
+    this.findRandomChoices();
+    this.shuffleChoices();
   }
 
   onCardClick(word) {
@@ -71,4 +69,55 @@ export class QuizComponent implements OnInit {
     }, 1000);
   }
 
+  private generateRandomQuiz() {
+    const randomIndex = Math.floor(Math.random() * this.allPhonemes.length);
+    this.phoneme = this.allPhonemes[randomIndex];
+
+    const phonWords = this.phoneme.words;
+    const wordIndex = Math.floor(Math.random() * phonWords.length);
+    this.correctWord = phonWords[wordIndex];
+
+    this.findRandomChoices();
+    this.shuffleChoices();
+    console.log(this.quizChoices);
+    console.log(this.phoneme);
+  }
+
+  private correctChoice() {
+    const phonWords = this.phoneme.words;
+    const wordIndex = Math.floor(Math.random() * phonWords.length);
+    this.correctWord = phonWords[wordIndex];
+  }
+
+  private shuffleChoices() {
+    for (let i = this.quizChoices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = this.quizChoices[i];
+      this.quizChoices[i] = this.quizChoices[j];
+      this.quizChoices[j] = temp;
+    }
+  }
+
+  private findRandomChoices() {
+    while (true) {
+      const randInd = Math.floor(Math.random() * (Object.keys(w)).length);
+      const randKey = Object.keys(w)[randInd];
+
+      if (!randKey.includes(this.phoneme.label)) {
+        const randChoice = {
+          word: w[randKey],
+          isClicked: false,
+        };
+        this.quizChoices.push(randChoice);
+      }
+      if (this.quizChoices.length === 2) {
+        break;
+      }
+    }
+    const correct = {
+      word: this.correctWord,
+      isClicked: false,
+    };
+    this.quizChoices.push(correct);
+  }
 }

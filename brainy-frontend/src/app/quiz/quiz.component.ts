@@ -85,8 +85,6 @@ export class QuizComponent implements OnInit {
       const nextPhoneme = this.allPhonemes[randomIndex];
       nextPhoneme.dupKey ? this.router.navigate([`../quiz/${nextPhoneme.dupKey}`])
         : this.router.navigate([`../quiz/${nextPhoneme.label}`]);
-      // this.interval = setInterval((()=>{}), 2000);
-      // this.generateRandomQuiz();
     }
   }
 
@@ -111,26 +109,18 @@ export class QuizComponent implements OnInit {
     currStars += this.starsWon;
     if (currStars > 12) currStars = 12;
 
+    const category = this.phoneme.category.label.replace(/\s/g, '');
     let constant;
     this.phoneme.dupKey ? constant = this.phoneme.dupKey.slice(1, this.phoneme.dupKey.length)
       : constant = this.phoneme.label;
     const payload = {
-      category: this.phoneme.category.label,
+      category,
       constant,
       stars: currStars,
     };
+    console.log(payload);
     this.userService.updateUserProgress(payload)
       .subscribe();
-  }
-
-  private generateRandomQuiz() {
-    const randomIndex = Math.floor(Math.random() * this.allPhonemes.length);
-    this.phoneme = this.allPhonemes[randomIndex];
-
-    this.findRandomChoices();
-    this.shuffleChoices();
-    console.log(this.quizChoices);
-    console.log(this.phoneme);
   }
 
   private correctChoice() {

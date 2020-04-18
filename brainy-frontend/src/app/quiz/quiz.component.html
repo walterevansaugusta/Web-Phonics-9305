@@ -8,6 +8,9 @@
             <br>
             <stars
               [phoneme]="phoneme"
+              [quizCompleted]="quizCompleted"
+              [starsWon]="starsWon"
+              (starCount)="onStarCount($event)"
               >
             </stars>
         </div>

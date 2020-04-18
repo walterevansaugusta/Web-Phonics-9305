@@ -1,8 +1,9 @@
+import { UserService } from './../services/user.service';
 import { StateService } from './../services/state.service';
 import { IPhoneme } from './../interfaces/phoneme.interface';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import * as w from '../constants/lesson.constant';
-import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'quiz',
@@ -12,21 +13,36 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class QuizComponent implements OnInit {
 
   phoneme: IPhoneme;
-  choices = [];
   quizChoices = [];
   correctWord: IPhoneme;
+  starsWon = 2;
+  quizCompleted = false;
+  mySubscription;
+  starCount;
   private catParam;
   private choicesInd = 0;
   private interval;
   private isDuplicate = false;
   private allPhonemes: IPhoneme[];
+  private incorrect = 0;
 
   constructor(
+    private userService: UserService,
     private stateService: StateService,
     private route: ActivatedRoute,
     private router: Router,
   ) {
     this.route.params.subscribe( params => this.catParam = params['id'] );
+    this.router.routeReuseStrategy.shouldReuseRoute = function () {
+      return false;
+    };
+
+    this.mySubscription = this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Trick the Router into believing it's last link wasn't previously loaded
+        this.router.navigated = false;
+      }
+    });
    }
 
   ngOnInit() {
@@ -40,6 +56,7 @@ export class QuizComponent implements OnInit {
     if (!this.phoneme) {
       this.router.navigateByUrl('/home');
     }
+    console.log(this.phoneme);
 
     this.allPhonemes = this.stateService.getAll();
     this.correctChoice();
@@ -47,35 +64,68 @@ export class QuizComponent implements OnInit {
     this.shuffleChoices();
   }
 
-  onCardClick(word) {
-    for (const w of this.choices) {
-      w['isClicked'] = false;
+  ngOnDestroy() {
+    if (this.mySubscription) {
+      this.mySubscription.unsubscribe();
     }
-    word['isClicked'] = !word['isClicked'];
+  }
+
+  onCardClick(word) {
+    if (word['word'] !== this.correctWord) {
+      word['isClicked'] = true;
+      this.incorrect++;
+    } else {
+      this.quizChoices.forEach((choice) => {
+        choice['isClicked'] = true;
+      });
+      this.starsWon -= this.incorrect;
+      this.quizCompleted = true;
+      this.completeQuiz();
+      const randomIndex = Math.floor(Math.random() * this.allPhonemes.length);
+      const nextPhoneme = this.allPhonemes[randomIndex];
+      nextPhoneme.dupKey ? this.router.navigate([`../quiz/${nextPhoneme.dupKey}`])
+        : this.router.navigate([`../quiz/${nextPhoneme.label}`]);
+      // this.interval = setInterval((()=>{}), 2000);
+      // this.generateRandomQuiz();
+    }
   }
 
   onAudioPlay() {
     const audio = new Audio();
     this.interval = setInterval(() => {
-      const currWord = this.choices[this.choicesInd];
-      console.log(currWord);
+      const currWord = this.quizChoices[this.choicesInd];
       audio.src = currWord['word']['sound'];
-      audio.autoplay = true;
-      audio.muted = false;
       audio.load();
       audio.play();
       this.choicesInd++;
-      if (this.choicesInd === this.choices.length) clearInterval(this.interval);
-    }, 1000);
+      if (this.choicesInd === this.quizChoices.length) clearInterval(this.interval);
+    }, 2000);
+  }
+
+  onStarCount(count) {
+    this.starCount = count;
+  }
+
+  private completeQuiz() {
+    let currStars = this.starCount;
+    currStars += this.starsWon;
+    if (currStars > 12) currStars = 12;
+
+    let constant;
+    this.phoneme.dupKey ? constant = this.phoneme.dupKey.slice(1, this.phoneme.dupKey.length)
+      : constant = this.phoneme.label;
+    const payload = {
+      category: this.phoneme.category.label,
+      constant,
+      stars: currStars,
+    };
+    this.userService.updateUserProgress(payload)
+      .subscribe();
   }
 
   private generateRandomQuiz() {
     const randomIndex = Math.floor(Math.random() * this.allPhonemes.length);
     this.phoneme = this.allPhonemes[randomIndex];
-
-    const phonWords = this.phoneme.words;
-    const wordIndex = Math.floor(Math.random() * phonWords.length);
-    this.correctWord = phonWords[wordIndex];
 
     this.findRandomChoices();
     this.shuffleChoices();
@@ -103,21 +153,20 @@ export class QuizComponent implements OnInit {
       const randInd = Math.floor(Math.random() * (Object.keys(w)).length);
       const randKey = Object.keys(w)[randInd];
 
-      if (!randKey.includes(this.phoneme.label)) {
-        const randChoice = {
-          word: w[randKey],
-          isClicked: false,
-        };
-        this.quizChoices.push(randChoice);
+      if (!randKey.includes(this.phoneme.label) && !this.quizChoices.includes(w[randKey])) {
+        this.quizChoices.push(w[randKey]);
       }
       if (this.quizChoices.length === 2) {
         break;
       }
     }
-    const correct = {
-      word: this.correctWord,
-      isClicked: false,
-    };
-    this.quizChoices.push(correct);
+    this.quizChoices.push(this.correctWord);
+    for (let i = 0; i < this.quizChoices.length; i++) {
+      const choice = {
+          word: this.quizChoices[i],
+          isClicked: false,
+      };
+      this.quizChoices[i] = choice;
+    }
   }
 }

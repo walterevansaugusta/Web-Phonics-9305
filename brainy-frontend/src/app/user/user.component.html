@@ -10,7 +10,7 @@
         <div class="row mx-lg-n5">
             <div class="col-md-10 offset-md-1 px-lg-5">
                 <div class="progress" style="height: 43px;">
-                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{totalPercent}}%" attr.aria-valuenow="{{totalPercent}}" aria-valuemin="0" aria-valuemax="100"> {{totalPercent}}% </div>
+                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" [ngStyle]="{width: totalPercent + '%'}" role="progressbar" attr.aria-valuenow="{{totalPercent}}" aria-valuemin="0" aria-valuemax="100"> {{totalPercent}}% </div>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
                     <div class="row mx-lg-n5">
                         <div class="col-md-8 offset-md-2 pb-3">
                             <div class="progress" style="height: 30px;">
-                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentVowels}}%" attr.aria-valuenow="{{percentVowels}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowels}}% </div>
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{width: percentVowels + '%'}" attr.aria-valuenow="{{percentVowels}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowels}}% </div>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                     <div class="row mx-lg-n5">
                         <div class="col-md-8 offset-md-2 pb-3">
                             <div class="progress" style="height: 30px;">
-                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentVowelPairs}}%" attr.aria-valuenow="{{percentVowelPairs}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowelPairs}}% </div>
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{width: percentVowelPairs + '%'}" attr.aria-valuenow="{{percentVowelPairs}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowelPairs}}% </div>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                     <div class="row mx-lg-n5">
                         <div class="col-md-8 offset-md-2 pb-3">
                             <div class="progress" style="height: 30px;">
-                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentConsonants}}%" attr.aria-valuenow="{{percentConsonants}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonants}}% </div>
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{width: percentConsonants + '%'}" attr.aria-valuenow="{{percentConsonants}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonants}}% </div>
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@
                     <div class="row mx-lg-n5">
                         <div class="col-md-8 offset-md-2 pb-3">
                             <div class="progress" style="height: 30px;">
-                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentConsonantPairs}}%" attr.aria-valuenow="{{percentConsonantPairs}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonantPairs}}% </div>
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{width: percentConsonantPairs + '%'}" attr.aria-valuenow="{{percentConsonantPairs}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonantPairs}}% </div>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                     <div class="row mx-lg-n5">
                         <div class="col-md-8 offset-md-2 pb-3">
                             <div class="progress" style="height: 30px;">
-                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentConsonantBlends}}%" attr.aria-valuenow="{{percentConsonantBlends}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonantBlends}}% </div>
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{width: percentConsonantBlends + '%'}" attr.aria-valuenow="{{percentConsonantBlends}}" aria-valuemin="0" aria-valuemax="100"> {{percentConsonantBlends}}% </div>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
                     <div class="row mx-lg-n5">
                         <div class="col-md-8 offset-md-2 pb-3">
                             <div class="progress" style="height: 30px;">
-                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" attr.style="width: {{percentVowelConsonantBlends}}%" attr.aria-valuenow="{{percentVowelConsonantBlends}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowelConsonantBlends}}% </div>
+                                <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" [ngStyle]="{width: percentVowelConsonantBlends + '%'}" attr.aria-valuenow="{{percentVowelConsonantBlends}}" aria-valuemin="0" aria-valuemax="100"> {{percentVowelConsonantBlends}}% </div>
                             </div>
                         </div>
                     </div>

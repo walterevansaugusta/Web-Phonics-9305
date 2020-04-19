@@ -1802,7 +1802,7 @@ export const centipede: IPhoneme = {
 export const doc: IPhoneme = {
     label: 'doc',
     img: 'assets/images/consonants/doc.png',
-    sound: '../../assets/sounds/doc.mp3',
+    sound: '../../assets/sounds/doctor.mp3',
 
 }
 
@@ -1886,7 +1886,7 @@ export const stilts: IPhoneme = {
 export const suitcases: IPhoneme = {
     label: 'suitcases',
     img: 'assets/images/consonants/suitcases.png',
-    sound: '../../assets/sounds/suitcases.mp3',
+    sound: '../../assets/sounds/suitcase.mp3',
 
 }
 

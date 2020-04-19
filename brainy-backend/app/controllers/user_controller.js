@@ -16,7 +16,7 @@ module.exports.register = (req, res, next) => {
             "ai": 0, "ay": 0, "ea": 0, "oa": 0, "ow": 0, "oo": 0, "oi": 0, "oy": 0
         },
         "Vowels": {
-            "a1": 0, "a2": 0, "a3": 0," e1": 0, "e2": 0, "e3": 0, "i1": 0, "i2": 0, "i3": 0, "o1": 0, "o2": 0, "u1": 0, "u2": 0, "u3": 0, "y1": 0, "y2": 0, "y3": 0
+            "a1": 0, "a2": 0, "a3": 0, "e1": 0, "e2": 0, "e3": 0, "i1": 0, "i2": 0, "i3": 0, "o1": 0, "o2": 0, "u1": 0, "u2": 0, "u3": 0, "y1": 0, "y2": 0, "y3": 0
         },
         "ConsonantPairs": {
             "ch": 0, "ng": 0, "sh": 0, "th": 0, "wh": 0
@@ -35,6 +35,10 @@ module.exports.register = (req, res, next) => {
     user.save((err, doc) => {
         console.log("Tried to save");
         if (!err) res.send(doc);
+        else {
+            if (err.code == 11000)
+                res.status(422).send(['Duplicate name found.'])
+        }
     });
     console.log("postsave");    
 }

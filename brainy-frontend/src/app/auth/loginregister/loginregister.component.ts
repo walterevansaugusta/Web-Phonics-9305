@@ -18,6 +18,7 @@ export class LoginregisterComponent implements OnInit {
   chosenImgs = [];
   showRegister: boolean;
   name: string;
+  loginFailed = false;
 
   constructor(
     private router: Router,
@@ -98,7 +99,6 @@ export class LoginregisterComponent implements OnInit {
       this.chosenImgs.length--;
     }
     delete this.chosenImgs[index];
-    console.log(this.chosenImgs);
   }
 
   private userLogin(user: User) {
@@ -111,7 +111,8 @@ export class LoginregisterComponent implements OnInit {
         },
         err => {
           console.log(err);
-          alert('You may only choose 4 animal pictures');
+          console.log(err['error']['message']);
+          this.loginFailed = true;
         }
       );
   }

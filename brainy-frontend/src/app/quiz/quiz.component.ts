@@ -98,6 +98,7 @@ export class QuizComponent implements OnInit {
       this.choicesInd++;
       if (this.choicesInd === this.quizChoices.length) clearInterval(this.interval);
     }, 2000);
+    this.choicesInd = 0;
   }
 
   onStarCount(count) {

@@ -14,6 +14,8 @@ export class NavbarComponent implements OnInit {
     private userService: UserService,
   ) { }
 
+  // url_name = (this.router['url'] != '/quiz-landing'); 
+  url_name = (this.router['url'] == '/home' || this.router['url'] == '/user');
   userName: string;
 
   ngOnInit() {
@@ -38,5 +40,9 @@ export class NavbarComponent implements OnInit {
 
   onUser() {
     this.router.navigate(['../user/'])
+  }
+
+  onTakeQuiz() { 
+    this.router.navigate(['../quiz-landing/'])
   }
 }

@@ -4,7 +4,7 @@
     margin: auto;
 }
 
-h1 {
+#let {
     font-size: 100px;
 }
 
@@ -14,6 +14,19 @@ h1 {
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+ 
+h1 { 
+    font-size: 60px;
+}
+
+#next { 
+    font-size: 25px;
+    width: 45%;
+}
+
+strong { 
+    color: #b57fe3;
 }
 
 .btn-show {
@@ -25,6 +38,15 @@ h1 {
 
 #words {
     background-color: white;
+}
+
+#finished {
+    background-color: white;
+    text-align: center;
+}
+
+.checked { 
+    color: orange;
 }
 
 .quiz {

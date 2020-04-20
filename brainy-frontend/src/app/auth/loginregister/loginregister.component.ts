@@ -3,7 +3,6 @@ import { UserService } from './../../services/user.service';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { IImage } from 'src/app/interfaces/image.interface';
-import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'loginregister',

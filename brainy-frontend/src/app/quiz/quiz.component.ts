@@ -92,6 +92,11 @@ export class QuizComponent implements OnInit {
     const audio = new Audio();
     this.interval = setInterval(() => {
       const currWord = this.quizChoices[this.choicesInd];
+      this.quizChoices.forEach((word) => {
+        word['isPlaying'] = false;
+      });
+      currWord['isPlaying'] = true;
+      console.log(currWord);
       audio.src = currWord['word']['sound'];
       audio.load();
       audio.play();
@@ -156,6 +161,7 @@ export class QuizComponent implements OnInit {
       const choice = {
           word: this.quizChoices[i],
           isClicked: false,
+          isPlaying: false,
       };
       this.quizChoices[i] = choice;
     }

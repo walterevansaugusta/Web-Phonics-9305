@@ -1,19 +1,19 @@
 
-#card { 
+#card {
     text-align: center;
     margin: auto;
 }
 
-h1 { 
+h1 {
     font-size: 100px;
 }
 
-#phoneme { 
-    background-color: #f0f8ff;  
+#phoneme {
+    background-color: #f0f8ff;
     text-align: center;
     padding-top: 50px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .btn-show {
@@ -23,11 +23,15 @@ h1 {
     background-color: #b57fe3;
   }
 
-#words { 
-    background-color: white; 
+#words {
+    background-color: white;
 }
 
-.quiz { 
+.quiz {
     height: 600px;
+}
+
+.card-playing {
+  box-shadow: 5px 10px;
 }
 

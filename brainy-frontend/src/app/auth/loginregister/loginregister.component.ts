@@ -3,6 +3,7 @@ import { UserService } from './../../services/user.service';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { IImage } from 'src/app/interfaces/image.interface';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'loginregister',
@@ -98,7 +99,6 @@ export class LoginregisterComponent implements OnInit {
       this.chosenImgs.length--;
     }
     delete this.chosenImgs[index];
-    console.log(this.chosenImgs);
   }
 
   private userLogin(user: User) {
@@ -110,8 +110,7 @@ export class LoginregisterComponent implements OnInit {
           this.homeClick.emit();
         },
         err => {
-          console.log(err);
-          alert('You may only choose 4 animal pictures');
+          alert(err['error']['message']);
         }
       );
   }

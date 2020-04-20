@@ -82,11 +82,14 @@ export class QuizComponent implements OnInit {
       this.starsWon -= this.incorrect;
       this.quizCompleted = true;
       this.completeQuiz();
-      const randomIndex = Math.floor(Math.random() * this.allPhonemes.length);
-      const nextPhoneme = this.allPhonemes[randomIndex];
-      nextPhoneme.dupKey ? this.router.navigate([`../quiz/${nextPhoneme.dupKey}`])
-        : this.router.navigate([`../quiz/${nextPhoneme.label}`]);
     }
+  }
+
+  onNext() { 
+    const randomIndex = Math.floor(Math.random() * this.allPhonemes.length);
+    const nextPhoneme = this.allPhonemes[randomIndex];
+    nextPhoneme.dupKey ? this.router.navigate([`../quiz/${nextPhoneme.dupKey}`])
+      : this.router.navigate([`../quiz/${nextPhoneme.label}`]);
   }
 
   onAudioPlay() {

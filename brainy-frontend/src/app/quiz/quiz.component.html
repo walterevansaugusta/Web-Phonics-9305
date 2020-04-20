@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="root">
     <navbar></navbar>
     <div class="row quiz">
         <div class="col-md-3" id="phoneme">
-            <h1>{{ phoneme.label }}</h1>
+            <h1 id="let">{{ phoneme.label }}</h1>
             <button class="btn btn-show rounded-pill" type="button" (click)="onAudioPlay()">Play Sounds</button>
             <br>
             <br>
@@ -14,7 +15,8 @@
               >
             </stars>
         </div>
-        <div class="row col-md-9" id="words">
+
+        <div *ngIf="!quizCompleted" class="row col-md-9" id="words">
             <div id="card"  class="col-sm-6" *ngFor="let w of quizChoices" (click)="onCardClick(w)">
                 <div>
                     <h3 *ngIf="w['isClicked']">{{w['word'].label}}</h3>
@@ -22,5 +24,29 @@
                 </div>
             </div>
         </div>
+        <div *ngIf="quizCompleted" class="row col-md-9 justify-content-center" id="finished">
+            <div *ngIf="starsWon == 0">
+                <br><br><br><br>
+                <h1>That's ok!</h1>
+                <br>
+                <h2>The word was <strong>{{correctWord.label}}.</strong></h2>
+                <h2>You won {{starsWon}}  <span class="fa fa-star checked"></span>s.</h2>
+                <br>
+                <h2>You'll do better next time!</h2>
+                <br>
+                <button class="btn btn-show rounded-pill" type="button" id="next" (click)="onNext()">Next</button>
+            </div>
+            <div *ngIf="starsWon != 0">
+                <br><br><br><br>
+                <h1>Great Work!</h1>
+                <br>
+                <h2>You got the word <strong>{{correctWord.label}}.</strong></h2>
+                <br>
+                <h2>You won {{starsWon}} <span class="fa fa-star checked"></span>s.</h2>
+                <br>
+                <button class="btn btn-show rounded-pill" type="button" id="next" (click)="onNext()">Next</button>
+            </div>
+        </div>
+
     </div>
 </div>

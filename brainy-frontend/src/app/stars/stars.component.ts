@@ -7,7 +7,7 @@ import { IPhoneme } from '../interfaces/phoneme.interface';
   templateUrl: './stars.component.html',
   styleUrls: ['./stars.component.scss']
 })
-export class StarsComponent implements OnInit, OnChanges {
+export class StarsComponent implements OnInit {
 
   @Input() phoneme: IPhoneme;
   @Input() quizCompleted: boolean;
@@ -35,27 +35,6 @@ export class StarsComponent implements OnInit, OnChanges {
         console.log(this.stars.length);
         this.starCount.emit(this.stars.length);
       });
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes.quizCompleted && this.starsWon > 0) {
-      let currStars = this.stars.length;
-      currStars += this.starsWon;
-      if (currStars > 12) currStars = 12;
-
-      let constant;
-      this.phoneme.dupKey ? constant = this.phoneme.dupKey.slice(1, this.phoneme.dupKey.length)
-        : constant = this.phoneme.label;
-      const payload = {
-        category: this.category,
-        constant,
-        stars: currStars,
-      };
-      this.userService.updateUserProgress(payload)
-        .subscribe();
-
-      this.stars.length = currStars;
-    }
   }
 
 }

@@ -15,10 +15,10 @@
             </stars>
         </div>
         <div class="row col-md-9" id="words">
-            <div id="card" [ngClass]="{'card-playing': w['isPlaying']}" class="col-sm-6" *ngFor="let w of quizChoices" (click)="onCardClick(w)">
+            <div id="card"  class="col-sm-6" *ngFor="let w of quizChoices" (click)="onCardClick(w)">
                 <div>
                     <h3 *ngIf="w['isClicked']">{{w['word'].label}}</h3>
-                    <img id="image" [src]="w['word'].img" width="200" height="200">
+                    <img [ngClass]="{'card-playing': w['isPlaying']}" id="image" [src]="w['word'].img" width="200" height="200">
                 </div>
             </div>
         </div>

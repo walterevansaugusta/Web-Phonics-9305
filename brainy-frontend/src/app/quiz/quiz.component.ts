@@ -4,6 +4,7 @@ import { IPhoneme } from './../interfaces/phoneme.interface';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import * as w from '../constants/lesson.constant';
+import { stringify } from 'querystring';
 
 @Component({
   selector: 'quiz',
@@ -101,7 +102,10 @@ export class QuizComponent implements OnInit {
       audio.load();
       audio.play();
       this.choicesInd++;
-      if (this.choicesInd === this.quizChoices.length) clearInterval(this.interval);
+      
+      if (this.choicesInd === this.quizChoices.length) {
+        clearInterval(this.interval);
+      }
     }, 2000);
     this.choicesInd = 0;
   }

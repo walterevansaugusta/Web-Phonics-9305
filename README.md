@@ -29,13 +29,13 @@
     * https://nodejs.org/en/download/
 
 #### Dependencies
-Type `npm i` in the terminal while in the “brainy-frontend” folder and in the “brainy-backend” folder to get all of the dependencies.
+* Type `npm i` in the terminal while in the “brainy-frontend” folder and in the “brainy-backend” folder to get all of the dependencies.
 
 #### Download
-Clone the repository. 
-```
-git clone https://github.com/frankiekim5/Brainy-Web-Phonics
-```
+* Clone the repository. 
+   ```
+   git clone https://github.com/frankiekim5/Brainy-Web-Phonics
+   ```
 
 #### Build
 * No build necessary for this app.
